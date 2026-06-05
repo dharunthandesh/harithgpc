@@ -1121,6 +1121,11 @@ a.info-title:hover {
   align-items: start;
 }
 
+/* Mobile Filter Toggle Button */
+.mobile-filter-toggle {
+  display: none;
+}
+
 /* Sidebar Filters */
 .catalog-sidebar {
   background-color: var(--bg-surface);
@@ -1601,7 +1606,7 @@ a.info-title:hover {
 }
 .accordion-item.active .accordion-content {
   padding: 0 20px 20px 20px;
-  max-height: 150px; /* arbitrary max height */
+  max-height: 1000px; /* high limit to avoid clipping on mobile */
 }
 .accordion-content p {
   font-size: 13px;
@@ -2659,29 +2664,32 @@ a.info-title:hover {
 
 /* Mobile Nav Overlay */
 .mobile-nav-overlay {
-  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
   z-index: 199;
   opacity: 0;
-  transition: opacity var(--transition-fast);
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity var(--transition-fast), visibility var(--transition-fast);
 }
 .mobile-nav-overlay.active {
   opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 
 /* Mobile Nav Drawer */
 .mobile-nav-drawer {
-  display: none;
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -300px;
   width: 280px;
   max-width: 85vw;
   height: 100vh;
   background: var(--primary-dark);
   z-index: 200;
+  display: flex;
   flex-direction: column;
   padding: 24px 0;
   box-shadow: -8px 0 30px rgba(0, 0, 0, 0.4);
@@ -2857,12 +2865,6 @@ a.info-title:hover {
   .user-profile-status {
     display: none !important;
   }
-  .mobile-nav-drawer {
-    display: flex;
-  }
-  .mobile-nav-overlay {
-    display: block;
-  }
   
   .nav-inner {
     flex-direction: row;
@@ -3026,6 +3028,41 @@ a.info-title:hover {
   }
   .catalog-inner {
     padding: 0 16px;
+  }
+  .mobile-filter-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 20px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: all var(--transition-fast);
+  }
+  .mobile-filter-toggle i {
+    width: 16px;
+    height: 16px;
+  }
+  .mobile-filter-toggle .toggle-arrow {
+    transition: transform var(--transition-fast);
+  }
+  .mobile-filter-toggle.active .toggle-arrow {
+    transform: rotate(180deg);
+  }
+  .catalog-sidebar {
+    display: none;
+    margin-bottom: 24px;
+    position: static;
+    box-shadow: none;
+  }
+  .catalog-sidebar.active {
+    display: flex;
   }
   .section-header {
     flex-direction: column;
@@ -3195,6 +3232,13 @@ a.info-title:hover {
   }
   .pest-info h3 {
     font-size: 1.2rem;
+  }
+  .pest-detail-name {
+    font-size: 2rem;
+  }
+  .recommended-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   
   /* ── About Page ── */

@@ -715,9 +715,11 @@ const PEST_DATABASE = [
 ];
 
 // Wait for DOM content to load
-document.addEventListener("DOMContentLoaded", () => {
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initPestLibrary);
+} else {
   initPestLibrary();
-});
+}
 
 function initPestLibrary() {
   const gridContainer = document.getElementById("pest-grid-container");

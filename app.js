@@ -513,7 +513,7 @@ let currentOrderDetails = null;
 /* ─────────────────────────────────────────────────────────────────────────
    DOCUMENT INITIALIZATION
    ───────────────────────────────────────────────────────────────────────── */
-document.addEventListener("DOMContentLoaded", () => {
+function initializeApp() {
   // Initialize and run the premium loading screen
   initLoader();
 
@@ -556,7 +556,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (typeof lucide !== "undefined") {
     lucide.createIcons();
   }
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeApp);
+} else {
+  initializeApp();
+}
 
 /* ─────────────────────────────────────────────────────────────────────────
    POPULATE SIDEBAR FILTERS DYNAMICALLY
@@ -593,6 +599,16 @@ function populateFilterOptions() {
    EVENT LISTENERS SETUP
    ───────────────────────────────────────────────────────────────────────── */
 function setupEventListeners() {
+  // Mobile Filter Sidebar Toggle
+  const filterToggle = document.getElementById("mobile-filter-toggle");
+  const sidebar = document.querySelector(".catalog-sidebar");
+  if (filterToggle && sidebar) {
+    filterToggle.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+      filterToggle.classList.toggle("active");
+    });
+  }
+
   // 1. Theme Switcher
   const themeToggle = document.getElementById("theme-toggle");
   if (themeToggle) {
