@@ -112,6 +112,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 body {
@@ -2838,6 +2839,7 @@ a.info-title:hover {
     padding: 0;
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 150;
     background-color: var(--primary-dark);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -2882,6 +2884,8 @@ a.info-title:hover {
     position: sticky;
     top: 0;
     height: 0;
+    margin-top: -56px;
+    width: 100%;
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
@@ -2896,10 +2900,11 @@ a.info-title:hover {
     height: 56px;
     display: flex;
     align-items: center;
-    pointer-events: auto;
+    pointer-events: none;
   }
   .nav-actions {
     gap: 8px;
+    pointer-events: auto;
   }
   .nav-actions .action-btn {
     height: 36px;
@@ -3362,8 +3367,8 @@ a.info-title:hover {
     font-size: clamp(20px, 7vw, 32px);
   }
   .hero-stats {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     padding-top: 20px;
   }
