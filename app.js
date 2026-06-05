@@ -1021,6 +1021,45 @@ function setupEventListeners() {
       }
     });
   });
+
+  // 20. Mobile Hamburger Menu Toggle
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const mobileNavDrawer = document.getElementById("mobile-nav-drawer");
+  const mobileNavOverlay = document.getElementById("mobile-nav-overlay");
+
+  function openMobileNav() {
+    if (hamburgerBtn) hamburgerBtn.classList.add("active");
+    if (mobileNavDrawer) mobileNavDrawer.classList.add("active");
+    if (mobileNavOverlay) mobileNavOverlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeMobileNav() {
+    if (hamburgerBtn) hamburgerBtn.classList.remove("active");
+    if (mobileNavDrawer) mobileNavDrawer.classList.remove("active");
+    if (mobileNavOverlay) mobileNavOverlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  if (hamburgerBtn) {
+    hamburgerBtn.addEventListener("click", () => {
+      const isOpen = hamburgerBtn.classList.contains("active");
+      if (isOpen) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
+    });
+  }
+
+  if (mobileNavOverlay) {
+    mobileNavOverlay.addEventListener("click", closeMobileNav);
+  }
+
+  // Re-initialize Lucide icons for dynamically added mobile nav icons
+  if (typeof lucide !== "undefined") {
+    lucide.createIcons();
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
