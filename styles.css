@@ -3336,17 +3336,24 @@ a.info-title:hover {
     font-size: clamp(20px, 7vw, 32px);
   }
   .hero-stats {
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    padding-top: 20px;
   }
   .stat-item {
-    align-items: center;
+    align-items: flex-start;
+  }
+  .stat-num {
+    font-size: 20px;
+  }
+  .stat-label {
+    font-size: 9px;
   }
   
   .trust-bar-inner {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
     padding: 0 12px;
   }
   
