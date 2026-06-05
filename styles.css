@@ -3358,18 +3358,28 @@ a.info-title:hover {
   }
   
   .products-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
   }
   .product-img-wrap {
-    min-height: 180px;
-    padding: 16px;
+    min-height: 120px;
+    padding: 10px;
   }
   .product-details {
-    padding: 16px;
+    padding: 10px;
   }
   .prod-name {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .prod-active-ing {
+    font-size: 9px;
+    margin-bottom: 6px;
+  }
+  .prod-price {
+    font-size: 13px;
+  }
+  .prod-footer-row {
+    padding-top: 8px;
   }
   
   .about-inner,
@@ -4215,8 +4225,8 @@ body.loading-active {
 }
 @media (max-width: 480px) {
   .pest-grid-container {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
   }
 }
 .pest-grid-item {
