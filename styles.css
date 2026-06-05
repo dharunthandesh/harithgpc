@@ -1224,6 +1224,7 @@ a.info-title:hover {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  min-width: 0;
 }
 
 /* Tabs */
@@ -1285,8 +1286,8 @@ a.info-title:hover {
 
 /* Product Card */
 .product-card {
-  background-color: var(--pest-card-bg);
-  border: 1px solid var(--pest-card-border);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   overflow: hidden;
   position: relative;
@@ -2835,9 +2836,18 @@ a.info-title:hover {
   }
   .main-header {
     padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 150;
+    background-color: var(--primary-dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: var(--shadow-sm);
   }
   .header-inner {
     padding: 10px 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
   }
   .logo-badge {
     width: 36px;
@@ -2847,9 +2857,11 @@ a.info-title:hover {
   }
   .logo-main {
     font-size: 16px;
+    color: var(--text-white) !important;
   }
   .logo-sub {
     font-size: 9px;
+    color: rgba(255, 255, 255, 0.7) !important;
   }
   
   /* ── Navigation – Hamburger Mode ── */
@@ -2866,11 +2878,25 @@ a.info-title:hover {
     display: none !important;
   }
   
+  .navigation-bar {
+    position: sticky;
+    top: 0;
+    height: 0;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    z-index: 151;
+    pointer-events: none;
+  }
   .nav-inner {
     flex-direction: row;
     justify-content: flex-end;
     gap: 8px;
-    padding: 10px 16px;
+    padding: 0 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    pointer-events: auto;
   }
   .nav-actions {
     gap: 8px;
@@ -3391,11 +3417,11 @@ a.info-title:hover {
   
   .about-inner,
   .catalog-inner {
-    padding: 0 12px;
+    padding: 0 16px;
   }
   
   .enquiry-inner {
-    padding: 0 12px;
+    padding: 0 16px;
   }
   .enquiry-title {
     font-size: 18px;
@@ -3416,15 +3442,17 @@ a.info-title:hover {
   }
   
   .pest-hero {
-    padding: 36px 12px;
+    padding: 36px 16px;
   }
-  .pest-library-inner,
+  .pest-library-inner {
+    padding: 0 20px;
+  }
   .about-page-inner {
-    padding: 0 12px;
+    padding: 0 16px;
   }
   
   .pest-grid-container {
-    gap: 24px;
+    gap: 24px 12px;
     padding: 10px 0 40px 0;
   }
   .pest-image-circle {
