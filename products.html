@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="no-loader">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products – Harith Garden and Pest Clinic</title>
+  
+  <meta name="keywords" content="Harith Garden and Pest Clinic, pest control chemical suppliers Chennai, pest control equipment Chennai, ENVU Bayer distributor, UPL pest solutions Tamil Nadu, Syngenta pest products, bird netting suppliers Chennai, authorized pest control dealers, Sumitomo Bayer pest expert, pest control wholesalers Chennai, pest control training Tamil Nadu" />
+  <meta name="description" content="Explore our catalog of professional grade pest management formulations, chemicals, and industrial machinery. Authorized distributors of ENVU (Bayer), Syngenta, UPL, and ASPEE in Chennai." />
+
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="Products – Harith Garden and Pest Clinic" />
+  <meta property="og:url" content="https://www.harithgpc.com/products.html" />
+  <meta property="og:site_name" content="Harith Garden And Pest Clinic" />
+  <meta property="og:description" content="Explore our catalog of professional grade pest management formulations, chemicals, and industrial machinery." />
+  <meta property="og:type" content="website" />       
+  <meta property="og:image" content="https://www.harithgpc.com/uploads/images/1749577509271af924e3280763a6fc694387104646.png" />    
+      
+  <link rel="shortcut icon" href="https://www.harithgpc.com/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://www.harithgpc.com/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function() {
+      const isHomepage = window.location.pathname === "/" || 
+                         window.location.pathname.endsWith("/index.html") || 
+                         window.location.pathname.endsWith("/index.php") ||
+                         window.location.pathname.split("/").pop() === "";
+      const loaderPlayed = sessionStorage.getItem("harith-loader-played");
+      if (!isHomepage || loaderPlayed === "true") {
+        document.documentElement.classList.add('no-loader');
+      }
+      // Apply theme immediately to prevent flashing
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.documentElement.classList.remove('light-theme');
+        document.documentElement.classList.add('dark-theme');
+      } else {
+        document.documentElement.classList.remove('dark-theme');
+        document.documentElement.classList.add('light-theme');
+      }
+    })();
+  </script>
+</head>
+<body class="light-theme loading-active">
+
+  <!-- ─── PREMIUM LOADING SCREEN ─── -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loader-content">
+      <div class="loader-bg-glow"></div>
+      
+      <!-- Shuffling Image Deck (Portrait Frame) -->
+      <div class="image-deck-container">
+        <div class="image-deck" id="shuffle-deck"></div>
+      </div>
+
+      <!-- Typography Wrapper -->
+      <div class="loader-text-wrapper">
+        <h1 class="loader-logo">HARITH<span class="dot">.</span></h1>
+        <span class="loader-counter" id="loader-counter">000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── MAIN HEADER (Arbuda Style) ─── -->
+  <header class="main-header">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="index.html" class="logo-container">
+        <div class="logo-badge">HG</div>
+        <div class="logo-text">
+          <span class="logo-main">Harith Garden</span>
+          <span class="logo-sub">& Pest Clinic</span>
+        </div>
+      </a>
+
+      <!-- Info Widgets -->
+      <div class="header-info-widgets">
+        <!-- Contact Block -->
+        <div class="info-widget">
+          <div class="info-icon-box">
+            <i data-lucide="phone"></i>
+          </div>
+          <div class="info-text">
+            <a href="tel:+919444904349" class="info-title">+91 9444904349</a>
+            <a href="mailto:info@harithgpc.com" class="info-subtitle">info@harithgpc.com</a>
+          </div>
+        </div>
+
+        <!-- Timings Block -->
+        <div class="info-widget">
+          <div class="info-icon-box">
+            <i data-lucide="clock"></i>
+          </div>
+          <div class="info-text">
+            <span class="info-title">Mon-Sat 9:00 AM - 6:30 PM</span>
+            <span class="info-subtitle">Sunday Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shop Now Button -->
+      <div class="header-shop-action">
+        <a href="products.html" class="shop-now-btn">
+          SHOP NOW <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── NAVIGATION & UTILITIES BAR (Sticky) ─── -->
+  <nav class="navigation-bar">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link active">Products</a></li>
+        <li><a href="pest-library.html" class="nav-link">Pest Library</a></li>
+        <li><a href="about.html" class="nav-link">About Company</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- User Profile Status (Preserves app.js DOM checks) -->
+        <div class="user-profile-status" style="display:none !important;">
+          <i data-lucide="user"></i>
+          <span>Welcome, <strong id="user-display">Guest</strong></span>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-container">
+          <div class="search-wrapper">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="product-search" placeholder="Search pest solutions, chemicals, or equipment..." autocomplete="off">
+            <button id="search-clear-btn" class="clear-btn" style="display:none;"><i data-lucide="x"></i></button>
+          </div>
+          <!-- Search Autocomplete Suggestions -->
+          <div id="search-suggestions" class="search-suggestions-dropdown" style="display:none;"></div>
+        </div>
+
+        <!-- Actions -->
+        <button id="cart-trigger-btn" class="action-btn cart-btn" aria-label="Open Shopping Cart">
+          <i data-lucide="shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </button>
+
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="theme-icon-dark"></i>
+          <i data-lucide="sun" class="theme-icon-light"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── PRODUCT CATALOG ─── -->
+  <main id="catalog" class="catalog-section" style="padding-top: 60px;">
+    <div class="catalog-inner">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-subtitle">Product Catalog</span>
+          <h2 class="section-title">Explore Premium Formulations</h2>
+        </div>
+        
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+          <div class="search-filter-status" id="filter-status-text" style="display:none;">
+            Showing results for "<span id="filter-search-query"></span>" 
+            <button id="clear-filters-btn" class="pill-btn">Reset Filters <i data-lucide="x"></i></button>
+          </div>
+          
+          <div class="sort-selector-wrapper">
+            <label for="sort-select"><i data-lucide="sliders-horizontal" class="inline-icon"></i> Sort By:</label>
+            <select id="sort-select" class="sort-dropdown">
+              <option value="default">Popularity</option>
+              <option value="name-asc">Alphabetical (A-Z)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catalog Layout Grid -->
+      <div class="catalog-layout">
+        <!-- Sidebar filters -->
+        <aside class="catalog-sidebar">
+          <div class="filter-group">
+            <h3 class="filter-group-title">Brands</h3>
+            <div class="filter-checkbox-list" id="brand-filters-container">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+          <div class="filter-group">
+            <h3 class="filter-group-title">Product Category</h3>
+            <div class="filter-checkbox-list" id="type-filters-container">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+          <div class="filter-group">
+            <h3 class="filter-group-title">Toxicity Level</h3>
+            <div class="filter-checkbox-list">
+              <label class="filter-label">
+                <input type="checkbox" name="toxicity" value="Yellow Label" class="filter-checkbox">
+                <span class="custom-check"><span class="toxicity-dot yellow"></span> Yellow (Highly Toxic)</span>
+              </label>
+              <label class="filter-label">
+                <input type="checkbox" name="toxicity" value="Blue Label" class="filter-checkbox">
+                <span class="custom-check"><span class="toxicity-dot blue"></span> Blue (Moderately Toxic)</span>
+              </label>
+              <label class="filter-label">
+                <input type="checkbox" name="toxicity" value="Green Label" class="filter-checkbox">
+                <span class="custom-check"><span class="toxicity-dot green"></span> Green (Slightly Toxic)</span>
+              </label>
+              <label class="filter-label">
+                <input type="checkbox" name="toxicity" value="Equipment" class="filter-checkbox">
+                <span class="custom-check"><span class="toxicity-dot gray"></span> None (Machinery)</span>
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Products Grid Container -->
+        <div class="products-grid-wrapper">
+          <div class="products-tab-headers">
+            <button class="tab-header active" data-tab="all">All Products</button>
+            <button class="tab-header" data-tab="featured">Featured Solutions</button>
+            <button class="tab-header" data-tab="new">New Arrivals</button>
+            <button class="tab-header" data-tab="offers">Special Offers</button>
+            <button class="tab-header gardening-tab" data-tab="gardening">🌿 Gardening</button>
+          </div>
+
+          <div id="products-grid" class="products-grid">
+            <!-- Dynamically generated product cards -->
+          </div>
+          
+          <!-- Empty State -->
+          <div id="empty-state" class="empty-state-box" style="display: none;">
+            <i data-lucide="alert-circle" class="empty-icon"></i>
+            <h3>No Products Found</h3>
+            <p>We couldn't find any products matching your specific filters or search keywords. Try adjusting your sidebar selections.</p>
+            <button id="reset-empty-btn" class="cta-primary-btn">Reset All Filters</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ─── B2B ENQUIRY / BANNER STRIP ─── -->
+  <section class="enquiry-banner">
+    <div class="enquiry-inner">
+      <div class="enquiry-text">
+        <span class="enquiry-subtitle">Bulk Sales & B2B Orders</span>
+        <h2 class="enquiry-title">Need custom pesticide licensing assistance or bulk commercial quotes?</h2>
+        <p class="enquiry-desc">We offer special distributor pricing packages and GST invoicing for registered pest control companies and corporate partners.</p>
+      </div>
+      <div class="enquiry-action-box">
+        <a href="contact.html" class="enquiry-btn">Send Enquiry Form <i data-lucide="mail"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-inner grid-4-cols">
+        <!-- Brand -->
+        <div class="footer-brand-col">
+          <div class="logo-container white-logo">
+            <div class="logo-badge">HG</div>
+            <div class="logo-text">
+              <span class="logo-main">Harith Garden</span>
+              <span class="logo-sub">& Pest Clinic</span>
+            </div>
+          </div>
+          <p class="footer-desc">Authorized distributor of pest control formulations, industrial fogging equipment, rodent cages, and bird nets. Serving major operations since 2016.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links-col">
+          <h3 class="footer-title">Shop Brands</h3>
+          <ul class="footer-list">
+            <li><a href="#" class="brand-shortcut" data-brand="ENVU (BAYER)">ENVU (Bayer) Solutions</a></li>
+            <li><a href="#" class="brand-shortcut" data-brand="SYNGENTA">Syngenta Public Health</a></li>
+            <li><a href="#" class="brand-shortcut" data-brand="UPL LTD">UPL Ltd Formulations</a></li>
+            <li><a href="#" class="brand-shortcut" data-brand="ULTIMA SEARCH">Ultima Search Rodenticides</a></li>
+            <li><a href="#" class="brand-shortcut" data-brand="FOGGERS INDIA PVT LTD">Foggers India Machinery</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Support -->
+        <div class="footer-links-col">
+          <h3 class="footer-title">Customer Services</h3>
+          <ul class="footer-list">
+            <li><a href="contact.html">Submit B2B Enquiry</a></li>
+            <li><a href="products.html">Safety Data Sheets (SDS)</a></li>
+            <li><a href="about.html">Pest Toxicity Labels Info</a></li>
+            <li><a href="contact.html">Contact Clinical Team</a></li>
+            <li><a href="products.html">Special Wholesale pricing</a></li>
+          </ul>
+        </div>
+
+        <!-- Support Info Card -->
+        <div class="footer-support-card">
+          <h3 class="footer-title">Customer Support</h3>
+          <div class="support-content">
+            <div class="support-icon"><i data-lucide="phone-call"></i></div>
+            <div class="support-text">
+              <span class="support-label">Direct Hotline</span>
+              <strong class="support-num">+91 9444904349</strong>
+            </div>
+          </div>
+          <p class="support-note">Call us between 9:00 AM and 6:30 PM (IST) for immediate help with chemical selections.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p class="copyright-text">&copy; 2026 - Harith Garden And Pest Clinic. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ───────────────── OVERLAYS & MODALS ───────────────── -->
+
+  <!-- 1. CART DRAWER -->
+  <div id="cart-drawer" class="drawer-overlay" style="display:none;">
+    <div class="drawer-container">
+      <div class="drawer-header">
+        <h2>Your Enquiry List</h2>
+        <button id="cart-close-btn" class="close-btn" aria-label="Close Enquiry List"><i data-lucide="x"></i></button>
+      </div>
+      
+      <div class="drawer-body">
+        <div id="cart-items-list" class="cart-items-container">
+          <!-- Dynamically populated items -->
+        </div>
+
+        <div id="cart-empty-state" class="cart-empty-box">
+          <i data-lucide="shopping-bag" class="empty-icon"></i>
+          <p>Your enquiry list is empty.</p>
+          <button id="cart-shop-now-btn" class="cta-primary-btn">Browse Products</button>
+        </div>
+      </div>
+
+      <div class="drawer-footer" id="cart-summary-footer" style="display:none;">
+        <button id="whatsapp-enquire-btn" class="whatsapp-btn">Enquire on WhatsApp <i data-lucide="message-square"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. PRODUCT DETAILS QUICK-VIEW MODAL -->
+  <div id="product-modal" class="modal-overlay" style="display:none;">
+    <div class="product-modal-container">
+      <button id="product-modal-close-btn" class="close-btn"><i data-lucide="x"></i></button>
+      <div id="product-modal-body" class="product-modal-grid">
+        <!-- Dynamically loaded product content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. SIGN-IN MODAL -->
+  <div id="auth-modal" class="modal-overlay" style="display:none;">
+    <div class="auth-modal-container">
+      <button id="auth-close-btn" class="close-btn"><i data-lucide="x"></i></button>
+      
+      <!-- Tab Controls -->
+      <div class="auth-tabs">
+        <button class="auth-tab-btn active" id="tab-login-btn">Sign In</button>
+        <button class="auth-tab-btn" id="tab-register-btn">Create Account</button>
+      </div>
+
+      <div class="auth-forms">
+        <!-- Login Form -->
+        <form id="login-form" class="auth-form active">
+          <h3>Welcome Back</h3>
+          <p class="form-sub">Sign in to your client profile to review purchase history and track active orders.</p>
+          <div class="form-group">
+            <label for="login-email">Email Address</label>
+            <input type="email" id="login-email" required placeholder="name@company.com">
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required placeholder="••••••••">
+          </div>
+          <button type="submit" class="auth-submit-btn">Login Securely <i data-lucide="log-in"></i></button>
+        </form>
+
+        <!-- Register Form -->
+        <form id="register-form" class="auth-form">
+          <h3>Create Client Profile</h3>
+          <p class="form-sub">Register your organization details for immediate GST-compliant invoices.</p>
+          <div class="form-group">
+            <label for="reg-name">Full Name / Organization *</label>
+            <input type="text" id="reg-name" required placeholder="E.g., Chennai Pest Solutions Pvt Ltd">
+          </div>
+          <div class="form-group">
+            <label for="reg-email">Email Address *</label>
+            <input type="email" id="reg-email" required placeholder="corporate@company.com">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="reg-password">Password *</label>
+              <input type="password" id="reg-password" required placeholder="At least 6 characters">
+            </div>
+            <div class="form-group">
+              <label for="reg-gstin">GSTIN (Optional)</label>
+              <input type="text" id="reg-gstin" placeholder="33AAAAA0000A1Z1">
+            </div>
+          </div>
+          <button type="submit" class="auth-submit-btn">Register Account <i data-lucide="user-plus"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Wrapper -->
+  <div id="toast-wrapper" class="toast-wrapper"></div>
+
+  <script src="images.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

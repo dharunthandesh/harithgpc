@@ -1,0 +1,27 @@
+# Development / utility scripts
+*.py
+*.ps1
+*.cs
+*.csv
+
+# Catalog scan pages (development data, ~82MB)
+77a1c310a7008b1af40f72b3e3e0f742065d44fc202207-1/
+
+# Catalog source images (development data)
+ANANDA-POTS-CATALOG/
+
+# Development data files
+catalog_ocr.json
+validate_app_js.js
+
+# Video files
+*.mp4
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
