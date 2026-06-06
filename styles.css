@@ -4411,10 +4411,10 @@ body.loading-active {
   }
   
   .navigation-bar {
-    position: sticky;
+    position: fixed;
     top: 0;
-    height: 0;
-    margin-top: -56px;
+    height: 56px;
+    margin-top: 0;
     width: 100%;
     background: transparent !important;
     border: none !important;
