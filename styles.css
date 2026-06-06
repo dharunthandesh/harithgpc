@@ -4071,8 +4071,8 @@ body.loading-active {
 /* Testimonial Card Styling */
 .testimonial-card {
   width: 380px;
-  background-color: var(--pest-card-bg);
-  border: 1px solid var(--pest-card-border);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 24px;
   box-shadow: var(--shadow-sm);
