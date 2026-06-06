@@ -2990,31 +2990,40 @@ a.info-title:hover {
   
   /* ── Brands Section ── */
   .brands-section {
-    padding: 48px 0;
+    padding: 32px 0;
   }
   .brands-inner {
     padding: 0 16px;
   }
   .brands-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
-    margin-top: 32px;
+    gap: 12px;
+    margin-top: 24px;
   }
   .brand-card {
-    padding: 24px;
+    padding: 16px;
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   .brand-logo-symbol,
   .brand-logo-img {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 16px;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .brand-card h3 {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
   }
   .brand-card p {
-    font-size: 0.88rem;
-    margin-bottom: 16px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+  .view-products-link {
+    justify-content: center;
   }
   
   /* ── Enquiry Banner ── */
@@ -3391,7 +3400,7 @@ a.info-title:hover {
     padding: 0 12px;
   }
   .brand-card {
-    padding: 20px;
+    padding: 16px;
   }
   
   .products-grid {
