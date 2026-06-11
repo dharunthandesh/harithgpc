@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harith Garden and Pest Clinic – Pest Control Chemicals & Equipment Distributor in Chennai</title>
   
-  <meta name="keywords" content="Harith Garden and Pest Clinic, pest control chemical suppliers Chennai, pest control equipment Chennai, ENVU Bayer distributor, UPL pest solutions Tamil Nadu, Syngenta pest products, bird netting suppliers Chennai, authorized pest control dealers, Sumitomo Bayer pest expert, pest control wholesalers Chennai, pest control training Tamil Nadu" />
-  <meta name="description" content="Harith Garden and Pest Clinic is a leading distributor of pest control chemicals and equipment in Chennai. Authorized dealer for ENVU (formerly Bayer), Syngenta, UPL, Ultima & more. Serving major pest control companies, institutions & corporations since 2016." />
+  <meta name="keywords" content="Harith Garden and Pest Clinic, pest control chemical suppliers Chennai, pest control equipment Chennai, ENVU Bayer distributor, Foggers India pest equipment, Syngenta pest products, bird netting suppliers Chennai, authorized pest control dealers, Sumitomo Bayer pest expert, pest control wholesalers Chennai, pest control training Tamil Nadu" />
+  <meta name="description" content="Harith Garden and Pest Clinic is a leading distributor of pest control chemicals and equipment in Chennai. Authorized dealer for ENVU (formerly Bayer), Syngenta, Foggers India, Ultima & more. Serving major pest control companies, institutions & corporations since 2016." />
 
   <!-- OpenGraph Tags -->
   <meta property="og:title" content="Harith Garden and Pest Clinic – Pest Control Chemicals & Equipment Distributor in Chennai" />
   <meta property="og:url" content="https://www.harithgpc.com/index.php" />
   <meta property="og:site_name" content="Harith Garden And Pest Clinic" />
-  <meta property="og:description" content="Harith Garden and Pest Clinic is a leading distributor of pest control chemicals and equipment in Chennai. Authorized dealer for ENVU (formerly Bayer), Syngenta, UPL, Ultima & more. Serving major pest control companies, institutions & corporations since 2016." />
+  <meta property="og:description" content="Harith Garden and Pest Clinic is a leading distributor of pest control chemicals and equipment in Chennai. Authorized dealer for ENVU (formerly Bayer), Syngenta, Foggers India, Ultima & more. Serving major pest control companies, institutions & corporations since 2016." />
   <meta property="og:type" content="website" />       
   <meta property="og:image" content="https://www.harithgpc.com/uploads/images/1749577509271af924e3280763a6fc694387104646.png" />    
       
@@ -35,12 +35,18 @@
                          window.location.pathname.endsWith("/index.html") || 
                          window.location.pathname.endsWith("/index.php") ||
                          window.location.pathname.split("/").pop() === "";
-      const loaderPlayed = sessionStorage.getItem("harith-loader-played");
+      let loaderPlayed = null;
+      try {
+        loaderPlayed = sessionStorage.getItem("harith-loader-played");
+      } catch (e) {}
       if (!isHomepage || loaderPlayed === "true") {
         document.documentElement.classList.add('no-loader');
       }
       // Apply theme immediately to prevent flashing
-      const savedTheme = localStorage.getItem("theme");
+      let savedTheme = null;
+      try {
+        savedTheme = localStorage.getItem("theme");
+      } catch (e) {}
       if (savedTheme === "dark") {
         document.documentElement.classList.remove('light-theme');
         document.documentElement.classList.add('dark-theme');
@@ -76,7 +82,7 @@
     <div class="header-inner">
       <!-- Logo -->
       <a href="#" class="logo-container">
-        <div class="logo-badge">HG</div>
+        <img src="images/favicon.ico" alt="Harith Garden Logo" class="logo-badge">
         <div class="logo-text">
           <span class="logo-main">Harith Garden</span>
           <span class="logo-sub">& Pest Clinic</span>
@@ -102,7 +108,7 @@
             <i data-lucide="clock"></i>
           </div>
           <div class="info-text">
-            <span class="info-title">Mon-Sat 9:00 AM - 6:30 PM</span>
+            <span class="info-title">Mon-Sat 10:00 AM - 7:00 PM</span>
             <span class="info-subtitle">Sunday Closed</span>
           </div>
         </div>
@@ -265,7 +271,7 @@
         <div class="trust-icon-box"><i data-lucide="award"></i></div>
         <div class="trust-content">
           <strong>Authorized Dealer</strong>
-          <span>ENVU, Syngenta, UPL & ASPEE</span>
+          <span>ENVU, Syngenta, Foggers & FUJIAKA</span>
         </div>
       </div>
       <div class="trust-pill">
@@ -313,11 +319,11 @@
           <p>Premium public health insecticides and crop protection technology.</p>
           <span class="view-products-link">View Formulations <i data-lucide="arrow-right"></i></span>
         </div>
-        <div class="brand-card brand-shortcut" data-brand="UPL LTD">
-          <div class="brand-logo-img"><img src="images/upl-logo.png" alt="UPL Logo"></div>
-          <h3>UPL Ltd</h3>
-          <p>Advanced chemical solutions for broad-spectrum insect and weed control.</p>
-          <span class="view-products-link">View Formulations <i data-lucide="arrow-right"></i></span>
+        <div class="brand-card brand-shortcut" data-brand="FOGGERS INDIA">
+          <div class="brand-logo-img"><img src="images/foggers-logo.png" alt="Foggers India Logo"></div>
+          <h3>Foggers India Pvt Ltd</h3>
+          <p>Professional thermal fogging machinery and vector control equipment.</p>
+          <span class="view-products-link">View Equipment <i data-lucide="arrow-right"></i></span>
         </div>
         <div class="brand-card brand-shortcut" data-brand="ULTIMA SEARCH">
           <div class="brand-logo-img"><img src="images/ultimasearch-logo.png" alt="Ultima Search Logo"></div>
@@ -331,9 +337,9 @@
           <p>High-quality synthetic pyrethroids and public health formulations.</p>
           <span class="view-products-link">View Formulations <i data-lucide="arrow-right"></i></span>
         </div>
-        <div class="brand-card brand-shortcut" data-brand="ASPEE">
-          <div class="brand-logo-img"><img src="images/aspee-logo.png" alt="ASPEE Logo"></div>
-          <h3>ASPEE Sprayers</h3>
+        <div class="brand-card brand-shortcut" data-brand="FUJIAKA">
+          <div class="brand-logo-img"><img src="images/fujiaka-logo.png" alt="FUJIAKA Logo"></div>
+          <h3>FUJIAKA Sprayers</h3>
           <p>Heavy-duty professional compression sprayers and farm equipment.</p>
           <span class="view-products-link">View Equipment <i data-lucide="arrow-right"></i></span>
         </div>
@@ -367,11 +373,11 @@
           <div class="faq-accordion">
             <div class="accordion-item">
               <button class="accordion-trigger">
-                <span>What are the Toxicity Label classes?</span>
+                <span>What are the Safety Label classes?</span>
                 <i data-lucide="chevron-down"></i>
               </button>
               <div class="accordion-content">
-                <p>Insecticides feature color-coded hazard triangles: Red (Extremely Toxic), Yellow (Highly Toxic), Blue (Moderately Toxic), and Green (Slightly Toxic). Ensure you wear appropriate PPE matching the toxicity rating during use.</p>
+                <p>Insecticides feature color-coded hazard triangles: Red (Extremely Active), Yellow (Highly Active), Blue (Moderately Active), and Green (Slightly Active / Mild). Ensure you wear appropriate PPE matching the safety rating during use.</p>
               </div>
             </div>
             <div class="accordion-item">
@@ -403,7 +409,7 @@
               <strong class="card-num">harithgpc@gmail.com</strong>
             </div>
           </div>
-          <p class="support-hours"><i data-lucide="clock" class="inline-icon"></i> Support Hours: Mon - Sat (9:00 AM - 6:30 PM)</p>
+          <p class="support-hours"><i data-lucide="clock" class="inline-icon"></i> Support Hours: Mon - Sat (10:00 AM - 7:00 PM)</p>
           <a href="contact.html" class="submit-form-btn text-center">Open Contact & Enquiry Form <i data-lucide="arrow-right"></i></a>
         </div>
       </div>
@@ -836,13 +842,13 @@
             </div>
             <span class="testimonial-date">Sept 2019</span>
           </div>
-          <p class="testimonial-text">"Pest Control Products and equipment supplier. Official distributor of UPL Limited. Very professional service."</p>
+          <p class="testimonial-text">"Pest Control Products and equipment supplier. Official distributor of Foggers India. Very professional service."</p>
           <div class="testimonial-card-footer">
             <div class="testimonial-reviewer">
               <div class="reviewer-avatar">AK</div>
               <div class="reviewer-info">
                 <span class="reviewer-name">Agr Kanifnath</span>
-                <span class="reviewer-label">UPL operator</span>
+                <span class="reviewer-label">Foggers operator</span>
               </div>
             </div>
             <div class="google-verify-icon">
@@ -994,13 +1000,13 @@
             </div>
             <span class="testimonial-date">Sept 2019</span>
           </div>
-          <p class="testimonial-text">"Pest Control Products and equipment supplier. Official distributor of UPL Limited. Very professional service."</p>
+          <p class="testimonial-text">"Pest Control Products and equipment supplier. Official distributor of Foggers India. Very professional service."</p>
           <div class="testimonial-card-footer">
             <div class="testimonial-reviewer">
               <div class="reviewer-avatar">AK</div>
               <div class="reviewer-info">
                 <span class="reviewer-name">Agr Kanifnath</span>
-                <span class="reviewer-label">UPL operator</span>
+                <span class="reviewer-label">Foggers operator</span>
               </div>
             </div>
             <div class="google-verify-icon">
@@ -1125,7 +1131,7 @@
         <!-- Brand -->
         <div class="footer-brand-col">
           <div class="logo-container white-logo">
-            <div class="logo-badge">HG</div>
+            <img src="images/hg-logo.png" alt="Harith Garden Logo" class="logo-badge">
             <div class="logo-text">
               <span class="logo-main">Harith Garden</span>
               <span class="logo-sub">& Pest Clinic</span>
@@ -1143,11 +1149,10 @@
         <div class="footer-links-col">
           <h3 class="footer-title">Shop Brands</h3>
           <ul class="footer-list">
-            <li><a href="#" class="brand-shortcut" data-brand="ENVU (BAYER)">ENVU (Bayer) Solutions</a></li>
+            <li><a href="#" class="brand-shortcut" data-brand="ENVU BAYER">ENVU (Bayer) Solutions</a></li>
             <li><a href="#" class="brand-shortcut" data-brand="SYNGENTA">Syngenta Public Health</a></li>
-            <li><a href="#" class="brand-shortcut" data-brand="UPL LTD">UPL Ltd Formulations</a></li>
             <li><a href="#" class="brand-shortcut" data-brand="ULTIMA SEARCH">Ultima Search Rodenticides</a></li>
-            <li><a href="#" class="brand-shortcut" data-brand="FOGGERS INDIA PVT LTD">Foggers India Machinery</a></li>
+            <li><a href="#" class="brand-shortcut" data-brand="FOGGERS INDIA">Foggers India Machinery</a></li>
           </ul>
         </div>
 
@@ -1155,11 +1160,11 @@
         <div class="footer-links-col">
           <h3 class="footer-title">Customer Services</h3>
           <ul class="footer-list">
-            <li><a href="#about">Submit B2B Enquiry</a></li>
-            <li><a href="#catalog">Safety Data Sheets (SDS)</a></li>
-            <li><a href="#about">Pest Toxicity Labels Info</a></li>
-            <li><a href="#about">Contact Clinical Team</a></li>
-            <li><a href="#catalog">Special Wholesale pricing</a></li>
+            <li><a href="contact.html">Submit B2B Enquiry</a></li>
+            <li><a href="products.html">Safety Data Sheets (SDS)</a></li>
+            <li><a href="about.html">Pest Safety Labels Info</a></li>
+            <li><a href="contact.html">Contact Clinical Team</a></li>
+            <li><a href="products.html">Special Wholesale pricing</a></li>
           </ul>
         </div>
 
@@ -1173,7 +1178,7 @@
               <strong class="support-num">+91 9444904349</strong>
             </div>
           </div>
-          <p class="support-note">Call us between 9:00 AM and 6:30 PM (IST) for immediate help with chemical selections.</p>
+          <p class="support-note">Call us between 10:00 AM and 7:00 PM (IST) for immediate help with chemical selections.</p>
         </div>
       </div>
     </div>
@@ -1283,6 +1288,7 @@
   <div id="toast-wrapper" class="toast-wrapper"></div>
 
   <script src="images.js"></script>
+  <script src="pest-library.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

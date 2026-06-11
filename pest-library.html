@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pest Library – Harith Garden and Pest Clinic</title>
   
-  <meta name="keywords" content="Harith Garden and Pest Clinic, pest control chemical suppliers Chennai, pest control equipment Chennai, ENVU Bayer distributor, UPL pest solutions Tamil Nadu, Syngenta pest products, bird netting suppliers Chennai, authorized pest control dealers, Sumitomo Bayer pest expert, pest control wholesalers Chennai, pest control training Tamil Nadu" />
+  <meta name="keywords" content="Harith Garden and Pest Clinic, pest control chemical suppliers Chennai, pest control equipment Chennai, ENVU Bayer distributor, Foggers India pest equipment, Syngenta pest products, bird netting suppliers Chennai, authorized pest control dealers, Sumitomo Bayer pest expert, pest control wholesalers Chennai, pest control training Tamil Nadu" />
   <meta name="description" content="Identify common structural, agricultural, and public health pests. Learn how to manage mosquitoes, termites, rodents, cockroaches, bedbugs, and find recommended professional formulations." />
 
   <!-- OpenGraph Tags -->
@@ -35,12 +35,18 @@
                          window.location.pathname.endsWith("/index.html") || 
                          window.location.pathname.endsWith("/index.php") ||
                          window.location.pathname.split("/").pop() === "";
-      const loaderPlayed = sessionStorage.getItem("harith-loader-played");
+      let loaderPlayed = null;
+      try {
+        loaderPlayed = sessionStorage.getItem("harith-loader-played");
+      } catch (e) {}
       if (!isHomepage || loaderPlayed === "true") {
         document.documentElement.classList.add('no-loader');
       }
       // Apply theme immediately to prevent flashing
-      const savedTheme = localStorage.getItem("theme");
+      let savedTheme = null;
+      try {
+        savedTheme = localStorage.getItem("theme");
+      } catch (e) {}
       if (savedTheme === "dark") {
         document.documentElement.classList.remove('light-theme');
         document.documentElement.classList.add('dark-theme');
@@ -76,7 +82,7 @@
     <div class="header-inner">
       <!-- Logo -->
       <a href="index.html" class="logo-container">
-        <div class="logo-badge">HG</div>
+        <img src="images/favicon.ico" alt="Harith Garden Logo" class="logo-badge">
         <div class="logo-text">
           <span class="logo-main">Harith Garden</span>
           <span class="logo-sub">& Pest Clinic</span>
@@ -102,7 +108,7 @@
             <i data-lucide="clock"></i>
           </div>
           <div class="info-text">
-            <span class="info-title">Mon-Sat 9:00 AM - 6:30 PM</span>
+            <span class="info-title">Mon-Sat 10:00 AM - 7:00 PM</span>
             <span class="info-subtitle">Sunday Closed</span>
           </div>
         </div>
@@ -227,7 +233,7 @@
         <!-- Brand -->
         <div class="footer-brand-col">
           <div class="logo-container white-logo">
-            <div class="logo-badge">HG</div>
+            <img src="images/hg-logo.png" alt="Harith Garden Logo" class="logo-badge">
             <div class="logo-text">
               <span class="logo-main">Harith Garden</span>
               <span class="logo-sub">& Pest Clinic</span>
@@ -245,11 +251,10 @@
         <div class="footer-links-col">
           <h3 class="footer-title">Shop Brands</h3>
           <ul class="footer-list">
-            <li><a href="#" class="brand-shortcut" data-brand="ENVU (BAYER)">ENVU (Bayer) Solutions</a></li>
+            <li><a href="#" class="brand-shortcut" data-brand="ENVU BAYER">ENVU (Bayer) Solutions</a></li>
             <li><a href="#" class="brand-shortcut" data-brand="SYNGENTA">Syngenta Public Health</a></li>
-            <li><a href="#" class="brand-shortcut" data-brand="UPL LTD">UPL Ltd Formulations</a></li>
             <li><a href="#" class="brand-shortcut" data-brand="ULTIMA SEARCH">Ultima Search Rodenticides</a></li>
-            <li><a href="#" class="brand-shortcut" data-brand="FOGGERS INDIA PVT LTD">Foggers India Machinery</a></li>
+            <li><a href="#" class="brand-shortcut" data-brand="FOGGERS INDIA">Foggers India Machinery</a></li>
           </ul>
         </div>
 
@@ -259,7 +264,7 @@
           <ul class="footer-list">
             <li><a href="contact.html">Submit B2B Enquiry</a></li>
             <li><a href="products.html">Safety Data Sheets (SDS)</a></li>
-            <li><a href="about.html">Pest Toxicity Labels Info</a></li>
+            <li><a href="about.html">Pest Safety Labels Info</a></li>
             <li><a href="contact.html">Contact Clinical Team</a></li>
             <li><a href="products.html">Special Wholesale pricing</a></li>
           </ul>
@@ -275,7 +280,7 @@
               <strong class="support-num">+91 9444904349</strong>
             </div>
           </div>
-          <p class="support-note">Call us between 9:00 AM and 6:30 PM (IST) for immediate help with chemical selections.</p>
+          <p class="support-note">Call us between 10:00 AM and 7:00 PM (IST) for immediate help with chemical selections.</p>
         </div>
       </div>
     </div>
@@ -384,8 +389,8 @@
   <!-- Toast Notification Wrapper -->
   <div id="toast-wrapper" class="toast-wrapper"></div>
 
-   <script src="images.js"></script>
-   <script src="app.js"></script>
-   <script src="pest-library.js"></script>
- </body>
- </html>
+  <script src="images.js"></script>
+  <script src="pest-library.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
