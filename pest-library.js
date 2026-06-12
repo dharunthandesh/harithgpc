@@ -11,7 +11,7 @@ const PEST_DATABASE = [
     risk: "Ants can contaminate food and food-preparation surfaces. Certain species can deliver painful bites or stings, while carpenter ants can cause structural wood damage.",
     behaviour: "Guided by pheromones, they forage in well-defined trails between their nest and food sources, constantly communicating and sharing resources.",
     whereToFind: "Commonly found in kitchens, pantries, wall voids, under foundation slabs, and around outdoor garden soil.",
-    recommendedProducts: [10, 20, 9, 7, 31],
+    recommendedProducts: [69, 70, 73, 74, 75, 76, 67, 44, 46, 47, 48, 51, 82, 83],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 45 46 Q 30 35 22 42 Q 18 45 15 52" fill="none" stroke="#4d1200" stroke-width="1.8" stroke-linecap="round" />
@@ -49,7 +49,7 @@ const PEST_DATABASE = [
     risk: "Bites cause severe itching, allergic reactions, red welts, and significant psychological distress or sleeplessness.",
     behaviour: "Nocturnal pests that hide in tiny crevices during the day and are attracted to carbon dioxide and body heat at night.",
     whereToFind: "Seams of mattresses, box springs, bed frames, headboards, behind wallpaper, and cracks in walls.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [44, 46, 47, 48, 69, 70, 73, 74, 75, 76, 194, 122],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 38 42 Q 22 45 16 38" fill="none" stroke="#4d1200" stroke-width="1.8" stroke-linecap="round" />
@@ -85,7 +85,7 @@ const PEST_DATABASE = [
     risk: "Contaminate and spoil food products, making them unfit for consumption, and cause economic damage to agricultural inventories.",
     behaviour: "Adults and larvae feed on dried organic materials, boring through packaging and multiplying rapidly in undisturbed cupboards.",
     whereToFind: "Pantry shelves, grain sacks, flour bins, cereal boxes, and dry pet food storage areas.",
-    recommendedProducts: [12, 5],
+    recommendedProducts: [69, 70, 73, 74, 75, 76, 44, 46, 59],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 38 42 Q 22 40 14 32" fill="none" stroke="#2d1a08" stroke-width="2" stroke-linecap="round" />
@@ -116,7 +116,7 @@ const PEST_DATABASE = [
     risk: "Can cause severe structural damage to wooden structures, roof trusses, window frames, and wall studs over time.",
     behaviour: "They chew galleries in damp or decaying wood, leaving behind piles of sawdust-like wood shavings (frass).",
     whereToFind: "Damp wood parts of buildings, tree stumps, hollow doors, wall cavities, and near water leaks.",
-    recommendedProducts: [10, 20, 9, 7],
+    recommendedProducts: [69, 70, 73, 74, 75, 76, 44, 46],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 44 44 Q 28 32 20 40 Q 15 44 12 52" fill="none" stroke="#1c1410" stroke-width="2" stroke-linecap="round" />
@@ -154,7 +154,7 @@ const PEST_DATABASE = [
     risk: "Their venomous claws can deliver a painful bite (similar to a wasp sting) if handled, though they are generally considered beneficial predators.",
     behaviour: "Nocturnal hunters that seek out moisture and feed on smaller household insects like silverfish, spiders, and cockroaches.",
     whereToFind: "Damp basements, crawlspaces, bathrooms, under mulch, leaf litter, and in dark moist crevices.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [69, 70, 75, 76],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <g class="legs-many">
@@ -184,7 +184,7 @@ const PEST_DATABASE = [
     risk: "Spread food poisoning bacteria (Salmonella, E. coli), trigger asthma attacks, and contaminate food and surfaces with droppings.",
     behaviour: "Highly active at night, seeking warm, humid, and dark harborages close to food and moisture.",
     whereToFind: "Kitchen cabinets, behind refrigerators, inside drains, under sinks, wall voids, and electrical outlets.",
-    recommendedProducts: [12, 7, 31, 73, 8, 5, 72],
+    recommendedProducts: [44, 45, 46, 47, 48, 49, 50, 69, 70, 73, 74, 75, 76, 67, 82, 83, 87, 88, 149, 127, 108, 119, 209],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 38 46 Q 22 44 14 36" fill="none" stroke="#2d1000" stroke-width="2" stroke-linecap="round" />
@@ -216,7 +216,7 @@ const PEST_DATABASE = [
     risk: "Can damage clothing, carpets, paper, and upholstery by feeding on natural and synthetic fibers.",
     behaviour: "Attracted to warmth and lights at night, they enter homes looking for shelter and moisture.",
     whereToFind: "Basements, crawlspaces, ground floors, around baseboards, and under leaf piles outdoors.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [69, 70, 73, 74, 75, 76, 46],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 38 42 Q 22 45 15 32" fill="none" stroke="#2d1408" stroke-width="1.8" stroke-linecap="round" />
@@ -246,7 +246,7 @@ const PEST_DATABASE = [
     risk: "Primarily a nuisance pest; they do not transmit diseases but can chew on tender garden plants and flowers.",
     behaviour: "Nocturnal scavengers that feed on organic matter and smaller insects. They seek tight, damp crevices.",
     whereToFind: "Under flower pots, stones, mulch, in damp basements, kitchens, bathrooms, and under carpets.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [69, 70, 73, 74, 75, 76],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 40 36 Q 24 36 16 26" fill="none" stroke="#3d1400" stroke-width="1.8" stroke-linecap="round" />
@@ -278,7 +278,7 @@ const PEST_DATABASE = [
     risk: "Transmit diseases and tapeworms, and their bites cause severe allergic dermatitis, itching, and red bumps.",
     behaviour: "Jump onto passing hosts, feed quickly, and lay eggs that fall into carpets and upholstery, leading to massive indoor infestations.",
     whereToFind: "Pet bedding, carpets, rugs, cracks in floorboards, and grassy areas outdoors where pets frequent.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [69, 70, 73, 74, 75, 76, 44, 46],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 35 42 Q 26 40 18 32" fill="none" stroke="#2d1005" stroke-width="1.8" stroke-linecap="round" />
@@ -302,7 +302,7 @@ const PEST_DATABASE = [
     risk: "Transport pathogens from waste onto food and prep surfaces, spreading Cholera, Dysentery, and food poisoning.",
     behaviour: "Attracted to food odors, light, and decay. They feed by regurgitating digestive fluids onto solids and sponging it up.",
     whereToFind: "Kitchens, garbage cans, manure heaps, dining areas, windows, and light fixtures.",
-    recommendedProducts: [13, 5, 72, 12],
+    recommendedProducts: [52, 116, 117, 118, 46, 63, 69, 70, 73, 74, 75, 76, 146],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 44 46 Q 30 40 22 45" fill="none" stroke="#001a1a" stroke-width="1.8" stroke-linecap="round" />
@@ -343,7 +343,7 @@ const PEST_DATABASE = [
     risk: "Gnaw wires (fire hazard), contaminate food with urine/feces, and transmit Salmonella and Hantavirus.",
     behaviour: "Curious and excellent climbers that explore small spaces, nesting with shredded paper and cloth near food sources.",
     whereToFind: "Pantries, kitchen drawers, wall cavities, attics, drop ceilings, and crawlspaces.",
-    recommendedProducts: [74, 75, 76],
+    recommendedProducts: [77, 78, 60, 153, 159, 160, 161],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="tail" d="M 50 72 C 50 72 62 82 52 90 C 46 95 38 90 32 90" fill="none" stroke="#cd5c5c" stroke-width="2" stroke-linecap="round" />
@@ -371,7 +371,7 @@ const PEST_DATABASE = [
     risk: "Do not bite or sting. However, some species secrete a smelly fluid that can irritate eyes or skin upon contact.",
     behaviour: "Feed on decaying vegetation and damp soil. They migrate into homes in large numbers after heavy rains.",
     whereToFind: "Basements, patios, ground floors, under wood piles, garden mulch, and damp leaf litter.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [69, 70, 73, 74, 75, 76],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <g class="legs-many">
@@ -394,7 +394,7 @@ const PEST_DATABASE = [
     risk: "Dust mites are a primary trigger for chronic asthma and nasal allergies, while clover mites can stain furniture.",
     behaviour: "Thrive in warm, humid conditions where skin scales or plant material are abundant.",
     whereToFind: "Mattresses, pillows, carpets, heavy curtains, window sills, and sunny walls.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [44, 69, 70, 46],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 36 44 C 24 44 18 36 12 30" fill="none" stroke="#4d0000" stroke-width="1.8" stroke-linecap="round" />
@@ -424,7 +424,7 @@ const PEST_DATABASE = [
     risk: "Major vectors of lethal diseases including Dengue, Malaria, Chikungunya, Zika, and West Nile Virus.",
     behaviour: "Attracted to carbon dioxide, sweat, and body heat. They breed in standing water and are active at dusk and dawn.",
     whereToFind: "Stagnant water puddles, flower pot trays, blocked gutters, dark corners of rooms, and gardens.",
-    recommendedProducts: [5, 72, 12],
+    recommendedProducts: [69, 70, 73, 74, 75, 76, 68, 44, 46, 63, 65, 66, 62, 82, 83, 85, 84, 86, 128, 205, 121],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 44 44 Q 28 58 14 72" fill="none" stroke="#303030" stroke-width="1.2" stroke-linecap="round" />
@@ -461,7 +461,7 @@ const PEST_DATABASE = [
     risk: "Larvae chew holes in wool, silk, fur, carpets, and contaminate stored dry foods with webbing and cocoons.",
     behaviour: "Adults are attracted to lights but seek out dark, undisturbed wardrobes to lay eggs.",
     whereToFind: "Closets, drawers, pantries, grain jars, cereal boxes, and woolen storage bags.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [59, 69, 70, 73, 74, 75, 76],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <!-- Detailed Layered Wings -->
@@ -491,7 +491,7 @@ const PEST_DATABASE = [
     risk: "Cause structural damage by chewing wood and cables, and transmit Leptospirosis, plague, and food poisoning.",
     behaviour: "Cautious of new objects (neophobic), nocturnal, and live in nests close to consistent water and food supplies.",
     whereToFind: "Sewers, basements, wall voids, roof cavities, crawlspaces, and garbage disposal areas.",
-    recommendedProducts: [74, 75, 76],
+    recommendedProducts: [77, 78, 60, 153, 159, 160, 161, 152, 162, 163, 164],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="tail" d="M 50 78 C 50 78 60 90 52 96 C 44 100 36 90 28 90" fill="none" stroke="#db7093" stroke-width="2.5" stroke-linecap="round" />
@@ -519,7 +519,7 @@ const PEST_DATABASE = [
     risk: "Severe structural chewing damage, structural fires, crop damage, and food safety violations in commercial spaces.",
     behaviour: "Active at night, foraging along walls using whiskers to navigate safely.",
     whereToFind: "Warehouses, kitchens, crawl spaces, agricultural fields, ceiling panels, and trash zones.",
-    recommendedProducts: [74, 75, 76],
+    recommendedProducts: [77, 78, 60, 153, 159, 160, 161, 152, 162, 163, 164],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="tail" d="M 50 74 C 54 82 50 90 42 90" fill="none" stroke="#3c3c3c" stroke-width="2.5" stroke-linecap="round" />
@@ -542,7 +542,7 @@ const PEST_DATABASE = [
     risk: "Nuisance pest that feeds on starches and sugars, damaging books, wallpaper, photographs, and clothes.",
     behaviour: "Fast-running, nocturnal insects that require high humidity and warm temperatures to survive.",
     whereToFind: "Bathrooms, kitchens, attics, bookshelves, behind wallpaper, and under sinks.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [69, 70, 73, 74, 75, 76, 44, 46],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="tail" d="M 48 75 L 40 90 M 48 75 L 50 92 M 48 75 L 60 90" stroke="#a0a0a0" stroke-width="1.5" stroke-linecap="round" />
@@ -564,7 +564,7 @@ const PEST_DATABASE = [
     risk: "Most household spiders are harmless, but some carry venom that can cause painful bites. Webs also deface walls.",
     behaviour: "Solitary hunters or web-spinners that feed on flies, mosquitoes, and crawling insects in undisturbed areas.",
     whereToFind: "Corners of rooms, ceilings, window frames, garages, basements, and garden bushes.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [69, 70, 73, 74, 75, 76, 44, 46],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 44 38 C 30 35 22 30 14 24" fill="none" stroke="#140f0f" stroke-width="1.8" stroke-linecap="round" />
@@ -594,7 +594,7 @@ const PEST_DATABASE = [
     risk: "Their stings are painful and can trigger severe, life-threatening allergic shock in sensitive individuals.",
     behaviour: "Territorial and highly defensive of their nests; they will attack in swarms if they feel threatened.",
     whereToFind: "Roof eaves, tree branches, wall cavities, attics, and outdoor structures.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [69, 70, 73, 74, 44, 46],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 44 48 C 34 48 26 42 20 36" fill="none" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round" />
@@ -630,7 +630,7 @@ const PEST_DATABASE = [
     risk: "Can damage gardens and fruit trees. Indoors, they are a significant odor and staining nuisance.",
     behaviour: "Attracted to warmth. In autumn, they seek shelter indoors, overwintering in walls and attics.",
     whereToFind: "Sunny walls, window frames, garden plants, curtains, and attics.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [69, 70, 73, 74, 46],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 32 40 Q 20 40 12 30" fill="none" stroke="#2d2923" stroke-width="1.8" stroke-linecap="round" />
@@ -657,7 +657,7 @@ const PEST_DATABASE = [
     risk: "The most destructive structural pest, causing severe damage to wood structures, furniture, and foundations.",
     behaviour: "Silently chew through wood from the inside out, remaining hidden from sight until damage is done.",
     whereToFind: "Foundations, wooden wall framing, floorboards, wooden doors, mulch, and tree roots.",
-    recommendedProducts: [10, 20, 3],
+    recommendedProducts: [71, 72, 79, 80, 81, 53, 54, 55, 56, 57, 58, 90, 93, 94, 95, 131, 129, 130, 198, 199, 200],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 44 42 Q 30 42 22 48" fill="none" stroke="#8b4513" stroke-width="1.8" stroke-linecap="round" />
@@ -691,7 +691,7 @@ const PEST_DATABASE = [
     risk: "Major transmitters of dangerous diseases like Lyme Disease, Kyasanur Forest Disease, and tick-borne fever.",
     behaviour: "Climb to the tips of grasses and shrubs (questing) and wait to cling to passing hosts.",
     whereToFind: "Grassy lawns, tall weeds, dog kennels, cracks in brickwork, and leaf piles.",
-    recommendedProducts: [12, 5, 72],
+    recommendedProducts: [69, 70, 73, 74, 75, 76, 44, 46],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 34 42 Q 20 38 12 26" fill="none" stroke="#1f0000" stroke-width="2" stroke-linecap="round" />
@@ -795,126 +795,9 @@ function renderPestGrid() {
 
 function getDynamicRecommendedProducts(pestId) {
   if (typeof PRODUCTS === "undefined" || !PRODUCTS) return [];
-  
-  const matchesPest = (prod, pId) => {
-    if (prod.category === "gardening") return false;
-    
-    const name = (prod.name || "").toLowerCase();
-    
-    const matchesAny = (keywords) => {
-      return keywords.some(k => name.includes(k));
-    };
-
-    // Ants / Carpenter Ants
-    if (pId === "ants" || pId === "carpenter_ants") {
-      return matchesAny(["maxforce forte", "maxforce quantum", "agenda 25ec", "premise sc", "rogan", "hilgent plus", "paxton", "line chalk", "chalk"]);
-    }
-    
-    // Bed Bugs
-    if (pId === "bedbug") {
-      return matchesAny(["temprid sc", "demand 2.5cs", "k-othrine flow"]);
-    }
-    
-    // Beetles
-    if (pId === "beetles") {
-      return matchesAny(["solfac ew050", "responsar 1l"]) ||
-             (name.includes("cypermethrin") && name.includes("10")) ||
-             (name.includes("cyperine") && name.includes("10")) ||
-             (name.includes("spotkil") && name.includes("10"));
-    }
-    
-    // Centipedes
-    if (pId === "centipedes") {
-      return matchesAny(["agenda 25ec", "biflex tc", "demand 2.5cs"]);
-    }
-    
-    // Cockroaches
-    if (pId === "cockroaches") {
-      return matchesAny(["maxforce forte", "maxforce fusion", "roachone", "kokron super gel", "nt cock", "kilspot", "kokron bait", "kokron line", "kokron power", "propoxur"]);
-    }
-    
-    // Crickets
-    if (pId === "crickets") {
-      return matchesAny(["agenda 25ec", "solfac ew050", "biflex tc"]);
-    }
-    
-    // Earwigs
-    if (pId === "earwigs") {
-      return matchesAny(["agenda 25ec", "demand 2.5cs"]);
-    }
-    
-    // Fleas
-    if (pId === "fleas") {
-      return matchesAny(["agenda 25ec", "paxton", "rogan"]);
-    }
-    
-    // Flies
-    if (pId === "flies") {
-      return matchesAny(["quick bayt", "fg flycobait", "flycutor", "fly trap", "fly zapper", "fly catcher", "flycatcher"]);
-    }
-    
-    // Mice / Rats / Rodents
-    if (pId === "mice" || pId === "rats" || pId === "rodent") {
-      return matchesAny(["racumin", "klerat", "ratol", "rodent"]);
-    }
-    
-    // Millipedes
-    if (pId === "millipedes") {
-      return matchesAny(["agenda 25ec", "biflex tc"]);
-    }
-    
-    // Mites
-    if (pId === "mites") {
-      return matchesAny(["temprid sc", "demand 2.5cs"]);
-    }
-    
-    // Mosquitoes
-    if (pId === "mosquitoes") {
-      return matchesAny(["aqua k-othrine", "k-othrine", "icon 10", "icon 10cs", "icon 10wp", "nt quito", "bi-larv", "demand 2.5", "demand 2_5", "solfac", "responsar", "del fog", "delsis", "delta flow", "delta master", "kingfog", "temephos", "brake", "flyco", "flycutor", "linnea", "pest o flash", "pestop", "moskmaar", "cypermethrin", "cypra", "cytox", "hilcyperin", "hilcyperine", "hilhunter", "hilmala"]);
-    }
-    
-    // Moths
-    if (pId === "moths") {
-      return matchesAny(["solfac ew050"]) ||
-             (name.includes("cypermethrin") && name.includes("10")) ||
-             (name.includes("cyperine") && name.includes("10")) ||
-             (name.includes("spotkil") && name.includes("10"));
-    }
-    
-    // Silverfish
-    if (pId === "silverfish") {
-      return matchesAny(["agenda 25ec", "kokron super gel", "cytox dp"]);
-    }
-    
-    // Spiders
-    if (pId === "spiders") {
-      return matchesAny(["agenda 25ec", "biflex tc", "demand 2.5cs"]);
-    }
-    
-    // Stinging Insects (Wasps/Bees)
-    if (pId === "stinging_pest") {
-      return matchesAny(["responsar 1l", "demand 2.5cs", "solfac ew050"]);
-    }
-    
-    // Stink Bugs
-    if (pId === "stink_bugs") {
-      return matchesAny(["agenda 25ec", "biflex tc"]);
-    }
-    
-    // Termites
-    if (pId === "termites") {
-      return matchesAny(["premise", "agenda", "termifinn", "biflex", "durmet", "paxton", "transportex", "zevictra", "heraban", "hilban", "jeyban", "chloropyriphos", "chlorpyriphos", "master thrin", "prompt"]);
-    }
-    
-    // Ticks
-    if (pId === "tick") {
-      return matchesAny(["agenda 25ec", "paxton", "rogan"]);
-    }
-    
-    return false;
-  };
-  
-  return PRODUCTS.filter(prod => matchesPest(prod, pestId));
+  const pest = PEST_DATABASE.find(p => p.id === pestId);
+  if (!pest || !pest.recommendedProducts) return [];
+  return PRODUCTS.filter(prod => pest.recommendedProducts.includes(prod.id));
 }
 
 function viewPestDetail(pestId) {

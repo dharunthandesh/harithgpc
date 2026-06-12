@@ -616,7 +616,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Temprid insecticide by Envu. High quality formulation containing Imidacloprid 21% + Beta-cyfluthrin 10.5% SC designed for structural pest control operations.",
-    image: "images/temprid_sc_500ml.png"
+    image: "images/temprid.jpg"
   },
   {
     id: 45,
@@ -630,7 +630,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Responsar insecticide by Envu. High quality formulation containing Beta-cyfluthrin 2.45% SC designed for structural pest control operations.",
-    image: "images/responsar_1l.png"
+    image: "images/responsar.jpg"
   },
   {
     id: 46,
@@ -644,7 +644,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade K-Othrine Flow insecticide by Envu. High quality formulation containing Deltamethrin 2.5% Flow designed for structural pest control operations.",
-    image: "images/k_othrine_flow.png"
+    image: "images/k_othrine_flow.jpg"
   },
   {
     id: 47,
@@ -658,7 +658,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Solfac EW050 insecticide by Envu. High quality formulation containing Cyfluthrin 5% EW designed for structural pest control operations.",
-    image: "images/solfac_ew050_100ml.png"
+    image: "images/solfac_ew.jpg"
   },
   {
     id: 48,
@@ -672,7 +672,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Solfac EW050 1L insecticide by Envu. High quality formulation containing Cyfluthrin 5% EW designed for structural pest control operations.",
-    image: "images/solfac_ew050_1l.png"
+    image: "images/solfac_ew.jpg"
   },
   {
     id: 49,
@@ -686,7 +686,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Maxforce Forte Gel insecticide by Envu. High quality formulation containing Fipronil 0.05% Gel designed for structural pest control operations.",
-    image: "images/maxforce_forte_gel_120g.png"
+    image: "images/maxforce_forte.jpg"
   },
   {
     id: 50,
@@ -700,7 +700,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Maxforce Fusion Gel insecticide by Envu. High quality formulation containing Imidacloprid 2.15% Gel designed for structural pest control operations.",
-    image: "images/maxforce_fusion_gel_120g.png"
+    image: "images/maxforce_fusion.jpg"
   },
   {
     id: 51,
@@ -714,7 +714,7 @@ const PRODUCTS = [
     newArrival: true,
     offer: false,
     description: "Professional-grade Maxforce Quantum Gel insecticide by Envu. High quality formulation containing Imidacloprid 0.03% Gel designed for structural pest control operations.",
-    image: "images/maxforce_quantum_gel_120g.png"
+    image: "images/maxforce_quantum.jpg"
   },
   {
     id: 52,
@@ -728,7 +728,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Quick Bait insecticide by Envu. High quality formulation containing Imidacloprid 0.5% + Muscalure designed for structural pest control operations.",
-    image: "images/quick_bayt_2kg.png"
+    image: "images/quick_bayt.jpg"
   },
   {
     id: 53,
@@ -742,7 +742,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Premise SC insecticide by Envu. High quality formulation containing Imidacloprid 30.5% SC designed for structural pest control operations.",
-    image: "images/premise_sc_250_ml.png"
+    image: "images/premise.jpg"
   },
   {
     id: 54,
@@ -756,7 +756,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Premise SC 1L insecticide by Envu. High quality formulation containing Imidacloprid 30.5% SC designed for structural pest control operations.",
-    image: "images/premise_sc_1l.png"
+    image: "images/premise.jpg"
   },
   {
     id: 55,
@@ -770,7 +770,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Premise SC 5L insecticide by Envu. High quality formulation containing Imidacloprid 30.5% SC designed for structural pest control operations.",
-    image: "images/premise_sc_5l.png"
+    image: "images/premise.jpg"
   },
   {
     id: 56,
@@ -784,7 +784,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Agenda EC insecticide by Envu. High quality formulation containing Fipronil 2.92% EC designed for structural pest control operations.",
-    image: "images/agenda_25ec_150ml.png"
+    image: "images/agenda.jpg"
   },
   {
     id: 57,
@@ -798,7 +798,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Agenda 25EC 500ml insecticide by Envu. High quality formulation containing Fipronil 2.92% EC designed for structural pest control operations.",
-    image: "images/agenda_25ec_500ml.png"
+    image: "images/agenda.jpg"
   },
   {
     id: 58,
@@ -812,7 +812,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Agenda 25EC 5L insecticide by Envu. High quality formulation containing Fipronil 2.92% EC designed for structural pest control operations.",
-    image: "images/agenda_25ec_5l.png"
+    image: "images/agenda.jpg"
   },
   {
     id: 59,
@@ -826,7 +826,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade K-Obiol insecticide by Envu. High quality formulation containing Deltamethrin 2.5% EC + Piperonyl Butoxide designed for structural pest control operations.",
-    image: "images/k-obiol_1kg.png"
+    image: "images/k_obiol.jpg"
   },
   {
     id: 60,
@@ -840,7 +840,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Racumin Sure insecticide by Envu. High quality formulation containing Coumatetralyl 0.0375% Bait designed for structural pest control operations.",
-    image: "images/racumin_sure_100g.png"
+    image: "images/racumin_sure.jpg"
   },
   {
     id: 61,
@@ -854,7 +854,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Baraki GR insecticide by Envu. High quality formulation containing Difethialone 0.0025% Granules designed for structural pest control operations.",
-    image: "images/baraki_gr_500g.png"
+    image: "images/baraki.jpg"
   },
   {
     id: 62,
@@ -868,7 +868,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Bi-Larv insecticide by Envu. High quality formulation containing Diflubenzuron 25% WP designed for structural pest control operations.",
-    image: "images/bi-larv_500g.png"
+    image: "images/bilarv.jpg"
   },
   {
     id: 63,
@@ -882,7 +882,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Aqua K-Othrine insecticide by Envu. High quality formulation containing Deltamethrin 2% EW designed for structural pest control operations.",
-    image: "images/aqua_k-othrine.png"
+    image: "images/aqua_k_othrine.jpg"
   },
   {
     id: 64,
@@ -896,7 +896,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Kingfog insecticide by Envu. High quality formulation containing Deltamethrin 1.25% ULV designed for structural pest control operations.",
-    image: "images/kingfog_1l.png"
+    image: "images/kingfog.jpg"
   },
   {
     id: 65,
@@ -910,7 +910,7 @@ const PRODUCTS = [
     newArrival: true,
     offer: false,
     description: "Professional-grade K-Othrine WG250 insecticide by Envu. High quality formulation containing Deltamethrin 25% WG designed for structural pest control operations.",
-    image: "images/k-othirine_wg250_10x2g.png"
+    image: "images/k_othrine_wg_sachet.jpg"
   },
   {
     id: 66,
@@ -924,7 +924,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Solfac WP10 insecticide by Envu. High quality formulation containing Cyfluthrin 10% WP designed for structural pest control operations.",
-    image: "images/solfac_wp10_5kg.png"
+    image: "images/solfac_wp.jpg"
   },
   {
     id: 67,
@@ -938,7 +938,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Acrenzel WDG 6g containing Acetamiprid 20% WDG for commercial pest management.",
-    image: "images/acrenzel_wdg_6g.png"
+    image: "images/acrenzel_wdg.webp"
   },
   {
     id: 68,
@@ -952,7 +952,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Acugard 10EC 500ml containing Alphacypermethrin 10% EC for commercial pest management.",
-    image: "images/acugard_10ec_500ml.png"
+    image: "images/acugard_10ec.jpg"
   },
   {
     id: 69,
@@ -966,7 +966,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Demand 2.5CS 100ml containing Lambda-cyhalothrin 2.43% CS for commercial pest management.",
-    image: "images/demand_2.5sc_100ml.png"
+    image: "images/demand_2_5cs.jpg"
   },
   {
     id: 70,
@@ -980,7 +980,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. Premium Demand 2.5CS 1L containing Lambda-cyhalothrin 2.43% CS for large-scale pest management.",
-    image: "images/demand_2.5sc_1l.png"
+    image: "images/demand_2_5cs.jpg"
   },
   {
     id: 71,
@@ -994,7 +994,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Exsectra 3EC 1L containing Esfenvalerate 3% EC for commercial pest management.",
-    image: "images/exsectra_3ec_1l.png"
+    image: "images/exsectra_3ec.jpg"
   },
   {
     id: 72,
@@ -1008,7 +1008,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. Premium Exsectra 3EC 5L containing Esfenvalerate 3% EC for large-scale pest management.",
-    image: "images/exsectra_3ec_5l.png"
+    image: "images/exsectra_3ec.jpg"
   },
   {
     id: 73,
@@ -1022,7 +1022,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Icon 10CS 100ml containing Lambda-cyhalothrin 10% CS for commercial pest management.",
-    image: "images/icon_10cs_100ml.png"
+    image: "images/icon_10cs.jpg"
   },
   {
     id: 74,
@@ -1036,7 +1036,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. Premium Icon 10CS 500ml containing Lambda-cyhalothrin 10% CS for commercial pest management.",
-    image: "images/icon_10cs_500ml.png"
+    image: "images/icon_10cs.jpg"
   },
   {
     id: 75,
@@ -1050,7 +1050,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Icon 10WP 125g containing Lambda-cyhalothrin 10% WP for commercial pest management.",
-    image: "images/icon_10_wp_125g.png"
+    image: "images/icon_10wp.jpg"
   },
   {
     id: 76,
@@ -1064,7 +1064,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Icon 10WP 62.5g containing Lambda-cyhalothrin 10% WP for commercial pest management.",
-    image: "images/icon_10wp_62.5g.png"
+    image: "images/icon_10wp.jpg"
   },
   {
     id: 77,
@@ -1078,7 +1078,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Klerat Waxblocks 100g containing Brodifacoum 0.005% Bait for commercial pest management.",
-    image: "images/klerat_waxblocks_100g.png"
+    image: "images/klerat_waxblocks.jpg"
   },
   {
     id: 78,
@@ -1092,7 +1092,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. Premium Klerat Waxblocks 250g containing Brodifacoum 0.005% Bait for commercial pest management.",
-    image: "images/klerat_waxblocks_250g.png"
+    image: "images/klerat_waxblocks.jpg"
   },
   {
     id: 79,
@@ -1106,7 +1106,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Zevictra TC 1L containing Thiamethoxam 25% WG for commercial pest management.",
-    image: "images/zevictra_tc_1l.png"
+    image: "images/zevictra_tc.jpg"
   },
   {
     id: 80,
@@ -1120,7 +1120,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Zevictra TC 250ml containing Thiamethoxam 25% WG for commercial pest management.",
-    image: "images/zevictra_tc_250ml.png"
+    image: "images/zevictra_tc.jpg"
   },
   {
     id: 81,
@@ -1134,7 +1134,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. Premium Zevictra TC 5L containing Thiamethoxam 25% WG for commercial pest management.",
-    image: "images/zevictra_tc_5l.png"
+    image: "images/zevictra_tc.jpg"
   },
   {
     id: 82,
@@ -3151,6 +3151,468 @@ const PRODUCTS = [
     offer: false,
     description: "Large adhesive spider and fly monitoring board.",
     image: "images/spider_control_board_fly_glue_board.jpg"
+  },
+  {
+    id: 229,
+    name: "Aspee 3.5 Lit Sprayer - MT36/VMND/SS",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Stainless Steel Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Premium 3.5-liter stainless steel compression sprayer featuring high durability and chemical resistance.",
+    image: "images/aspee_3_5_lit_sprayer_mt36_vmnd_ss.jpg"
+  },
+  {
+    id: 230,
+    name: "Aspee 3.5 Lt Sprayer - Brass",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Brass Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Premium 3.5-liter brass tank compression sprayer built for commercial pest control and agricultural operations.",
+    image: "images/aspee_3_5_lt_sprayer_brass.png"
+  },
+  {
+    id: 231,
+    name: "Aspee 5 Ltr with Lithium Battery",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Battery Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Advanced 5-liter battery sprayer equipped with a lightweight lithium battery for consistent high-pressure spraying.",
+    image: "images/aspee_5_ltr_with_lithium_battery.png"
+  },
+  {
+    id: 232,
+    name: "Aspee 6 Ltr Brass Sprayer",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Brass Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Heavy-duty 6-liter brass tank compression sprayer, offering professional performance and exceptional longevity.",
+    image: "images/aspee_6_ltr_brass_sprayer.png"
+  },
+  {
+    id: 233,
+    name: "Aspee 6Ltr Sprayer - SS",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Stainless Steel Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Professional 6-liter stainless steel tank compression sprayer with high corrosion resistance.",
+    image: "images/aspee_6ltr_sprayer_ss.jpg"
+  },
+  {
+    id: 234,
+    name: "Aspee 9lt Brass Sprayer",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Brass Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Large-capacity 9-liter brass compression sprayer designed for heavy-duty pest control and disinfection tasks.",
+    image: "images/aspee_9lt_brass_sprayer.png"
+  },
+  {
+    id: 235,
+    name: "Aspee Atomizer Blower - AAB/IT00907628",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Atomizer Blower",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Powerful engine-driven atomizer blower for ultra-fine misting and wide-coverage agricultural pest control.",
+    image: "images/aspee_atomizer_blower.png"
+  },
+  {
+    id: 236,
+    name: "Aspee Avenger - ULV Machine",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "ULV Cold Fogger",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "High-efficiency ULV (Ultra Low Volume) cold fogger for rapid sanitization, pest control, and public health misting.",
+    image: "images/aspee_avenger_ulv_machine.png"
+  },
+  {
+    id: 237,
+    name: "Aspee Bolo Knapsack Power Sprayer MB2/EP/HP/IS",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Knapsack Power Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Engine-powered knapsack mist blower with high-velocity air stream for orchard and agricultural pest management.",
+    image: "images/aspee_bolo_knapsack_power_sprayer.png"
+  },
+  {
+    id: 238,
+    name: "Aspee Duo Electro 2in1 Battery HO - ADE001/8AHBR",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "2in1 Battery/Manual Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Dual-function battery and manual 2-in-1 sprayer with high capacity for versatile application needs.",
+    image: "images/aspee_duo_electro_2in1_battery_ho.png"
+  },
+  {
+    id: 239,
+    name: "Aspee Electro 12 Ah Battery Sprayer",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Battery Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "High-capacity battery sprayer powered by a long-lasting 12Ah battery for extended professional operations.",
+    image: "images/aspee_electro_12_ah_battery_sprayer.png"
+  },
+  {
+    id: 240,
+    name: "Aspee Electro Junior Battery Sprayer 8AH",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Battery Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Compact and ergonomic 8Ah battery-powered sprayer designed for easy handling and efficient operation.",
+    image: "images/aspee_electro_junior_battery_sprayer_8ah.jpg"
+  },
+  {
+    id: 241,
+    name: "Aspee Foot Sprayer",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Foot Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Pedal-operated high-pressure foot sprayer with long delivery hose, ideal for spraying tall trees and crops.",
+    image: "images/aspee_foot_sprayer.png"
+  },
+  {
+    id: 242,
+    name: "Aspee Gaint Fogger",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Thermal Fogger",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "High-performance heavy-duty thermal fogging machine for vector control and large-scale public health disinfection.",
+    image: "images/aspee_gaint_fogger.png"
+  },
+  {
+    id: 243,
+    name: "Aspee Gun Bili HTP Power Sprayer - PSB16/BNC/WO",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "HTP Power Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "High-pressure HTP power sprayer assembly with spray gun for professional agricultural and industrial washing/spraying.",
+    image: "images/aspee_gun_bili_htp_power_sprayer_psb16_bnc_wo.png"
+  },
+  {
+    id: 244,
+    name: "Aspee Hivol Battery Sprayer",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Battery Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "High-volume battery-operated sprayer offering consistent pressure and maximum efficiency.",
+    image: "images/aspee_hivol_battery_sprayer.png"
+  },
+  {
+    id: 245,
+    name: "Aspee Jonathan (On Wheel Trolly Mounted Power JT35",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Trolley Power Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Wheel-trolley mounted high-pressure power sprayer for easy maneuverability during large area applications.",
+    image: "images/aspee_jonathan_on_wheel_trolly_mounted_power_jt35.png"
+  },
+  {
+    id: 247,
+    name: "Aspee Manual Sprayer",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Manual Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Ergonomic and durable manual knapsack sprayer, built for everyday general pest control operations.",
+    image: "images/aspee_manual_sprayer.png"
+  },
+  {
+    id: 248,
+    name: "Aspee Unimobile - Portable Power Sprayer- PPS35/2S",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Portable Power Sprayer",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Portable engine-powered sprayer unit, offering mobility and high pressure for agricultural and public health spraying.",
+    image: "images/aspee_unimobile_portable_power_sprayer_pps35_2s.png"
+  },
+  {
+    id: 250,
+    name: "Fog/002(Aspee Duo Portable Fogging Machine)",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Portable Fogging Machine",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Compact and portable thermal fogging machine for rapid space spraying in residential and commercial areas.",
+    image: "images/fog_002_aspee_duo_portable_fogging_machine.png"
+  },
+  {
+    id: 226,
+    name: "48CM Long 9.5MM DIA Pipe",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Sprayer Accessory",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Heavy-duty 48cm sprayer delivery pipe with 9.5mm diameter, compatible with Aspee spray lances.",
+    image: "images/48cm_long_9_5mm_dia_pipe.avif"
+  },
+  {
+    id: 227,
+    name: "Air Check Valve Cap",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Spare Part",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Premium replacement check valve cap for maintaining optimal compression in Aspee sprayers.",
+    image: "images/air_check_valve_cap.avif"
+  },
+  {
+    id: 228,
+    name: "Air Check Valve Spring",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Spare Part",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "High-tension stainless steel replacement check valve spring for Aspee sprayer pump assemblies.",
+    image: "images/air_check_valve_spring.jpg"
+  },
+  {
+    id: 246,
+    name: "Aspee Lance 6 Lt",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Sprayer Lance",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Replacement 6-liter spray lance assembly with nozzle, designed for precise chemical targeting.",
+    image: "images/aspee_lance_6_lt.jpg"
+  },
+  {
+    id: 249,
+    name: "Ext Rod 40CMS 3/8\"",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Sprayer Extension Rod",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Durable 40cm extension rod with 3/8-inch threading for extending sprayer lance reach.",
+    image: "images/ext_rod_40cms_3_8.avif"
+  },
+  {
+    id: 251,
+    name: "Lock Pin",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Spare Part",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Essential safety lock pin replacement for Aspee sprayer pump handles and assemblies.",
+    image: "images/lock_pin.avif"
+  },
+  {
+    id: 252,
+    name: "Mild Steel Hex Nut 5/16\"NF",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Spare Part",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "High-strength mild steel hex nut (5/16-inch NF) for secure assembly of sprayer mechanical parts.",
+    image: "images/mild_steel_hex_nut_5_16_nf.png"
+  },
+  {
+    id: 253,
+    name: "NMD/S (DURO MIST SPRAY NOZZLE)",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Sprayer Nozzle",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Specialized Duro mist nozzle for producing fine, uniform spray patterns in pest control.",
+    image: "images/nmd_s_duro_mist_spray_nozzle.jpg"
+  },
+  {
+    id: 254,
+    name: "Packing Retainer Collar",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Spare Part",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Replacement packing retainer collar for securing seals and preventing leaks in sprayer pumps.",
+    image: "images/packing_retainer_collar.png"
+  },
+  {
+    id: 255,
+    name: "Piston Lower Plate",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Spare Part",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Durable replacement piston lower plate for maintaining compression in Aspee sprayer cylinders.",
+    image: "images/piston_lower_plate.avif"
+  },
+  {
+    id: 256,
+    name: "Piston Upper Plate",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Spare Part",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "High-quality replacement piston upper plate for Aspee pump assemblies.",
+    image: "images/piston_upper_plate.avif"
+  },
+  {
+    id: 257,
+    name: "Valve Spring No 19A",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Spare Part",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Replacement valve spring No 19A for maintaining precise valve opening/closing in sprayer pumps.",
+    image: "images/valve_spring_no_19a.jpg"
+  },
+  {
+    id: 258,
+    name: "Volve Pin with Plug",
+    brand: "ASPEE",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Spare Part",
+    price: 0,
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Heavy-duty valve pin with plug assembly for reliable flow control in Aspee sprayers.",
+    image: "images/volve_pin_with_plug.png"
   }
 ];;;;;;;;
 
@@ -3223,6 +3685,32 @@ function initializeApp() {
           (brandVal.includes("heranba") && cbLower.includes("heranba"))) {
         cb.checked = true;
         selectedBrands = [cb.value];
+      }
+    });
+  }
+
+  // Parse URL tab parameters for cross-page tab redirection
+  const tabParam = urlParams.get('tab');
+  if (tabParam) {
+    const tabVal = decodeURIComponent(tabParam).toLowerCase();
+    const tabHeaders = document.querySelectorAll(".tab-header");
+    tabHeaders.forEach(tab => {
+      if (tab.getAttribute("data-tab") === tabVal) {
+        tabHeaders.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+        activeTab = tabVal;
+      }
+    });
+  }
+
+  // Parse URL category parameters for cross-page category redirection
+  const catParam = urlParams.get('category');
+  if (catParam) {
+    const catVal = decodeURIComponent(catParam).toLowerCase();
+    const catCbs = document.querySelectorAll(".category-cb");
+    catCbs.forEach(cb => {
+      if (cb.value.toLowerCase() === catVal) {
+        cb.checked = true;
       }
     });
   }
@@ -3885,22 +4373,19 @@ function renderCatalog() {
 
     // 2. Tab filters
     if (activeTab !== 'all') {
-      const prodName = (prod.name || "").toLowerCase();
-      const matchesAny = (keywords) => {
-        return keywords.some(k => prodName.includes(k));
-      };
-
+      let allowedIds = [];
       if (activeTab === 'cockroach') {
-        if (!matchesAny(["maxforce forte", "maxforce fusion", "roachone", "kokron super gel", "nt cock", "kilspot", "kokron bait", "kokron line", "kokron power", "propoxur"])) return false;
+        allowedIds = [44, 45, 46, 47, 48, 49, 50, 69, 70, 73, 74, 75, 76, 67, 82, 83, 87, 88, 149, 127, 108, 119, 209];
       } else if (activeTab === 'ant') {
-        if (!matchesAny(["maxforce forte", "maxforce quantum", "agenda 25ec", "premise sc", "rogan", "hilgent plus", "paxton", "line chalk", "chalk"])) return false;
+        allowedIds = [69, 70, 73, 74, 75, 76, 67, 44, 46, 47, 48, 51, 82, 83];
       } else if (activeTab === 'mosquito') {
-        if (!matchesAny(["aqua k-othrine", "k-othrine", "icon 10", "icon 10cs", "icon 10wp", "nt quito", "bi-larv", "demand 2.5", "demand 2_5", "solfac", "responsar", "del fog", "delsis", "delta flow", "delta master", "kingfog", "temephos", "brake", "flyco", "flycutor", "linnea", "pest o flash", "pestop", "moskmaar", "cypermethrin", "cypra", "cytox", "hilcyperin", "hilcyperine", "hilhunter", "hilmala"])) return false;
+        allowedIds = [69, 70, 73, 74, 75, 76, 68, 44, 46, 63, 65, 66, 62, 82, 83, 85, 84, 86, 128, 205, 121];
       } else if (activeTab === 'rodent') {
-        if (!matchesAny(["racumin", "klerat", "ratol", "rodent"])) return false;
+        allowedIds = [77, 78, 60, 153, 159, 160, 161, 152, 162, 163, 164];
       } else if (activeTab === 'termite') {
-        if (!matchesAny(["premise", "agenda", "termifinn", "biflex", "durmet", "paxton", "transportex", "zevictra", "heraban", "hilban", "jeyban", "chloropyriphos", "chlorpyriphos", "master thrin", "prompt"])) return false;
+        allowedIds = [71, 72, 79, 80, 81, 53, 54, 55, 56, 57, 58, 90, 93, 94, 95, 131, 129, 130, 198, 199, 200];
       }
+      if (!allowedIds.includes(prod.id)) return false;
     }
 
     // 3. Search query
@@ -4295,7 +4780,11 @@ function openProductQuickView(productId) {
   const modal = document.getElementById("product-modal");
   const modalBody = document.getElementById("product-modal-body");
 
-  if (!modal || !modalBody) return;
+  if (!modal || !modalBody) {
+    // If the modal is not present (e.g. on the pest library page), redirect to products page
+    window.location.href = `products.html?search=${encodeURIComponent(prod.name)}`;
+    return;
+  }
 
   let toxicClass = "";
   let toxicLabel = "";
@@ -4624,14 +5113,14 @@ function getProductCardsHTML(matches) {
 }
 
 function handleProductClick(prodName) {
-  const searchInput = document.getElementById("product-search");
-  if (searchInput) {
-    searchInput.value = prodName;
-    searchInput.dispatchEvent(new Event("input"));
-    const catalog = document.getElementById("catalog");
-    if (catalog) {
-      catalog.scrollIntoView({ behavior: "smooth" });
+  const catalog = document.getElementById("catalog");
+  if (catalog) {
+    const searchInput = document.getElementById("product-search");
+    if (searchInput) {
+      searchInput.value = prodName;
+      searchInput.dispatchEvent(new Event("input"));
     }
+    catalog.scrollIntoView({ behavior: "smooth" });
   } else {
     window.location.href = `products.html?search=${encodeURIComponent(prodName)}`;
   }
