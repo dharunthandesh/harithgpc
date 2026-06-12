@@ -563,21 +563,6 @@ const PRODUCTS = [
     image: "images/gardening_pot_41.jpg?v=3"
   },
   {
-    id: 41,
-    name: "Marut Hand Compression Sprayer 6 (6L)",
-    brand: "FUJIAKA",
-    category: "equipment",
-    toxicity: "Equipment",
-    activeIngredient: "Brass Tank Sprayer",
-    price: 4600,
-    featured: true,
-    newArrival: true,
-    offer: false,
-    description: "Heavy-duty brass tank compression sprayer built for pest control operators. 6-liter capacity with high-pressure discharge lance, nozzle, and pump assembly.",
-    image: ""
-  },
-
-  {
     id: 44,
     name: "Temprid SC 500ml",
     brand: "ENVU BAYER",
@@ -621,30 +606,20 @@ const PRODUCTS = [
   },
   {
     id: 47,
-    name: "Solfac EW050 100ml",
+    name: "Solfac EW050",
     brand: "ENVU BAYER",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Cyfluthrin 5% EW",
     price: 550,
+    variants: [
+      { size: "100ml", price: 550 },
+      { size: "1L", price: 2600 }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
     description: "Professional-grade Solfac EW050 insecticide by Envu. High quality formulation containing Cyfluthrin 5% EW designed for structural pest control operations.",
-    image: "images/solfac_ew.jpg"
-  },
-  {
-    id: 48,
-    name: "Solfac EW050 1L",
-    brand: "ENVU BAYER",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Cyfluthrin 5% EW",
-    price: 2600,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Professional-grade Solfac EW050 1L insecticide by Envu. High quality formulation containing Cyfluthrin 5% EW designed for structural pest control operations.",
     image: "images/solfac_ew.jpg"
   },
   {
@@ -705,12 +680,17 @@ const PRODUCTS = [
   },
   {
     id: 53,
-    name: "Premise SC 250ml",
+    name: "Premise SC",
     brand: "ENVU BAYER",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Imidacloprid 30.5% SC",
     price: 950,
+    variants: [
+      { size: "250ml", price: 950 },
+      { size: "1L", price: 4200 },
+      { size: "5L", price: 19500 }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
@@ -718,73 +698,22 @@ const PRODUCTS = [
     image: "images/premise.jpg"
   },
   {
-    id: 54,
-    name: "Premise SC 1L",
-    brand: "ENVU BAYER",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Imidacloprid 30.5% SC",
-    price: 4200,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Professional-grade Premise SC 1L insecticide by Envu. High quality formulation containing Imidacloprid 30.5% SC designed for structural pest control operations.",
-    image: "images/premise.jpg"
-  },
-  {
-    id: 55,
-    name: "Premise SC 5L",
-    brand: "ENVU BAYER",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Imidacloprid 30.5% SC",
-    price: 19500,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Professional-grade Premise SC 5L insecticide by Envu. High quality formulation containing Imidacloprid 30.5% SC designed for structural pest control operations.",
-    image: "images/premise.jpg"
-  },
-  {
     id: 56,
-    name: "Agenda 25EC 150ml",
+    name: "Agenda 25EC",
     brand: "ENVU BAYER",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Fipronil 2.92% EC",
     price: 1250,
+    variants: [
+      { size: "150ml", price: 1250 },
+      { size: "500ml", price: 2800 },
+      { size: "5L", price: 24000 }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
     description: "Professional-grade Agenda EC insecticide by Envu. High quality formulation containing Fipronil 2.92% EC designed for structural pest control operations.",
-    image: "images/agenda.jpg"
-  },
-  {
-    id: 57,
-    name: "Agenda 25EC 500ml",
-    brand: "ENVU BAYER",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Fipronil 2.92% EC",
-    price: 2800,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Professional-grade Agenda 25EC 500ml insecticide by Envu. High quality formulation containing Fipronil 2.92% EC designed for structural pest control operations.",
-    image: "images/agenda.jpg"
-  },
-  {
-    id: 58,
-    name: "Agenda 25EC 5L",
-    brand: "ENVU BAYER",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Fipronil 2.92% EC",
-    price: 24000,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Professional-grade Agenda 25EC 5L insecticide by Envu. High quality formulation containing Fipronil 2.92% EC designed for structural pest control operations.",
     image: "images/agenda.jpg"
   },
   {
@@ -929,184 +858,111 @@ const PRODUCTS = [
   },
   {
     id: 69,
-    name: "Demand 2.5CS 100ml",
+    name: "Demand 2.5CS",
     brand: "SYNGENTA",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Lambda-cyhalothrin 2.43% CS",
     price: 420,
+    variants: [
+      { size: "100ml", price: 420 },
+      { size: "1L", price: 3200 }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Syngenta vector control and public health insecticide. High performance Demand 2.5CS 100ml containing Lambda-cyhalothrin 2.43% CS for commercial pest management.",
-    image: "images/demand_2_5cs.jpg"
-  },
-  {
-    id: 70,
-    name: "Demand 2.5CS 1L",
-    brand: "SYNGENTA",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Lambda-cyhalothrin 2.43% CS",
-    price: 3200,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Syngenta vector control and public health insecticide. Premium Demand 2.5CS 1L containing Lambda-cyhalothrin 2.43% CS for large-scale pest management.",
+    description: "Syngenta vector control and public health insecticide. High performance Demand 2.5CS containing Lambda-cyhalothrin 2.43% CS for commercial pest management.",
     image: "images/demand_2_5cs.jpg"
   },
   {
     id: 71,
-    name: "Exsectra 3EC 1L",
+    name: "Exsectra 3EC",
     brand: "SYNGENTA",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Esfenvalerate 3% EC",
     price: 480,
+    variants: [
+      { size: "1L", price: 480 },
+      { size: "5L", price: 2150 }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Syngenta vector control and public health insecticide. High performance Exsectra 3EC 1L containing Esfenvalerate 3% EC for commercial pest management.",
-    image: "images/exsectra_3ec.jpg"
-  },
-  {
-    id: 72,
-    name: "Exsectra 3EC 5L",
-    brand: "SYNGENTA",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Esfenvalerate 3% EC",
-    price: 2150,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Syngenta vector control and public health insecticide. Premium Exsectra 3EC 5L containing Esfenvalerate 3% EC for large-scale pest management.",
+    description: "Syngenta vector control and public health insecticide. High performance Exsectra 3EC containing Esfenvalerate 3% EC for commercial pest management.",
     image: "images/exsectra_3ec.jpg"
   },
   {
     id: 73,
-    name: "Icon 10CS 100ml",
+    name: "Icon 10CS",
     brand: "SYNGENTA",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Lambda-cyhalothrin 10% CS",
     price: 950,
+    variants: [
+      { size: "100ml", price: 950 },
+      { size: "500ml", price: 3800 }
+    ],
     featured: true,
     newArrival: false,
     offer: false,
-    description: "Syngenta vector control and public health insecticide. High performance Icon 10CS 100ml containing Lambda-cyhalothrin 10% CS for commercial pest management.",
-    image: "images/icon_10cs.jpg"
-  },
-  {
-    id: 74,
-    name: "Icon 10CS 500ml",
-    brand: "SYNGENTA",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Lambda-cyhalothrin 10% CS",
-    price: 3800,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Syngenta vector control and public health insecticide. Premium Icon 10CS 500ml containing Lambda-cyhalothrin 10% CS for commercial pest management.",
+    description: "Syngenta vector control and public health insecticide. High performance Icon 10CS containing Lambda-cyhalothrin 10% CS for commercial pest management.",
     image: "images/icon_10cs.jpg"
   },
   {
     id: 75,
-    name: "Icon 10WP 125g",
-    brand: "SYNGENTA",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Lambda-cyhalothrin 10% WP",
-    price: 1100,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Syngenta vector control and public health insecticide. High performance Icon 10WP 125g containing Lambda-cyhalothrin 10% WP for commercial pest management.",
-    image: "images/icon_10wp.jpg"
-  },
-  {
-    id: 76,
-    name: "Icon 10WP 62.5g",
+    name: "Icon 10WP",
     brand: "SYNGENTA",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Lambda-cyhalothrin 10% WP",
     price: 620,
+    variants: [
+      { size: "62.5g", price: 620 },
+      { size: "125g", price: 1100 }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Syngenta vector control and public health insecticide. High performance Icon 10WP 62.5g containing Lambda-cyhalothrin 10% WP for commercial pest management.",
+    description: "Syngenta vector control and public health insecticide. High performance Icon 10WP containing Lambda-cyhalothrin 10% WP for commercial pest management.",
     image: "images/icon_10wp.jpg"
   },
   {
     id: 77,
-    name: "Klerat Waxblocks 100g",
+    name: "Klerat Waxblocks",
     brand: "SYNGENTA",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Brodifacoum 0.005% Bait",
     price: 240,
+    variants: [
+      { size: "100g", price: 240 },
+      { size: "250g", price: 520 }
+    ],
     featured: true,
     newArrival: false,
     offer: false,
-    description: "Syngenta vector control and public health insecticide. High performance Klerat Waxblocks 100g containing Brodifacoum 0.005% Bait for commercial pest management.",
-    image: "images/klerat_waxblocks.jpg"
-  },
-  {
-    id: 78,
-    name: "Klerat Waxblocks 250g",
-    brand: "SYNGENTA",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Brodifacoum 0.005% Bait",
-    price: 520,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Syngenta vector control and public health insecticide. Premium Klerat Waxblocks 250g containing Brodifacoum 0.005% Bait for commercial pest management.",
+    description: "Syngenta vector control and public health insecticide. High performance Klerat Waxblocks containing Brodifacoum 0.005% Bait for commercial pest management.",
     image: "images/klerat_waxblocks.jpg"
   },
   {
     id: 79,
-    name: "Zevictra TC 1L",
-    brand: "SYNGENTA",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Thiamethoxam 25% WG",
-    price: 850,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Syngenta vector control and public health insecticide. High performance Zevictra TC 1L containing Thiamethoxam 25% WG for commercial pest management.",
-    image: "images/zevictra_tc.jpg"
-  },
-  {
-    id: 80,
-    name: "Zevictra TC 250ml",
+    name: "Zevictra TC",
     brand: "SYNGENTA",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Thiamethoxam 25% WG",
     price: 260,
+    variants: [
+      { size: "250ml", price: 260 },
+      { size: "1L", price: 850 },
+      { size: "5L", price: 3900 }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Syngenta vector control and public health insecticide. High performance Zevictra TC 250ml containing Thiamethoxam 25% WG for commercial pest management.",
-    image: "images/zevictra_tc.jpg"
-  },
-  {
-    id: 81,
-    name: "Zevictra TC 5L",
-    brand: "SYNGENTA",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Thiamethoxam 25% WG",
-    price: 3900,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Syngenta vector control and public health insecticide. Premium Zevictra TC 5L containing Thiamethoxam 25% WG for commercial pest management.",
+    description: "Syngenta vector control and public health insecticide. High performance Zevictra TC containing Thiamethoxam 25% WG for commercial pest management.",
     image: "images/zevictra_tc.jpg"
   },
   {
@@ -1570,20 +1426,6 @@ const PRODUCTS = [
     offer: false,
     description: "Hindustan Insecticides Limited (HIL) product. Effective Hilstar WG - 100 Gm with active Hexaconazole 5% WG for plant health and insect vector control.",
     image: "images/hilstar_wg_100_gm.png"
-  },
-  {
-    id: 115,
-    name: "Trinashi 41 SL - 1lt (Glyphosate)",
-    brand: "HIL",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Glyphosate 41% SL",
-    price: 380,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Hindustan Insecticides Limited (HIL) product. Effective Trinashi 41 SL - 1 Ltr (Glyphosate) with active Glyphosate 41% SL for plant health and insect vector control.",
-    image: ""
   },
   {
     id: 116,
@@ -3773,58 +3615,38 @@ const PRODUCTS = [
   },
   {
     id: 272,
-    name: "Termiseal 500ml",
+    name: "Termiseal",
     brand: "PCI",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Imidacloprid 30.5% SC Termiticide",
     price: 0,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "PCI Termiseal termiticide containing Imidacloprid 30.5% SC. Effective soil treatment for pre- and post-construction anti-termite operations. 500ml pack.",
-    image: "images/termiseal_500ml.jpg"
-  },
-  {
-    id: 273,
-    name: "Termiseal 5ltr",
-    brand: "PCI",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Imidacloprid 30.5% SC Termiticide",
-    price: 0,
+    variants: [
+      { size: "500ml", price: 0, image: "images/termiseal_500ml.jpg" },
+      { size: "5L", price: 0, image: "images/termiseal_5ltr.png" }
+    ],
     featured: true,
     newArrival: false,
     offer: false,
-    description: "PCI Termiseal termiticide in 5-liter bulk pack. Professional-grade soil drench for large-scale anti-termite treatments in commercial and residential buildings.",
-    image: "images/termiseal_5ltr.png"
+    description: "PCI Termiseal termiticide. Effective soil drench for pre- and post-construction anti-termite operations.",
+    image: "images/termiseal_500ml.jpg"
   },
   {
     id: 274,
-    name: "Termiseal Plus - 1ltr",
+    name: "Termiseal Plus",
     brand: "PCI",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Bifenthrin 8% SC Termiticide",
     price: 0,
+    variants: [
+      { size: "500ml", price: 0, image: "images/termiseal_plus_500ml.jpg" },
+      { size: "1L", price: 0, image: "images/termiseal_plus_1ltr.jpg" }
+    ],
     featured: false,
     newArrival: true,
     offer: false,
-    description: "PCI Termiseal Plus with Bifenthrin 8% SC. Enhanced formula for long-lasting termite barrier protection. 1-liter pack ideal for medium-scale anti-termite jobs.",
-    image: "images/termiseal_plus_1ltr.jpg"
-  },
-  {
-    id: 275,
-    name: "Termiseal Plus - 500ml",
-    brand: "PCI",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Bifenthrin 8% SC Termiticide",
-    price: 0,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "PCI Termiseal Plus 500ml termiticide with Bifenthrin 8% SC. Ideal for small residential termite treatment jobs and spot application in crack & crevice areas.",
+    description: "PCI Termiseal Plus termiticide. Enhanced formula for long-lasting termite barrier protection.",
     image: "images/termiseal_plus_500ml.jpg"
   },
   {
@@ -4718,8 +4540,20 @@ function renderCatalog() {
       toxicLabel = "Pest Equipment";
     }
 
+    const hasVariants = prod.variants && prod.variants.length > 0;
+    const variantsHtml = hasVariants ? `
+      <div class="prod-variants">
+        ${prod.variants.map((v, i) => `
+          <button class="variant-chip-btn ${i === 0 ? 'active' : ''}" 
+                  onclick="selectVariant(${prod.id}, ${i}, this, event)">
+            ${v.size}
+          </button>
+        `).join('')}
+      </div>
+    ` : '';
+
     return `
-      <article class="product-card" data-product-id="${prod.id}">
+      <article class="product-card" data-product-id="${prod.id}" ${hasVariants ? 'data-selected-variant="0"' : ''}>
         <div class="product-img-wrap">
           <span class="toxic-band-tag ${toxicClass}">${toxicLabel}</span>
           ${prod.image ? `<img src="${prod.image}" alt="${prod.name}">` : ""}
@@ -4736,6 +4570,7 @@ function renderCatalog() {
           <span class="prod-brand">${prod.brand}</span>
           <h4 class="prod-name">${prod.name}</h4>
           <p class="prod-active-ing">${prod.activeIngredient}</p>
+          ${variantsHtml}
           <div class="prod-footer-row">
             <span class="prod-price">Price on Request</span>
             <button class="add-cart-circle-btn" onclick="addToCart(${prod.id})" title="Add to Cart">
@@ -4894,21 +4729,122 @@ function resetAllFilters() {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
+   PRODUCT VARIANT SELECTORS
+   ───────────────────────────────────────────────────────────────────────── */
+function selectVariant(productId, variantIndex, element, event) {
+  if (event) event.stopPropagation();
+
+  // Find the product card
+  const card = element.closest('.product-card');
+  if (!card) return;
+  
+  // Set selected variant attribute on card
+  card.dataset.selectedVariant = variantIndex;
+  
+  // Update active class on variant buttons inside this card
+  const buttons = card.querySelectorAll('.variant-chip-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  element.classList.add('active');
+  
+  // Update card image if variant has a specific image
+  const product = PRODUCTS.find(p => p.id === productId);
+  if (!product || !product.variants) return;
+  
+  const variant = product.variants[variantIndex];
+  if (!variant) return;
+  
+  const img = card.querySelector('.product-img-wrap img');
+  if (img) {
+    if (variant.image) {
+      img.src = variant.image;
+    } else if (product.image) {
+      img.src = product.image;
+    }
+  }
+}
+
+function selectModalVariant(productId, variantIndex, element) {
+  // Find the modal variants list container
+  const container = element.closest('.modal-variants-list');
+  if (!container) return;
+  
+  // Set selected variant index
+  container.dataset.selectedVariant = variantIndex;
+  
+  // Update active class on buttons
+  const buttons = container.querySelectorAll('.modal-variant-chip-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  element.classList.add('active');
+  
+  // Find product and update modal image if variant has a custom image
+  const product = PRODUCTS.find(p => p.id === productId);
+  if (!product || !product.variants) return;
+  
+  const variant = product.variants[variantIndex];
+  if (!variant) return;
+  
+  const modalImg = document.querySelector('.modal-img-col img');
+  if (modalImg) {
+    if (variant.image) {
+      modalImg.src = variant.image;
+    } else if (product.image) {
+      modalImg.src = product.image;
+    }
+  }
+}
+
+function addModalItemToCart(productId) {
+  const container = document.querySelector('.modal-variants-list');
+  let variantIndex = null;
+  if (container && container.dataset.selectedVariant !== undefined) {
+    variantIndex = parseInt(container.dataset.selectedVariant, 10);
+  }
+  addToCart(productId, variantIndex);
+  
+  const modal = document.getElementById('product-modal');
+  if (modal) modal.style.display = 'none';
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
    CART ACTIONS
    ───────────────────────────────────────────────────────────────────────── */
-function addToCart(productId) {
+function addToCart(productId, variantIndex = null) {
   const product = PRODUCTS.find(p => p.id === productId);
   if (!product) return;
 
-  const existing = cart.find(item => item.product.id === productId);
+  let chosenVariant = null;
+  if (product.variants && product.variants.length > 0) {
+    if (variantIndex === null) {
+      const card = document.querySelector(`.product-card[data-product-id="${productId}"]`);
+      if (card && card.dataset.selectedVariant !== undefined) {
+        variantIndex = parseInt(card.dataset.selectedVariant, 10);
+      } else {
+        variantIndex = 0;
+      }
+    }
+    chosenVariant = product.variants[variantIndex];
+  }
+
+  // Find if this product variant is already in the cart
+  const existing = cart.find(item => 
+    item.product.id === productId && 
+    ((!chosenVariant && !item.selectedVariant) || 
+     (chosenVariant && item.selectedVariant && item.selectedVariant.size === chosenVariant.size))
+  );
+
   if (existing) {
     existing.quantity += 1;
   } else {
-    cart.push({ product, quantity: 1 });
+    cart.push({ 
+      product, 
+      selectedVariant: chosenVariant, 
+      quantity: 1 
+    });
   }
 
   updateCartBadge();
-  showToast(`Added ${product.name.split('(')[0]} to cart`, "success");
+  const displayName = chosenVariant ? `${product.name} (${chosenVariant.size})` : product.name;
+  showToast(`Added ${displayName.split('(')[0].trim()} to cart`, "success");
 }
 
 function updateCartBadge() {
@@ -4919,21 +4855,30 @@ function updateCartBadge() {
   badge.innerText = count;
 }
 
-function changeCartItemQty(productId, change) {
-  const item = cart.find(item => item.product.id === productId);
+function changeCartItemQty(productId, size, change) {
+  const item = cart.find(item => 
+    item.product.id === productId && 
+    ((!size && !item.selectedVariant) || (size && item.selectedVariant && item.selectedVariant.size === size))
+  );
   if (!item) return;
 
   item.quantity += change;
   if (item.quantity <= 0) {
-    cart = cart.filter(i => i.product.id !== productId);
+    cart = cart.filter(i => 
+      !(i.product.id === productId && 
+        ((!size && !i.selectedVariant) || (size && i.selectedVariant && i.selectedVariant.size === size)))
+    );
   }
 
   updateCartBadge();
   renderCartDrawerContents();
 }
 
-function removeCartItem(productId) {
-  cart = cart.filter(i => i.product.id !== productId);
+function removeCartItem(productId, size) {
+  cart = cart.filter(i => 
+    !(i.product.id === productId && 
+      ((!size && !i.selectedVariant) || (size && i.selectedVariant && i.selectedVariant.size === size)))
+  );
   updateCartBadge();
   renderCartDrawerContents();
   showToast("Removed item from cart", "info");
@@ -4975,24 +4920,31 @@ function renderCartDrawerContents() {
   emptyState.style.display = "none";
   footer.style.display = "block";
 
-  listContainer.innerHTML = cart.map(item => `
-    <div class="cart-item">
-      ${item.product.image ? `<img src="${item.product.image}" alt="${item.product.name}" class="cart-item-img">` : `<div class="cart-item-img-placeholder cart-item-img"></div>`}
-      <div class="cart-item-details">
-        <span class="cart-item-name">${item.product.name}</span>
-        <div class="cart-item-controls">
-          <div class="qty-stepper">
-            <button onclick="changeCartItemQty(${item.product.id}, -1)">-</button>
-            <span>${item.quantity}</span>
-            <button onclick="changeCartItemQty(${item.product.id}, 1)">+</button>
+  listContainer.innerHTML = cart.map(item => {
+    const size = item.selectedVariant ? item.selectedVariant.size : null;
+    const sizeParam = size ? `'${size}'` : 'null';
+    const displayName = size ? `${item.product.name} (${size})` : item.product.name;
+    const displayImg = (item.selectedVariant && item.selectedVariant.image) || item.product.image;
+
+    return `
+      <div class="cart-item">
+        ${displayImg ? `<img src="${displayImg}" alt="${displayName}" class="cart-item-img">` : `<div class="cart-item-img-placeholder cart-item-img"></div>`}
+        <div class="cart-item-details">
+          <span class="cart-item-name">${displayName}</span>
+          <div class="cart-item-controls">
+            <div class="qty-stepper">
+              <button onclick="changeCartItemQty(${item.product.id}, ${sizeParam}, -1)">-</button>
+              <span>${item.quantity}</span>
+              <button onclick="changeCartItemQty(${item.product.id}, ${sizeParam}, 1)">+</button>
+            </div>
+            <button class="remove-item-btn" onclick="removeCartItem(${item.product.id}, ${sizeParam})">
+              <i data-lucide="trash-2"></i> Remove
+            </button>
           </div>
-          <button class="remove-item-btn" onclick="removeCartItem(${item.product.id})">
-            <i data-lucide="trash-2"></i> Remove
-          </button>
         </div>
       </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 
   lucide.createIcons();
 }
@@ -5032,6 +4984,21 @@ function openProductQuickView(productId) {
     toxicLabel = "Pest Control Equipment";
   }
 
+  const hasVariants = prod.variants && prod.variants.length > 0;
+  const variantsHtml = hasVariants ? `
+    <div class="modal-variants-section">
+      <span class="modal-variants-title">Select Size:</span>
+      <div class="modal-variants-list" data-selected-variant="0">
+        ${prod.variants.map((v, i) => `
+          <button class="modal-variant-chip-btn ${i === 0 ? 'active' : ''}" 
+                  onclick="selectModalVariant(${prod.id}, ${i}, this)">
+            ${v.size}
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  ` : '';
+
   modalBody.innerHTML = `
     <div class="modal-img-col">
       ${prod.image ? `<img src="${prod.image}" alt="${prod.name}">` : ""}
@@ -5043,10 +5010,11 @@ function openProductQuickView(productId) {
         <span class="meta-chip toxicity-chip ${toxicClass}">${toxicLabel}</span>
         <span class="meta-chip active-ingredient-chip">Active Ingredient: ${prod.activeIngredient}</span>
       </div>
+      ${variantsHtml}
       <p class="modal-desc">${prod.description}</p>
       <div class="modal-action-row">
         <span class="modal-price">Price on Request</span>
-        <button class="modal-add-cart-btn" onclick="addToCart(${prod.id}); document.getElementById('product-modal').style.display='none';">
+        <button class="modal-add-cart-btn" onclick="addModalItemToCart(${prod.id})">
           <i data-lucide="shopping-cart"></i> Add to Cart
         </button>
       </div>
@@ -5071,7 +5039,8 @@ function sendWhatsAppEnquiry() {
   message += `I would like to enquire about the availability and bulk quotation for the following products:\n\n`;
 
   cart.forEach((item, index) => {
-    const prodName = item.product.name;
+    const size = item.selectedVariant ? item.selectedVariant.size : null;
+    const prodName = size ? `${item.product.name} (${size})` : item.product.name;
     const qty = item.quantity;
     message += `${index + 1}. *${prodName}*\n`;
     message += `   Quantity: ${qty}\n\n`;

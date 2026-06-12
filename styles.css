@@ -5721,3 +5721,88 @@ body.loading-active {
     max-height: 120px;
   }
 }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   PRODUCT VARIANT SELECTORS
+   ───────────────────────────────────────────────────────────────────────── */
+.prod-variants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 8px 0;
+}
+
+.variant-chip-btn {
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-round);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.variant-chip-btn:hover {
+  border-color: var(--primary-light);
+  color: var(--primary-light);
+  background-color: var(--bg-surface-alt);
+}
+
+.variant-chip-btn.active {
+  background-color: var(--primary);
+  color: var(--text-white);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Modal Variants styling */
+.modal-variants-section {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-variants-title {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.modal-variants-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.modal-variant-chip-btn {
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-round);
+  border: 1.5px solid var(--border-color);
+  background-color: var(--bg-surface);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.modal-variant-chip-btn:hover {
+  border-color: var(--primary-light);
+  color: var(--primary-light);
+  background-color: var(--bg-surface-alt);
+}
+
+.modal-variant-chip-btn.active {
+  background-color: var(--primary);
+  color: var(--text-white);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
