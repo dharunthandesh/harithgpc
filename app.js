@@ -576,34 +576,7 @@ const PRODUCTS = [
     description: "Heavy-duty brass tank compression sprayer built for pest control operators. 6-liter capacity with high-pressure discharge lance, nozzle, and pump assembly.",
     image: ""
   },
-  {
-    id: 42,
-    name: "PCI Sticky Fly Traps (Yellow Trap)",
-    brand: "PCI",
-    category: "equipment",
-    toxicity: "Equipment",
-    activeIngredient: "Yellow Glue Board",
-    price: 240,
-    featured: false,
-    newArrival: false,
-    offer: true,
-    description: "Non-poisonous yellow sticky sheets. Highly effective at trapping gnats, whiteflies, and houseflies in greenhouses and homes.",
-    image: ""
-  },
-  {
-    id: 43,
-    name: "PCI Termiseal service Kit (DIY)",
-    brand: "PCI",
-    category: "chemicals",
-    toxicity: "Green Label",
-    activeIngredient: "Boric Acid + Applicator Set",
-    price: 1650,
-    featured: false,
-    newArrival: true,
-    offer: false,
-    description: "Complete home anti-termite application kit. Features precise injection tubes and safety spray nozzles for crack treatment.",
-    image: ""
-  },
+
   {
     id: 44,
     name: "Temprid SC 500ml",
