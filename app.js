@@ -3459,7 +3459,7 @@ const PRODUCTS = [
     id: 281,
     name: "AutoLock Door Mouse Trap",
     brand: "TRAPS & EQUIPMENT",
-    category: "equipment",
+    category: "traps & equipment",
     toxicity: "Equipment",
     activeIngredient: "Mouse Trap",
     price: 0,
@@ -3473,7 +3473,7 @@ const PRODUCTS = [
     id: 282,
     name: "Bandicoot Rat Trap",
     brand: "TRAPS & EQUIPMENT",
-    category: "equipment",
+    category: "traps & equipment",
     toxicity: "Equipment",
     activeIngredient: "Heavy Duty Rat Trap",
     price: 0,
@@ -3492,7 +3492,7 @@ const PRODUCTS = [
     id: 283,
     name: "Plastic Rodent Bait Station",
     brand: "TRAPS & EQUIPMENT",
-    category: "equipment",
+    category: "traps & equipment",
     toxicity: "Equipment",
     activeIngredient: "Rodent Bait Station",
     price: 0,
@@ -3511,7 +3511,7 @@ const PRODUCTS = [
     id: 284,
     name: "Rat Iron Trap",
     brand: "TRAPS & EQUIPMENT",
-    category: "equipment",
+    category: "traps & equipment",
     toxicity: "Equipment",
     activeIngredient: "Iron Rat Trap",
     price: 0,
@@ -3525,7 +3525,7 @@ const PRODUCTS = [
     id: 285,
     name: "Rat Snap Trap",
     brand: "TRAPS & EQUIPMENT",
-    category: "equipment",
+    category: "traps & equipment",
     toxicity: "Equipment",
     activeIngredient: "Snap Trap",
     price: 0,
@@ -3543,7 +3543,7 @@ const PRODUCTS = [
     id: 286,
     name: "Rat Trap Cage",
     brand: "TRAPS & EQUIPMENT",
-    category: "equipment",
+    category: "traps & equipment",
     toxicity: "Equipment",
     activeIngredient: "Rat Trap Cage",
     price: 0,
@@ -3561,7 +3561,7 @@ const PRODUCTS = [
     id: 287,
     name: "Rat Wood Trap",
     brand: "TRAPS & EQUIPMENT",
-    category: "equipment",
+    category: "traps & equipment",
     toxicity: "Equipment",
     activeIngredient: "Wooden Snap Trap",
     price: 0,
@@ -3575,7 +3575,7 @@ const PRODUCTS = [
     id: 288,
     name: "Snake Catcher Stick (6 Feet)",
     brand: "TRAPS & EQUIPMENT",
-    category: "equipment",
+    category: "traps & equipment",
     toxicity: "Equipment",
     activeIngredient: "Snake Handling Stick",
     price: 0,
@@ -3750,6 +3750,7 @@ const PRODUCTS = [
     activeIngredient: "Spades",
     price: 0,
     variants: [
+      { size: 'SPKW-2000', price: 0, image: 'images/falcon_spade_spkw_2000.jpg' },
       { size: 'SPKW-25', price: 0, image: 'images/falcon_spade_spkw_25.jpg' },
       { size: 'SPKW-50', price: 0, image: 'images/falcon_spade_spkw_50.jpg' },
       { size: 'SPKW-1000', price: 0, image: 'images/falcon_spade_spkw_1000.jpg' }
@@ -3758,7 +3759,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Heavy-duty agricultural spades designed for digging unprepared ground and landscaping.",
-    image: "images/falcon_spade_spkw_25.jpg"
+    image: "images/falcon_spade_spkw_2000.jpg"
   },
   {
     id: 297,
@@ -3915,6 +3916,14 @@ const PRODUCTS = [
    STATE VARIABLES
    ───────────────────────────────────────────────────────────────────────── */
 let cart = [];
+try {
+  const storedCart = localStorage.getItem("harith_cart");
+  if (storedCart) {
+    cart = JSON.parse(storedCart);
+  }
+} catch (e) {
+  console.error("Error loading cart:", e);
+}
 let activeCategory = 'all';     // Filter by brand link or general category
 let activeTab = 'all';          // Tab: all, featured, new, offers
 let searchQuery = '';
@@ -4028,8 +4037,9 @@ function populateFilterOptions() {
     const chemsterBrand = uniqueBrands.find(b => b.toLowerCase().includes("chemster"));
     const hilBrand = uniqueBrands.find(b => b.toLowerCase() === "hil");
     const rodexitBrand = uniqueBrands.find(b => b.toLowerCase() === "rodexit");
+    const trapsBrand = uniqueBrands.find(b => b.toLowerCase().includes("traps"));
 
-    uniqueBrands = uniqueBrands.filter(b => b !== envuBrand && b !== fmcBrand && b !== syngentaBrand && b !== heranbaBrand && b !== chemsterBrand && b !== hilBrand && b !== rodexitBrand);
+    uniqueBrands = uniqueBrands.filter(b => b !== envuBrand && b !== fmcBrand && b !== syngentaBrand && b !== heranbaBrand && b !== chemsterBrand && b !== hilBrand && b !== rodexitBrand && b !== trapsBrand);
     
     const topBrands = [];
     if (envuBrand) topBrands.push(envuBrand);
@@ -4051,7 +4061,10 @@ function populateFilterOptions() {
   if (typeContainer) {
     const uniqueTypes = [...new Set(PRODUCTS.map(p => p.category))];
     typeContainer.innerHTML = uniqueTypes.map(type => {
-      const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
+      let typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
+      if (type.toLowerCase() === 'traps & equipment') {
+        typeLabel = 'Traps & Equipment';
+      }
       return `
         <label class="filter-label">
           <input type="checkbox" value="${type}" class="filter-checkbox category-cb">
@@ -4818,8 +4831,10 @@ function renderCatalog() {
     });
   } else if (sortOption === 'name-asc') {
     filtered.sort((a, b) => {
-      const precedence = compareEnvuPremise(a, b);
-      if (precedence !== null) return precedence;
+      const aEnvu = isEnvu(a);
+      const bEnvu = isEnvu(b);
+      if (aEnvu && !bEnvu) return -1;
+      if (!aEnvu && bEnvu) return 1;
       return a.name.localeCompare(b.name);
     });
   } else {
@@ -4842,6 +4857,14 @@ function renderCatalog() {
   // Draw products
   if (filtered.length === 0) {
     grid.style.display = "none";
+    const catalogEl = document.getElementById("catalog");
+    if (catalogEl) {
+      const rect = catalogEl.getBoundingClientRect();
+      if (rect.top < -50) {
+        catalogEl.scrollIntoView({ behavior: "auto" });
+      }
+    }
+    grid.style.minHeight = "";
     if (emptyBox) emptyBox.style.display = "block";
     return;
   }
@@ -4915,6 +4938,14 @@ function renderCatalog() {
       </article>
     `;
   }).join('');
+
+  const catalogEl = document.getElementById("catalog");
+  if (catalogEl) {
+    const rect = catalogEl.getBoundingClientRect();
+    if (rect.top < -50) {
+      catalogEl.scrollIntoView({ behavior: "auto" });
+    }
+  }
 
   // Release the height pin — new cards are now rendered and hold the height naturally.
   grid.style.minHeight = "";
@@ -5191,8 +5222,17 @@ function addToCart(productId, variantIndex = null) {
   }
 
   updateCartBadge();
+  saveCartToLocalStorage();
   const displayName = chosenVariant ? `${product.name} (${chosenVariant.size})` : product.name;
   showToast(`Added ${displayName.split('(')[0].trim()} to cart`, "success");
+}
+
+function saveCartToLocalStorage() {
+  try {
+    localStorage.setItem("harith_cart", JSON.stringify(cart));
+  } catch (e) {
+    console.error("Error saving cart to localStorage:", e);
+  }
 }
 
 function updateCartBadge() {
@@ -5219,6 +5259,7 @@ function changeCartItemQty(productId, size, change) {
   }
 
   updateCartBadge();
+  saveCartToLocalStorage();
   renderCartDrawerContents();
 }
 
@@ -5228,6 +5269,7 @@ function removeCartItem(productId, size) {
       ((!size && !i.selectedVariant) || (size && i.selectedVariant && i.selectedVariant.size === size)))
   );
   updateCartBadge();
+  saveCartToLocalStorage();
   renderCartDrawerContents();
   showToast("Removed item from cart", "info");
 }

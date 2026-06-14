@@ -5472,11 +5472,22 @@ body.loading-active {
   border-top: 1px solid var(--border-color);
   overflow-x: auto;
   white-space: nowrap;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-color) transparent;
 }
 
 .harith-chat-suggestions::-webkit-scrollbar {
-  display: none;
+  height: 4px;
+}
+.harith-chat-suggestions::-webkit-scrollbar-track {
+  background: transparent;
+}
+.harith-chat-suggestions::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 10px;
+}
+.harith-chat-suggestions::-webkit-scrollbar-thumb:hover {
+  background: var(--text-light);
 }
 
 .harith-chat-chip {
