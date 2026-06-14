@@ -1769,6 +1769,15 @@ img.logo-badge {
   align-items: center;
   justify-content: center;
   transition: all var(--transition-fast);
+  color: rgba(255, 255, 255, 0.7);
+}
+.social-links a svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  transition: stroke var(--transition-fast);
 }
 .social-links a:hover {
   background-color: var(--accent);
@@ -4710,14 +4719,36 @@ body.loading-active {
   .mobile-filter-toggle.active .toggle-arrow {
     transform: rotate(180deg);
   }
+  #sidebar-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 499;
+    backdrop-filter: blur(2px);
+  }
+  #sidebar-backdrop.active {
+    display: block;
+  }
   .catalog-sidebar {
     display: none;
-    margin-bottom: 24px;
-    position: static;
-    box-shadow: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: min(320px, 90vw);
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 500;
+    margin-bottom: 0;
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.18);
+    padding-top: 72px;
+    transform: translateX(-100%);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .catalog-sidebar.active {
     display: flex;
+    transform: translateX(0);
   }
   .section-header {
     flex-direction: column;

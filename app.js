@@ -574,7 +574,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Temprid insecticide by Envu. High quality formulation containing Imidacloprid 21% + Beta-cyfluthrin 10.5% SC designed for structural pest control operations.",
-    image: "images/temprid.jpg"
+    image: "images/temprid_sc_500ml.png"
   },
   {
     id: 45,
@@ -588,7 +588,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Responsar insecticide by Envu. High quality formulation containing Beta-cyfluthrin 2.45% SC designed for structural pest control operations.",
-    image: "images/responsar.jpg"
+    image: "images/responsar_1l.png"
   },
   {
     id: 46,
@@ -613,14 +613,14 @@ const PRODUCTS = [
     activeIngredient: "Cyfluthrin 5% EW",
     price: 550,
     variants: [
-      { size: "100ml", price: 550 },
-      { size: "1L", price: 2600 }
+      { size: "100ml", price: 550, image: "images/solfac_ew050_100ml.png" },
+      { size: "1L", price: 2600, image: "images/solfac_ew050_1l.png" }
     ],
     featured: false,
     newArrival: false,
     offer: false,
     description: "Professional-grade Solfac EW050 insecticide by Envu. High quality formulation containing Cyfluthrin 5% EW designed for structural pest control operations.",
-    image: "images/solfac_ew.jpg"
+    image: "images/solfac_ew050_100ml.png"
   },
   {
     id: 49,
@@ -634,7 +634,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Maxforce Forte Gel insecticide by Envu. High quality formulation containing Fipronil 0.05% Gel designed for structural pest control operations.",
-    image: "images/maxforce_forte.jpg"
+    image: "images/maxforce_forte_gel_120g.png"
   },
   {
     id: 50,
@@ -648,7 +648,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Maxforce Fusion Gel insecticide by Envu. High quality formulation containing Imidacloprid 2.15% Gel designed for structural pest control operations.",
-    image: "images/maxforce_fusion.jpg"
+    image: "images/maxforce_fusion_gel_120g.png"
   },
   {
     id: 51,
@@ -662,7 +662,7 @@ const PRODUCTS = [
     newArrival: true,
     offer: false,
     description: "Professional-grade Maxforce Quantum Gel insecticide by Envu. High quality formulation containing Imidacloprid 0.03% Gel designed for structural pest control operations.",
-    image: "images/maxforce_quantum.jpg"
+    image: "images/maxforce_quantum_gel_120g.png"
   },
   {
     id: 52,
@@ -676,7 +676,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Quick Bait insecticide by Envu. High quality formulation containing Imidacloprid 0.5% + Muscalure designed for structural pest control operations.",
-    image: "images/quick_bayt.jpg"
+    image: "images/quick_bayt_2kg.png"
   },
   {
     id: 53,
@@ -687,15 +687,15 @@ const PRODUCTS = [
     activeIngredient: "Imidacloprid 30.5% SC",
     price: 950,
     variants: [
-      { size: "250ml", price: 950 },
-      { size: "1L", price: 4200 },
-      { size: "5L", price: 19500 }
+      { size: "250ml", price: 950, image: "images/premise_sc_250_ml.png" },
+      { size: "1L", price: 4200, image: "images/premise_sc_1l.png" },
+      { size: "5L", price: 19500, image: "images/premise_sc_5l.png" }
     ],
     featured: false,
     newArrival: false,
     offer: false,
     description: "Professional-grade Premise SC insecticide by Envu. High quality formulation containing Imidacloprid 30.5% SC designed for structural pest control operations.",
-    image: "images/premise.jpg"
+    image: "images/premise_sc_250_ml.png"
   },
   {
     id: 56,
@@ -706,15 +706,15 @@ const PRODUCTS = [
     activeIngredient: "Fipronil 2.92% EC",
     price: 1250,
     variants: [
-      { size: "150ml", price: 1250 },
-      { size: "500ml", price: 2800 },
-      { size: "5L", price: 24000 }
+      { size: "150ml", price: 1250, image: "images/agenda_25ec_150ml.png" },
+      { size: "500ml", price: 2800, image: "images/agenda_25ec_500ml.png" },
+      { size: "5L", price: 24000, image: "images/agenda_25ec_5l.png" }
     ],
     featured: false,
     newArrival: false,
     offer: false,
     description: "Professional-grade Agenda EC insecticide by Envu. High quality formulation containing Fipronil 2.92% EC designed for structural pest control operations.",
-    image: "images/agenda.jpg"
+    image: "images/agenda_25ec_150ml.png"
   },
   {
     id: 59,
@@ -742,7 +742,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Racumin Sure insecticide by Envu. High quality formulation containing Coumatetralyl 0.0375% Bait designed for structural pest control operations.",
-    image: "images/racumin_sure.jpg"
+    image: "images/racumin_sure_100g.png"
   },
   {
     id: 61,
@@ -826,7 +826,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Professional-grade Solfac WP10 insecticide by Envu. High quality formulation containing Cyfluthrin 10% WP designed for structural pest control operations.",
-    image: "images/solfac_wp.jpg"
+    image: "images/solfac_wp10_5kg.png"
   },
   {
     id: 67,
@@ -840,7 +840,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Acrenzel WDG 6g containing Acetamiprid 20% WDG for commercial pest management.",
-    image: "images/acrenzel_wdg.webp"
+    image: "images/acrenzel_wdg_6g.png"
   },
   {
     id: 68,
@@ -854,7 +854,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Acugard 10EC 500ml containing Alphacypermethrin 10% EC for commercial pest management.",
-    image: "images/acugard_10ec.jpg"
+    image: "images/acugard_10ec_500ml.png"
   },
   {
     id: 69,
@@ -865,14 +865,14 @@ const PRODUCTS = [
     activeIngredient: "Lambda-cyhalothrin 2.43% CS",
     price: 420,
     variants: [
-      { size: "100ml", price: 420 },
-      { size: "1L", price: 3200 }
+      { size: "100ml", price: 420, image: "images/demand_2_5cs_100ml.png" },
+      { size: "1L", price: 3200, image: "images/demand_2_5cs_1ltr.png" }
     ],
     featured: false,
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Demand 2.5CS containing Lambda-cyhalothrin 2.43% CS for commercial pest management.",
-    image: "images/demand_2_5cs.jpg"
+    image: "images/demand_2_5cs_100ml.png"
   },
   {
     id: 71,
@@ -883,14 +883,14 @@ const PRODUCTS = [
     activeIngredient: "Esfenvalerate 3% EC",
     price: 480,
     variants: [
-      { size: "1L", price: 480 },
-      { size: "5L", price: 2150 }
+      { size: "1L", price: 480, image: "images/exsectra_3ec_1l.png" },
+      { size: "5L", price: 2150, image: "images/exsectra_3ec_5l.png" }
     ],
     featured: false,
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Exsectra 3EC containing Esfenvalerate 3% EC for commercial pest management.",
-    image: "images/exsectra_3ec.jpg"
+    image: "images/exsectra_3ec_1l.png"
   },
   {
     id: 73,
@@ -901,14 +901,14 @@ const PRODUCTS = [
     activeIngredient: "Lambda-cyhalothrin 10% CS",
     price: 950,
     variants: [
-      { size: "100ml", price: 950 },
-      { size: "500ml", price: 3800 }
+      { size: "100ml", price: 950, image: "images/icon_10cs_100ml.png" },
+      { size: "500ml", price: 3800, image: "images/icon_10cs_500ml.png" }
     ],
     featured: true,
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Icon 10CS containing Lambda-cyhalothrin 10% CS for commercial pest management.",
-    image: "images/icon_10cs.jpg"
+    image: "images/icon_10cs_100ml.png"
   },
   {
     id: 75,
@@ -919,14 +919,14 @@ const PRODUCTS = [
     activeIngredient: "Lambda-cyhalothrin 10% WP",
     price: 620,
     variants: [
-      { size: "62.5g", price: 620 },
-      { size: "125g", price: 1100 }
+      { size: "62.5g", price: 620, image: "images/icon_10wp_62.5g.png" },
+      { size: "125g", price: 1100, image: "images/icon_10_wp_125g.png" }
     ],
     featured: false,
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Icon 10WP containing Lambda-cyhalothrin 10% WP for commercial pest management.",
-    image: "images/icon_10wp.jpg"
+    image: "images/icon_10wp_62.5g.png"
   },
   {
     id: 77,
@@ -937,14 +937,14 @@ const PRODUCTS = [
     activeIngredient: "Brodifacoum 0.005% Bait",
     price: 240,
     variants: [
-      { size: "100g", price: 240 },
-      { size: "250g", price: 520 }
+      { size: "100g", price: 240, image: "images/klerat_waxblocks_100g.png" },
+      { size: "250g", price: 520, image: "images/klerat_waxblocks_250g.png" }
     ],
     featured: true,
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Klerat Waxblocks containing Brodifacoum 0.005% Bait for commercial pest management.",
-    image: "images/klerat_waxblocks.jpg"
+    image: "images/klerat_waxblocks_100g.png"
   },
   {
     id: 79,
@@ -955,15 +955,15 @@ const PRODUCTS = [
     activeIngredient: "Thiamethoxam 25% WG",
     price: 260,
     variants: [
-      { size: "250ml", price: 260 },
-      { size: "1L", price: 850 },
-      { size: "5L", price: 3900 }
+      { size: "250ml", price: 260, image: "images/zevictra_tc_250ml.png" },
+      { size: "1L", price: 850, image: "images/zevictra_tc_1l.png" },
+      { size: "5L", price: 3900, image: "images/zevictra_tc_5l.png" }
     ],
     featured: false,
     newArrival: false,
     offer: false,
     description: "Syngenta vector control and public health insecticide. High performance Zevictra TC containing Thiamethoxam 25% WG for commercial pest management.",
-    image: "images/zevictra_tc.jpg"
+    image: "images/zevictra_tc_250ml.png"
   },
   {
     id: 82,
@@ -1065,31 +1065,21 @@ const PRODUCTS = [
   },
   {
     id: 89,
-    name: "Heraban 1 Ltr",
+    name: "Heraban TC",
     brand: "HERANBA INDUSTRIES LIMITED",
     category: "chemicals",
     toxicity: "Yellow Label",
     activeIngredient: "Chlorpyriphos 20% EC",
     price: 290,
+    variants: [
+      { size: "1 Ltr", price: 290, image: "images/heraban_1l.png" },
+      { size: "20 Ltr", price: 5200, image: "images/heraban_tc_20l.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Heranba Industries pest control formulation. Reliable Heraban 1 Ltr with active ingredient Chlorpyriphos 20% EC for agricultural and urban pest control.",
+    description: "Heranba Industries pest control formulation. Reliable Heraban TC with active ingredient Chlorpyriphos 20% EC for agricultural and urban pest control.",
     image: "images/heraban_1l.png"
-  },
-  {
-    id: 90,
-    name: "Heraban TC 20 Ltr",
-    brand: "HERANBA INDUSTRIES LIMITED",
-    category: "chemicals",
-    toxicity: "Yellow Label",
-    activeIngredient: "Chlorpyriphos 20% EC",
-    price: 5200,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Heranba Industries pest control formulation. Reliable Heraban TC 20 Ltr with active ingredient Chlorpyriphos 20% EC for agricultural and urban pest control.",
-    image: "images/heraban_tc_20l.png"
   },
   {
     id: 91,
@@ -1121,73 +1111,40 @@ const PRODUCTS = [
   },
   {
     id: 93,
-    name: "Termifinn TC 1 Ltr (Bifenthrin)",
+    name: "Termifinn TC",
     brand: "HERANBA INDUSTRIES LIMITED",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Bifenthrin 2.5% EC",
     price: 680,
+    variants: [
+      { size: "1 Ltr", price: 680, image: "images/termifinn_tc_1l.png" },
+      { size: "5 Ltr", price: 2950, image: "images/termifinn_tc_5l.png" },
+      { size: "20 Ltr", price: 11500, image: "images/termifinn_tc_20l.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Heranba Industries pest control formulation. Reliable Termifinn TC 1 Ltr (Bifenthrin) with active ingredient Bifenthrin 2.5% EC for agricultural and urban pest control.",
+    description: "Heranba Industries pest control formulation. Reliable Termifinn TC with active ingredient Bifenthrin 2.5% EC for agricultural and urban pest control.",
     image: "images/termifinn_tc_1l.png"
   },
   {
-    id: 94,
-    name: "Termifinn TC 5 Ltr (Bifenthrin)",
-    brand: "HERANBA INDUSTRIES LIMITED",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Bifenthrin 2.5% EC",
-    price: 2950,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Heranba Industries pest control formulation. Reliable Termifinn TC 5 Ltr (Bifenthrin) with active ingredient Bifenthrin 2.5% EC for agricultural and urban pest control.",
-    image: "images/termifinn_tc_5l.png"
-  },
-  {
-    id: 95,
-    name: "Termifinn TC - 20 Ltr",
-    brand: "HERANBA INDUSTRIES LIMITED",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Bifenthrin 2.5% EC",
-    price: 11500,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Heranba Industries pest control formulation. Reliable Termifinn TC - 20 Ltr with active ingredient Bifenthrin 2.5% EC for agricultural and urban pest control.",
-    image: "images/termifinn_tc_20l.png"
-  },
-  {
     id: 96,
-    name: "Prompt 100gm",
+    name: "Prompt",
     brand: "HERANBA INDUSTRIES LIMITED",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Propoxur 2% Carbamat Bait",
     price: 150,
+    variants: [
+      { size: "100gm", price: 150, image: "images/prompt_100g.png" },
+      { size: "1kg", price: 950, image: "images/prompt_1kg.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Heranba Industries pest control formulation. Reliable Prompt 100gm with active ingredient Propoxur 2% Carbamat Bait for agricultural and urban pest control.",
+    description: "Heranba Industries pest control formulation. Reliable Prompt with active ingredient Propoxur 2% Carbamat Bait for agricultural and urban pest control.",
     image: "images/prompt_100g.png"
-  },
-  {
-    id: 97,
-    name: "Prompt 1kg",
-    brand: "HERANBA INDUSTRIES LIMITED",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Propoxur 2% Carbamat Bait",
-    price: 950,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Heranba Industries pest control formulation. Reliable Prompt 1kg with active ingredient Propoxur 2% Carbamat Bait for agricultural and urban pest control.",
-    image: "images/prompt_1kg.png"
   },
   {
     id: 98,
@@ -1247,31 +1204,21 @@ const PRODUCTS = [
   },
   {
     id: 102,
-    name: "Hilban 20 EC - 1 Ltr -",
+    name: "Hilban 20 EC",
     brand: "HIL",
     category: "chemicals",
     toxicity: "Yellow Label",
     activeIngredient: "Chlorpyriphos 20% EC",
     price: 280,
+    variants: [
+      { size: "1 Ltr", price: 280, image: "images/hilban_20_ec_1_ltr.png" },
+      { size: "5 Ltr", price: 1350, image: "images/hilban_20_ec_5_ltr.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Hindustan Insecticides Limited (HIL) product. Effective Hilban 20 EC - 1 Ltr with active Chlorpyriphos 20% EC for plant health and insect vector control.",
+    description: "Hindustan Insecticides Limited (HIL) product. Effective Hilban 20 EC with active Chlorpyriphos 20% EC for plant health and insect vector control.",
     image: "images/hilban_20_ec_1_ltr.png"
-  },
-  {
-    id: 103,
-    name: "Hilban 20 EC - 5 Ltr",
-    brand: "HIL",
-    category: "chemicals",
-    toxicity: "Yellow Label",
-    activeIngredient: "Chlorpyriphos 20% EC",
-    price: 1350,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Hindustan Insecticides Limited (HIL) product. Effective Hilban 20 EC - 5 Ltr with active Chlorpyriphos 20% EC for plant health and insect vector control.",
-    image: "images/hilban_20_ec_5_ltr.png"
   },
   {
     id: 104,
@@ -1429,45 +1376,39 @@ const PRODUCTS = [
   },
   {
     id: 116,
-    name: "FG-Flycobait - 1 Kg",
+    name: "FG Flycobait",
     brand: "A SAJ AGRICARE PVT LTD",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Imidacloprid 0.5% Bait + Muscalure",
     price: 980,
+    variants: [
+      { size: "1 Kg", price: 980, image: "images/fg_flycobait_1_kg.png" },
+      { size: "5 Kg Tin", price: 4500, image: "images/fg_flycobait_5_kg_tin.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "A Saj Agricare Pvt Ltd public health insecticide. Quality FG-Flycobait - 1 Kg formulation featuring Imidacloprid 0.5% Bait + Muscalure for pest controllers.",
+    description: "A Saj Agricare Pvt Ltd public health insecticide. Quality FG Flycobait formulation featuring Imidacloprid 0.5% Bait + Muscalure for pest controllers.",
     image: "images/fg_flycobait_1_kg.png"
   },
   {
-    id: 117,
-    name: "FG Flycobait - 5 Kg Tin",
-    brand: "A SAJ AGRICARE PVT LTD",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Imidacloprid 0.5% Bait + Muscalure",
-    price: 4500,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "A Saj Agricare Pvt Ltd public health insecticide. Quality FG Flycobait - 5 Kg Tin formulation featuring Imidacloprid 0.5% Bait + Muscalure for pest controllers.",
-    image: "images/fg_flycobait_5_kg_tin.png"
-  },
-  {
     id: 118,
-    name: "FLYCO 20% EC (Propoxur) - 5 Ltrs",
+    name: "FLYCO 20% EC (Propoxur)",
     brand: "A SAJ AGRICARE PVT LTD",
     category: "chemicals",
     toxicity: "Yellow Label",
     activeIngredient: "Propoxur 20% EC",
-    price: 1650,
+    price: 380,
+    variants: [
+      { size: "1 Ltr", price: 380, image: "images/flyco_20_ec_propoxur_1_ltrs.png" },
+      { size: "5 Ltr", price: 1650, image: "images/flyco_20_ec_propoxur_5_ltrs.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "A Saj Agricare Pvt Ltd public health insecticide. Quality FLYCO 20% EC (Propoxur) - 5 Ltrs formulation featuring Propoxur 20% EC for pest controllers.",
-    image: "images/flyco_20_ec_propoxur_5_ltrs.png"
+    description: "A Saj Agricare Pvt Ltd public health insecticide. Quality FLYCO 20% EC (Propoxur) formulation featuring Propoxur 20% EC for pest controllers.",
+    image: "images/flyco_20_ec_propoxur_1_ltrs.png"
   },
   {
     id: 119,
@@ -1611,30 +1552,20 @@ const PRODUCTS = [
   },
   {
     id: 129,
-    name: "Biflex 20 Ltr",
-    brand: "FMC",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Bifenthrin 8% SC",
-    price: 12500,
-    featured: true,
-    newArrival: false,
-    offer: false,
-    description: "FMC agricultural and structural pest control product. Premium Biflex 20 Ltr containing Bifenthrin 8% SC for reliable chemical barrier treatment.",
-    image: "images/biflex_tc_20l.png"
-  },
-  {
-    id: 130,
-    name: "Biflex 5 Ltr",
+    name: "Biflex",
     brand: "FMC",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Bifenthrin 8% SC",
     price: 3250,
+    variants: [
+      { size: "5 Ltr", price: 3250, image: "images/biflex_tc_5l.png" },
+      { size: "20 Ltr", price: 12500, image: "images/biflex_tc_20l.png" }
+    ],
     featured: true,
     newArrival: false,
     offer: false,
-    description: "FMC agricultural and structural pest control product. Premium Biflex 5 Ltr containing Bifenthrin 8% SC for reliable chemical barrier treatment.",
+    description: "FMC agricultural and structural pest control product. Premium Biflex containing Bifenthrin 8% SC for reliable chemical barrier treatment.",
     image: "images/biflex_tc_5l.png"
   },
   {
@@ -1695,101 +1626,58 @@ const PRODUCTS = [
   },
   {
     id: 135,
-    name: "Bug stop 250 Ml",
+    name: "Bug Stop",
     brand: "ULTIMA SEARCH",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Imiprothrin 0.07% + Cypermethrin 0.2%",
     price: 250,
+    variants: [
+      { size: "250 Ml", price: 250, image: "images/bug_stop_250ml.png" },
+      { size: "500 Ml", price: 450, image: "images/bug_stop_500ml.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Bug stop 250 Ml designed for home, warehouse, and institutional sanitization.",
+    description: "Ultima Search rodent control and hygiene solution. High palatability Bug Stop designed for home, warehouse, and institutional sanitization.",
     image: "images/bug_stop_250ml.png"
   },
   {
-    id: 136,
-    name: "Bug stop 500 Ml",
-    brand: "ULTIMA SEARCH",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Imiprothrin 0.07% + Cypermethrin 0.2%",
-    price: 450,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Bug stop 500 Ml designed for home, warehouse, and institutional sanitization.",
-    image: "images/bug_stop_500ml.png"
-  },
-  {
     id: 137,
-    name: "Canon Smoke - 125 GM",
-    brand: "ULTIMA SEARCH",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Cypermethrin 3% Smoke Generator",
-    price: 350,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Canon Smoke - 125 GM designed for home, warehouse, and institutional sanitization.",
-    image: "images/canon_smoke_125g.png"
-  },
-  {
-    id: 138,
-    name: "Canon Smoke 45 GM (3% Cypermethrin)",
+    name: "Canon Smoke",
     brand: "ULTIMA SEARCH",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Cypermethrin 3% Smoke Generator",
     price: 180,
+    variants: [
+      { size: "45 Gm", price: 180, image: "images/canon_smoke_45g.png" },
+      { size: "125 Gm", price: 350, image: "images/canon_smoke_125g.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Canon Smoke 45 GM (3% Cypermethrin) designed for home, warehouse, and institutional sanitization.",
+    description: "Ultima Search rodent control and hygiene solution. High palatability Canon Smoke designed for home, warehouse, and institutional sanitization.",
     image: "images/canon_smoke_45g.png"
   },
   {
     id: 139,
-    name: "Cytox DP (0.25% Cypermethrin) 1 Kg",
-    brand: "ULTIMA SEARCH",
-    category: "chemicals",
-    toxicity: "Green Label",
-    activeIngredient: "Cypermethrin 0.25% Dusting Powder",
-    price: 280,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Cytox DP (0.25% Cypermethrin) 1 Kg designed for home, warehouse, and institutional sanitization.",
-    image: "images/cytox_dp_1kg.png"
-  },
-  {
-    id: 140,
-    name: "Cytox DP (0.25% Cypermethrin) 200 Gm",
+    name: "Cytox DP (0.25% Cypermethrin)",
     brand: "ULTIMA SEARCH",
     category: "chemicals",
     toxicity: "Green Label",
     activeIngredient: "Cypermethrin 0.25% Dusting Powder",
     price: 90,
+    variants: [
+      { size: "200 Gm", price: 90, image: "images/cytox_dp_200g.png" },
+      { size: "500 Gm", price: 160, image: "images/cytox_dp_500g.png" },
+      { size: "1 Kg", price: 280, image: "images/cytox_dp_1kg.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Cytox DP (0.25% Cypermethrin) 200 Gm designed for home, warehouse, and institutional sanitization.",
+    description: "Ultima Search rodent control and hygiene solution. High palatability Cytox DP (0.25% Cypermethrin) designed for home, warehouse, and institutional sanitization.",
     image: "images/cytox_dp_200g.png"
-  },
-  {
-    id: 141,
-    name: "Cytox DP (0.25% Cypermethrin) 500 Gm",
-    brand: "ULTIMA SEARCH",
-    category: "chemicals",
-    toxicity: "Green Label",
-    activeIngredient: "Cypermethrin 0.25% Dusting Powder",
-    price: 160,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Cytox DP (0.25% Cypermethrin) 500 Gm designed for home, warehouse, and institutional sanitization.",
-    image: "images/cytox_dp_500g.png"
   },
   {
     id: 142,
@@ -1807,31 +1695,21 @@ const PRODUCTS = [
   },
   {
     id: 143,
-    name: "Kokron Bait - 10 Gm",
+    name: "Kokron Bait",
     brand: "ULTIMA SEARCH",
     category: "chemicals",
     toxicity: "Blue Label",
     activeIngredient: "Fipronil 0.05% Gel",
     price: 150,
+    variants: [
+      { size: "10 Gm", price: 150, image: "images/kokron_bait_10g.png" },
+      { size: "1 Kg", price: 950, image: "images/kokron_bait_1kg.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Kokron Bait - 10 Gm designed for home, warehouse, and institutional sanitization.",
+    description: "Ultima Search rodent control and hygiene solution. High palatability Kokron Bait designed for home, warehouse, and institutional sanitization.",
     image: "images/kokron_bait_10g.png"
-  },
-  {
-    id: 144,
-    name: "Kokron Bait - 1 Kg",
-    brand: "ULTIMA SEARCH",
-    category: "chemicals",
-    toxicity: "Blue Label",
-    activeIngredient: "Fipronil 0.05% Gel",
-    price: 950,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Kokron Bait - 1 Kg designed for home, warehouse, and institutional sanitization.",
-    image: "images/kokron_bait_1kg.png"
   },
   {
     id: 145,
@@ -2031,87 +1909,41 @@ const PRODUCTS = [
   },
   {
     id: 159,
-    name: "Ratol Granule (2% ZNP) 500 Gm",
-    brand: "ULTIMA SEARCH",
-    category: "chemicals",
-    toxicity: "Yellow Label",
-    activeIngredient: "Zinc Phosphide 2% Granules",
-    price: 450,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Ratol Granule (2% ZNP) 500 Gm designed for home, warehouse, and institutional sanitization.",
-    image: "images/ratol_granule_500g.png"
-  },
-  {
-    id: 160,
-    name: "Ratol Granule (2% ZNP) 50 Gm Buster",
+    name: "Ratol Granule (2% ZNP)",
     brand: "ULTIMA SEARCH",
     category: "chemicals",
     toxicity: "Yellow Label",
     activeIngredient: "Zinc Phosphide 2% Granules",
     price: 60,
+    variants: [
+      { size: "50 Gm", price: 60, image: "images/ratol_granule_50g.png" },
+      { size: "500 Gm", price: 450, image: "images/ratol_granule_500g.png" },
+      { size: "2 Kg (Bucket)", price: 1650, image: "images/ratol_granule_2kg.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Ratol Granule (2% ZNP) 50 Gm Buster designed for home, warehouse, and institutional sanitization.",
+    description: "Ultima Search rodent control and hygiene solution. High palatability Ratol Granule (2% ZNP) designed for home, warehouse, and institutional sanitization.",
     image: "images/ratol_granule_50g.png"
   },
   {
-    id: 161,
-    name: "Ratol Granule (2% ZNP) Sachet Pack 2 Kg (Bucket)",
-    brand: "ULTIMA SEARCH",
-    category: "chemicals",
-    toxicity: "Yellow Label",
-    activeIngredient: "Zinc Phosphide 2% Granules",
-    price: 1650,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Ratol Granule (2% ZNP) Sachet Pack 2 Kg (Bucket) designed for home, warehouse, and institutional sanitization.",
-    image: "images/ratol_granule_2kg.png"
-  },
-  {
     id: 162,
-    name: "Ratol Zin - 10 Gm",
+    name: "Ratol Zink",
     brand: "ULTIMA SEARCH",
     category: "chemicals",
     toxicity: "Yellow Label",
     activeIngredient: "Zinc Phosphide Technical",
     price: 40,
+    variants: [
+      { size: "10 Gm", price: 40, image: "images/ratol_zin_10g.png" },
+      { size: "100 Gm", price: 290, image: "images/ratol_zink_100g.png" },
+      { size: "500 Gm", price: 950, image: "images/ratol_zink_500g.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Ratol Zin - 10 Gm designed for home, warehouse, and institutional sanitization.",
+    description: "Ultima Search rodent control and hygiene solution. High palatability Ratol Zink designed for home, warehouse, and institutional sanitization.",
     image: "images/ratol_zin_10g.png"
-  },
-  {
-    id: 163,
-    name: "Ratol Zink - 100 Gm",
-    brand: "ULTIMA SEARCH",
-    category: "chemicals",
-    toxicity: "Yellow Label",
-    activeIngredient: "Zinc Phosphide Technical",
-    price: 290,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Ratol Zink - 100 Gm designed for home, warehouse, and institutional sanitization.",
-    image: "images/ratol_zink_100g.png"
-  },
-  {
-    id: 164,
-    name: "Ratol Zink - 500 Gm",
-    brand: "ULTIMA SEARCH",
-    category: "chemicals",
-    toxicity: "Yellow Label",
-    activeIngredient: "Zinc Phosphide Technical",
-    price: 950,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Ultima Search rodent control and hygiene solution. High palatability Ratol Zink - 500 Gm designed for home, warehouse, and institutional sanitization.",
-    image: "images/ratol_zink_500g.png"
   },
   {
     id: 165,
@@ -2237,7 +2069,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: false,
     description: "Robust 5 Ltr compression sprayer with adjustable nozzle and heavy-duty tank construction.",
-    image: "images/fujiaka_5_ltr_ws5_sprayer.jpg"
+    image: "images/fujiaka_5_litre_sprayer.png"
   },
   {
     id: 174,
@@ -2297,31 +2129,21 @@ const PRODUCTS = [
   },
   {
     id: 178,
-    name: "3 Mt Telescopic Lance",
+    name: "Telescopic Lance",
     brand: "FOGGERS INDIA",
     category: "equipment",
     toxicity: "Equipment",
     activeIngredient: "Sprayer Accessory",
     price: 0,
+    variants: [
+      { size: "3 Mt", price: 0, image: "images/3_mt_telescopic_lance.jpg" },
+      { size: "5 Mt", price: 0, image: "images/5_mt_telescopic_lance.jpg" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "3 Meter extendable telescopic lance for reaching heights during spraying operations.",
+    description: "Extendable telescopic lance for high-reach spraying and structural pest control.",
     image: "images/3_mt_telescopic_lance.jpg"
-  },
-  {
-    id: 179,
-    name: "5 MT Telescopic Lance",
-    brand: "FOGGERS INDIA",
-    category: "equipment",
-    toxicity: "Equipment",
-    activeIngredient: "Sprayer Accessory",
-    price: 0,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "5 Meter extendable telescopic lance for high-reach spraying and structural pest control.",
-    image: "images/5_mt_telescopic_lance.jpg"
   },
   {
     id: 180,
@@ -2549,12 +2371,16 @@ const PRODUCTS = [
   },
   {
     id: 196,
-    name: "Master - Chloropyriphos 20%EC - 1ltr",
+    name: "Master - Chloropyriphos 20% EC",
     brand: "CHEMSTER",
     category: "chemicals",
     toxicity: "Yellow Label",
     activeIngredient: "Chlorpyriphos 20% EC",
     price: 320,
+    variants: [
+      { size: "1 Ltr", price: 320, image: "images/master_chloropyriphos_20_ec_1ltr.jpg" },
+      { size: "20 Ltr", price: 5800, image: "images/master_chloropyriphos_20_ec_20ltr.jpg" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
@@ -2562,60 +2388,23 @@ const PRODUCTS = [
     image: "images/master_chloropyriphos_20_ec_1ltr.jpg"
   },
   {
-    id: 197,
-    name: "Master - Chloropyriphos 20% EC - 20ltr",
-    brand: "CHEMSTER",
-    category: "chemicals",
-    toxicity: "Yellow Label",
-    activeIngredient: "Chlorpyriphos 20% EC",
-    price: 5800,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Bulk commercial packing of Chemster Chlorpyriphos 20% EC for large-scale termiticide treatments.",
-    image: "images/master_chloropyriphos_20_ec_20ltr.jpg"
-  },
-  {
     id: 198,
-    name: "Master Thrin (Bifenthrin 2.5% EC) 1 Lt",
+    name: "Master Thrin (Bifenthrin 2.5% EC)",
     brand: "CHEMSTER",
     category: "chemicals",
     toxicity: "Yellow Label",
     activeIngredient: "Bifenthrin 2.5% EC",
     price: 550,
+    variants: [
+      { size: "1 Ltr", price: 550, image: "images/master_thrin_bifenthrin_2_5_ec_1_lt.jpg" },
+      { size: "5 Ltr", price: 2600, image: "images/master_thrin_bifenthrin_2_5_ec_5_ltr.jpg" },
+      { size: "20 Ltr", price: 9800, image: "images/master_thrin_bifenthrin_2_5_ec_20_ltr.jpg" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
     description: "Highly effective pyrethroid insecticide containing Bifenthrin 2.5% EC for termiticide barrier treatments.",
     image: "images/master_thrin_bifenthrin_2_5_ec_1_lt.jpg"
-  },
-  {
-    id: 199,
-    name: "Master Thrin (Bifenthrin 2.5% EC) 20 Ltr",
-    brand: "CHEMSTER",
-    category: "chemicals",
-    toxicity: "Yellow Label",
-    activeIngredient: "Bifenthrin 2.5% EC",
-    price: 9800,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Bulk commercial packaging of Chemster Bifenthrin 2.5% EC for professional pest control firms.",
-    image: "images/master_thrin_bifenthrin_2_5_ec_20_ltr.jpg"
-  },
-  {
-    id: 200,
-    name: "Master Thrin (Bifenthrin 2.5% EC) 5 Lt",
-    brand: "CHEMSTER",
-    category: "chemicals",
-    toxicity: "Yellow Label",
-    activeIngredient: "Bifenthrin 2.5% EC",
-    price: 2600,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Medium packaging of Chemster Bifenthrin 2.5% EC for vector control.",
-    image: "images/master_thrin_bifenthrin_2_5_ec_5_ltr.jpg"
   },
   {
     id: 201,
@@ -2647,31 +2436,21 @@ const PRODUCTS = [
   },
   {
     id: 203,
-    name: "Mini Master 2 - ULV 2 Ltr",
+    name: "Mini Master 2 - ULV",
     brand: "CHEMSTER",
     category: "equipment",
     toxicity: "Equipment",
     activeIngredient: "ULV Fogging Machine",
     price: 0,
+    variants: [
+      { size: "2 Ltr", price: 0, image: "images/mini_master_2_ulv_2_ltr.jpg" },
+      { size: "5 Ltr", price: 0, image: "images/mini_master_2_ulv_5_ltr.jpg" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Compact 2 Ltr portable ULV cold fogger for sanitizing residences and small offices.",
+    description: "Compact portable ULV cold fogger for sanitizing residences and commercial spaces.",
     image: "images/mini_master_2_ulv_2_ltr.jpg"
-  },
-  {
-    id: 204,
-    name: "Mini Master - 5 Ltr",
-    brand: "CHEMSTER",
-    category: "equipment",
-    toxicity: "Equipment",
-    activeIngredient: "ULV Fogging Machine",
-    price: 0,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "5 Ltr electric ULV fogging sprayer with flow-rate control.",
-    image: "images/mini_master_2_ulv_5_ltr.jpg"
   },
   {
     id: 205,
@@ -2969,30 +2748,39 @@ const PRODUCTS = [
   },
   {
     id: 229,
-    name: "Aspee 3.5 Lit Sprayer - MT36/VMND/SS",
+    name: "Aspee Stainless Steel Sprayer",
     brand: "ASPEE",
     category: "equipment",
     toxicity: "Equipment",
     activeIngredient: "Stainless Steel Sprayer",
     price: 0,
+    variants: [
+      { size: "3.5 Ltr", price: 0, image: "images/aspee_3_5_lit_sprayer_mt36_vmnd_ss.jpg" },
+      { size: "6 Ltr", price: 0, image: "images/aspee_6ltr_sprayer_ss.jpg" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Premium 3.5-liter stainless steel compression sprayer featuring high durability and chemical resistance.",
+    description: "Premium stainless steel tank compression sprayer featuring high durability and chemical resistance.",
     image: "images/aspee_3_5_lit_sprayer_mt36_vmnd_ss.jpg"
   },
   {
     id: 230,
-    name: "Aspee 3.5 Lt Sprayer - Brass",
+    name: "Aspee Brass Sprayer",
     brand: "ASPEE",
     category: "equipment",
     toxicity: "Equipment",
     activeIngredient: "Brass Sprayer",
     price: 0,
+    variants: [
+      { size: "3.5 Ltr", price: 0, image: "images/aspee_3_5_lt_sprayer_brass.png" },
+      { size: "6 Ltr", price: 0, image: "images/aspee_6_ltr_brass_sprayer.png" },
+      { size: "9 Ltr", price: 0, image: "images/aspee_9lt_brass_sprayer.png" }
+    ],
     featured: false,
     newArrival: false,
     offer: false,
-    description: "Premium 3.5-liter brass tank compression sprayer built for commercial pest control and agricultural operations.",
+    description: "Heavy-duty brass tank compression sprayer built for commercial pest control and agricultural operations.",
     image: "images/aspee_3_5_lt_sprayer_brass.png"
   },
   {
@@ -3008,48 +2796,6 @@ const PRODUCTS = [
     offer: false,
     description: "Advanced 5-liter battery sprayer equipped with a lightweight lithium battery for consistent high-pressure spraying.",
     image: "images/aspee_5_ltr_with_lithium_battery.png"
-  },
-  {
-    id: 232,
-    name: "Aspee 6 Ltr Brass Sprayer",
-    brand: "ASPEE",
-    category: "equipment",
-    toxicity: "Equipment",
-    activeIngredient: "Brass Sprayer",
-    price: 0,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Heavy-duty 6-liter brass tank compression sprayer, offering professional performance and exceptional longevity.",
-    image: "images/aspee_6_ltr_brass_sprayer.png"
-  },
-  {
-    id: 233,
-    name: "Aspee 6Ltr Sprayer - SS",
-    brand: "ASPEE",
-    category: "equipment",
-    toxicity: "Equipment",
-    activeIngredient: "Stainless Steel Sprayer",
-    price: 0,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Professional 6-liter stainless steel tank compression sprayer with high corrosion resistance.",
-    image: "images/aspee_6ltr_sprayer_ss.jpg"
-  },
-  {
-    id: 234,
-    name: "Aspee 9lt Brass Sprayer",
-    brand: "ASPEE",
-    category: "equipment",
-    toxicity: "Equipment",
-    activeIngredient: "Brass Sprayer",
-    price: 0,
-    featured: false,
-    newArrival: false,
-    offer: false,
-    description: "Large-capacity 9-liter brass compression sprayer designed for heavy-duty pest control and disinfection tasks.",
-    image: "images/aspee_9lt_brass_sprayer.png"
   },
   {
     id: 235,
@@ -3527,7 +3273,7 @@ const PRODUCTS = [
     newArrival: false,
     offer: true,
     description: "HiCare Buzzstrike electric mosquito racquet with high-voltage grid. Instant knock-down of flying insects with rechargeable battery and safety mesh guard.",
-    image: "images/pci_mosquito_bat.webp"
+    image: "images/pci_mosquito_bat.png"
   },
   {
     id: 266,
@@ -3547,8 +3293,8 @@ const PRODUCTS = [
     id: 267,
     name: "PCI - Trubble Gum Eco Pad (Small)",
     brand: "PCI",
-    category: "equipment",
-    toxicity: "Equipment",
+    category: "chemicals",
+    toxicity: "Green Label",
     activeIngredient: "Non-Toxic Glue Pad",
     price: 0,
     featured: false,
@@ -3561,8 +3307,8 @@ const PRODUCTS = [
     id: 268,
     name: "PCI - Trubble Gum Regular (Large)",
     brand: "PCI",
-    category: "equipment",
-    toxicity: "Equipment",
+    category: "chemicals",
+    toxicity: "Green Label",
     activeIngredient: "Non-Toxic Glue Board",
     price: 0,
     featured: false,
@@ -3575,8 +3321,8 @@ const PRODUCTS = [
     id: 269,
     name: "Plain Eco Glue Trap - PCI Small",
     brand: "PCI",
-    category: "equipment",
-    toxicity: "Equipment",
+    category: "chemicals",
+    toxicity: "Green Label",
     activeIngredient: "Eco Glue Trap",
     price: 0,
     featured: false,
@@ -3589,8 +3335,8 @@ const PRODUCTS = [
     id: 270,
     name: "Plain Regular Glue Board - PCI Large",
     brand: "PCI",
-    category: "equipment",
-    toxicity: "Equipment",
+    category: "chemicals",
+    toxicity: "Green Label",
     activeIngredient: "Regular Glue Board",
     price: 0,
     featured: false,
@@ -3662,6 +3408,487 @@ const PRODUCTS = [
     offer: false,
     description: "Versatile 3-in-1 plastic rodent bait station accommodating wax blocks, liquid bait, and snap traps. Tamper-resistant design with lockable lid for safe public placement.",
     image: "images/pci_three_in_one_rodent_bait_station.webp"
+  },
+  {
+    id: 278,
+    name: "Mosclean IG1 Insect Trap for Outdoor",
+    brand: "MOSCLEAN",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Outdoor Insect Light Trap",
+    price: 0,
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "High-efficiency outdoor insect light trap designed to safely capture mosquitoes, flies, and other flying pests in gardens, lawns, and outdoor spaces.",
+    image: "images/mosclean_ig1_insect_trap_for_outdoor.png"
+  },
+  {
+    id: 279,
+    name: "MosClean Mosquito Trap",
+    brand: "MOSCLEAN",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Indoor Mosquito Trap",
+    price: 0,
+    variants: [
+      { size: "Black", price: 0, image: "images/mosclean_black_mosquito_trap.png" },
+      { size: "White (IH2 Model)", price: 0, image: "images/mosclean_white_mosquito_trap_ih2_model.png" }
+    ],
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "Advanced Violeds UV LED mosquito trap featuring a powerful vacuum suction fan to silently attract and capture mosquitoes indoors without chemicals.",
+    image: "images/mosclean_black_mosquito_trap.png"
+  },
+  {
+    id: 280,
+    name: "RodeXit Rodent Exclusion Strip",
+    brand: "RODEXIT",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Rodent Proofing Exclusion Barrier",
+    price: 0,
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "RodeXit rodent proofing strip made of high-quality EPDM rubber with embedded stainless steel wires. Extremely durable barrier to prevent rats and mice from entering buildings under doors and through gaps.",
+    image: "images/rodexit.png"
+  },
+  {
+    id: 281,
+    name: "AutoLock Door Mouse Trap",
+    brand: "TRAPS & EQUIPMENT",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Mouse Trap",
+    price: 0,
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "Automatic locking door mouse trap designed for quick and humane capture of mice. Safe for home use and features a highly reliable trigger mechanism.",
+    image: "images/autolock_door_mouse_trap.png"
+  },
+  {
+    id: 282,
+    name: "Bandicoot Rat Trap",
+    brand: "TRAPS & EQUIPMENT",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Heavy Duty Rat Trap",
+    price: 0,
+    variants: [
+      { size: "15 Inch", price: 0, image: "images/bandicoot_rat_trap_15_inch.png" },
+      { size: "18 Inch", price: 0, image: "images/bandicoot_rat_trap_18_inch.png" },
+      { size: "22 Inch", price: 0, image: "images/bandicoot_rat_trap_22_inch.png" }
+    ],
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "Heavy-duty wire mesh bandicoot rat trap designed for capturing large rodents. Available in multiple lengths for different sizes of pests.",
+    image: "images/bandicoot_rat_trap_15_inch.png"
+  },
+  {
+    id: 283,
+    name: "Plastic Rodent Bait Station",
+    brand: "TRAPS & EQUIPMENT",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Rodent Bait Station",
+    price: 0,
+    variants: [
+      { size: "Standard", price: 0, image: "images/plastic_rodent_bait_station.png" },
+      { size: "Black", price: 0, image: "images/rodent_bait_station_black_colour.png" },
+      { size: "Grey", price: 0, image: "images/rodent_bait_station_grey_colour.png" }
+    ],
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "Tamper-resistant plastic rodent bait station for safe and secure placement of rodenticides. Protects bait from weather and non-target animals.",
+    image: "images/plastic_rodent_bait_station.png"
+  },
+  {
+    id: 284,
+    name: "Rat Iron Trap",
+    brand: "TRAPS & EQUIPMENT",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Iron Rat Trap",
+    price: 0,
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "Traditional iron wire cage rat trap. Durable construction with sensitive trigger door for capturing small to medium sized rats.",
+    image: "images/rat_iron_trap.png"
+  },
+  {
+    id: 285,
+    name: "Rat Snap Trap",
+    brand: "TRAPS & EQUIPMENT",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Snap Trap",
+    price: 0,
+    variants: [
+      { size: "Small", price: 0, image: "images/rat_snap_trap_small.png" },
+      { size: "Big", price: 0, image: "images/rat_snap_trap_big.png" }
+    ],
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "Classic spring-loaded snap trap for fast and effective rodent control. Simple to set and highly efficient.",
+    image: "images/rat_snap_trap_small.png"
+  },
+  {
+    id: 286,
+    name: "Rat Trap Cage",
+    brand: "TRAPS & EQUIPMENT",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Rat Trap Cage",
+    price: 0,
+    variants: [
+      { size: "Small", price: 0, image: "images/rat_trap_small.png" },
+      { size: "Big", price: 0, image: "images/rat_trap_big.png" }
+    ],
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "Classic wire mesh box rat trap with spring-loaded door trigger. Safe, reusable, and highly effective for live capture.",
+    image: "images/rat_trap_small.png"
+  },
+  {
+    id: 287,
+    name: "Rat Wood Trap",
+    brand: "TRAPS & EQUIPMENT",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Wooden Snap Trap",
+    price: 0,
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "Traditional wooden base snap trap for rats. Features a sturdy metal spring and catch mechanism for reliable operation.",
+    image: "images/rat_wood_trap.png"
+  },
+  {
+    id: 288,
+    name: "Snake Catcher Stick (6 Feet)",
+    brand: "TRAPS & EQUIPMENT",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Snake Handling Stick",
+    price: 0,
+    featured: false,
+    newArrival: true,
+    offer: false,
+    description: "Professional 6-foot snake catcher stick with secure grip handle and locking jaw mechanism. Designed for safe rescue and relocation of reptiles.",
+    image: "images/snake_stick_6_feet.png"
+  },
+  /* ── FALCON AGRICULTURAL & GARDENING TOOLS (104 products) ── */
+  {
+    id: 289,
+    name: "Falcon Anvil Secateurs",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Anvil Pruning Secateurs",
+    price: 0,
+    variants: [
+      { size: 'PROFESSIONAL', price: 0, image: 'images/falcon_anvil_professional.jpg' },
+      { size: 'ECONOMY-M2', price: 0, image: 'images/falcon_anvil_economy_m2.jpg' },
+      { size: 'ECONOMY-M3', price: 0, image: 'images/falcon_anvil_economy_m3.jpg' },
+      { size: 'FPS-209', price: 0, image: 'images/falcon_anvil_fps_209.jpg' },
+      { size: 'REGULAR', price: 0, image: 'images/falcon_anvil_regular.jpg' },
+      { size: 'SUPER', price: 0, image: 'images/falcon_anvil_super.jpg' },
+      { size: 'SUPERCUT', price: 0, image: 'images/falcon_anvil_supercut.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Professional-grade anvil pruning secateurs designed for clean and precise cuts on hard or thick branches.",
+    image: "images/falcon_anvil_professional.jpg"
+  },
+  {
+    id: 290,
+    name: "Falcon Hedge Shears",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Professional Hedge Shears",
+    price: 0,
+    variants: [
+      { size: 'FHS-777', price: 0, image: 'images/falcon_hedge_fhs_777.jpg' },
+      { size: 'FHS-666', price: 0, image: 'images/falcon_hedge_fhs_666.jpg' },
+      { size: 'FHS-1010', price: 0, image: 'images/falcon_hedge_fhs_1010.jpg' },
+      { size: 'FHS-2012', price: 0, image: 'images/falcon_hedge_fhs_2012.jpg' },
+      { size: 'FHS-2015', price: 0, image: 'images/falcon_hedge_fhs_2015.jpg' },
+      { size: 'FHS-2016', price: 0, image: 'images/falcon_hedge_fhs_2016.jpg' },
+      { size: 'FHS-2017', price: 0, image: 'images/falcon_hedge_fhs_2017.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "High-quality hedge shears designed to trim and shape hedges easily. Features hardened steel blades with rust preventive coating.",
+    image: "images/falcon_hedge_fhs_777.jpg"
+  },
+  {
+    id: 291,
+    name: "Falcon Thinning Shears",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Thinning Shears",
+    price: 0,
+    variants: [
+      { size: 'FTS-606', price: 0, image: 'images/falcon_thinning_fts_606.jpg' },
+      { size: 'FTS-707', price: 0, image: 'images/falcon_thinning_fts_707.jpg' },
+      { size: 'FTS-808', price: 0, image: 'images/falcon_thinning_fts_808.jpg' },
+      { size: 'FKC-91', price: 0, image: 'images/falcon_thinning_fkc_91.jpg' },
+      { size: 'FSC-98', price: 0, image: 'images/falcon_thinning_fsc_98.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Specially designed shears for thinning fruits, harvesting flowers, and clean short cuts on garden plants.",
+    image: "images/falcon_thinning_fts_606.jpg"
+  },
+  {
+    id: 292,
+    name: "Falcon Long Reach Pruners",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Long Reach Pruners",
+    price: 0,
+    variants: [
+      { size: 'MULTIPOWER', price: 0, image: 'images/falcon_longreach_multipower.jpg' },
+      { size: 'MULTIPOWER PRO', price: 0, image: 'images/falcon_longreach_multipower_pro.jpg' },
+      { size: 'FTP-220', price: 0, image: 'images/falcon_longreach_ftp_220.jpg' },
+      { size: 'FTP-225', price: 0, image: 'images/falcon_longreach_ftp_225.jpg' },
+      { size: 'FPPS-64', price: 0, image: 'images/falcon_longreach_fpps_64.jpg' },
+      { size: 'FPLR-21', price: 0, image: 'images/falcon_longreach_fplr_21.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Long reach pruners designed for clean, effortless cutting of high tree branches and green limbs without ladders.",
+    image: "images/falcon_longreach_multipower.jpg"
+  },
+  {
+    id: 293,
+    name: "Falcon Lopping Shears",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Lopping Shears",
+    price: 0,
+    variants: [
+      { size: 'SPLS-7007', price: 0, image: 'images/falcon_lopping_spls_7007.jpg' },
+      { size: '2XGEAR (C)', price: 0, image: 'images/falcon_lopping_2xgear_c.jpg' },
+      { size: '2X GEAR', price: 0, image: 'images/falcon_lopping_2x_gear.jpg' },
+      { size: '2X GEAR PRO (C)', price: 0, image: 'images/falcon_lopping_2x_gear_pro_c.jpg' },
+      { size: '2X GEAR PRO', price: 0, image: 'images/falcon_lopping_2x_gear_pro.jpg' },
+      { size: 'SPLS-7006', price: 0, image: 'images/falcon_lopping_spls_7006.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Powerful bypass and anvil lopping shears with geared mechanism for clean, effortless cutting of live, soft, and thick branches.",
+    image: "images/falcon_lopping_spls_7007.jpg"
+  },
+  {
+    id: 294,
+    name: "Falcon Shovels",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Shovels & Spades",
+    price: 0,
+    variants: [
+      { size: 'FRS-3000', price: 0, image: 'images/falcon_shovel_frs_3000.jpg' },
+      { size: 'FFAS-5000', price: 0, image: 'images/falcon_shovel_ffas_5000.jpg' },
+      { size: 'FFAS-6000', price: 0, image: 'images/falcon_shovel_ffas_6000.jpg' },
+      { size: 'FSS-3002', price: 0, image: 'images/falcon_shovel_fss_3002.jpg' },
+      { size: 'FSS-4000', price: 0, image: 'images/falcon_shovel_fss_4000.jpg' },
+      { size: 'FSS-4001', price: 0, image: 'images/falcon_shovel_fss_4001.jpg' },
+      { size: 'FSS-4002', price: 0, image: 'images/falcon_shovel_fss_4002.jpg' },
+      { size: 'FSS-4003', price: 0, image: 'images/falcon_shovel_fss_4003.jpg' },
+      { size: 'FSS-4004', price: 0, image: 'images/falcon_shovel_fss_4004.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Heavy-duty shovels, spades, and folding hoes. Perfect for digging unprepared ground, loosening soil, and agricultural tasks.",
+    image: "images/falcon_shovel_frs_3000.jpg"
+  },
+  {
+    id: 295,
+    name: "Falcon Forks",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Forks",
+    price: 0,
+    variants: [
+      { size: 'SPDF-8900', price: 0, image: 'images/falcon_fork_spdf_8900.jpg' },
+      { size: 'FWF-1001', price: 0, image: 'images/falcon_fork_fwf_1001.jpg' },
+      { size: 'FWF-102', price: 0, image: 'images/falcon_fork_fwf_102.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Designed for digging unprepared ground, planting, and row making. Professional-grade construction.",
+    image: "images/falcon_fork_spdf_8900.jpg"
+  },
+  {
+    id: 296,
+    name: "Falcon Spades",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Spades",
+    price: 0,
+    variants: [
+      { size: 'SPKW-25', price: 0, image: 'images/falcon_spade_spkw_25.jpg' },
+      { size: 'SPKW-50', price: 0, image: 'images/falcon_spade_spkw_50.jpg' },
+      { size: 'SPKW-1000', price: 0, image: 'images/falcon_spade_spkw_1000.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Heavy-duty agricultural spades designed for digging unprepared ground and landscaping.",
+    image: "images/falcon_spade_spkw_25.jpg"
+  },
+  {
+    id: 297,
+    name: "Falcon Cultivators",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Cultivators",
+    price: 0,
+    variants: [
+      { size: 'FCWH-3066', price: 0, image: 'images/falcon_cultivator_fcwh_3066.jpg' },
+      { size: 'FW-500', price: 0, image: 'images/falcon_cultivator_fw_500.jpg' },
+      { size: 'FW-900', price: 0, image: 'images/falcon_cultivator_fw_900.jpg' },
+      { size: 'FCH-3005', price: 0, image: 'images/falcon_cultivator_fch_3005.jpg' },
+      { size: 'FCH-305', price: 0, image: 'images/falcon_cultivator_fch_305.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Designed for loosening soil in beds/flower boxes, breaking up compacted ground, weeding, and cultivating in one action.",
+    image: "images/falcon_cultivator_fcwh_3066.jpg"
+  },
+  {
+    id: 298,
+    name: "Falcon Diggers",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Diggers",
+    price: 0,
+    variants: [
+      { size: 'FWT-2001', price: 0, image: 'images/falcon_digger_fwt_2001.jpg' },
+      { size: 'FWT-2002', price: 0, image: 'images/falcon_digger_fwt_2002.jpg' },
+      { size: 'FWT-203', price: 0, image: 'images/falcon_digger_fwt_203.jpg' },
+      { size: 'FWT-204', price: 0, image: 'images/falcon_digger_fwt_204.jpg' },
+      { size: 'FDP-19', price: 0, image: 'images/falcon_digger_fdp_19.jpg' },
+      { size: 'SPD-1900', price: 0, image: 'images/falcon_digger_spd_1900.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Hand transplanters and diggers ideal for planting, transplanting, and digging right size holes.",
+    image: "images/falcon_digger_fwt_2001.jpg"
+  },
+  {
+    id: 299,
+    name: "Falcon Chain Saws",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Chain Saws",
+    price: 0,
+    variants: [
+      { size: 'FCS-350', price: 0, image: 'images/falcon_saw_fcs_350.jpg' },
+      { size: 'FCS-350A', price: 0, image: 'images/falcon_saw_fcs_350a.jpg' },
+      { size: 'FCS-460', price: 0, image: 'images/falcon_saw_fcs_460.jpg' },
+      { size: 'FCS-540', price: 0, image: 'images/falcon_saw_fcs_540.jpg' },
+      { size: 'FCS-650', price: 0, image: 'images/falcon_saw_fcs_650.jpg' },
+      { size: 'FCS-750', price: 0, image: 'images/falcon_saw_fcs_750.jpg' },
+      { size: 'FECS-149', price: 0, image: 'images/falcon_saw_fecs_149.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Falcon Electric and Petrol Chain Saws cut thick and thin branches very easily. Powerful motor with high performance.",
+    image: "images/falcon_saw_fcs_350.jpg"
+  },
+  {
+    id: 300,
+    name: "Falcon Pruning Saws",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Pruning Saws",
+    price: 0,
+    variants: [
+      { size: 'FPS-30', price: 0, image: 'images/falcon_saw_fps_30.jpg' },
+      { size: 'FFS-300', price: 0, image: 'images/falcon_saw_ffs_300.jpg' },
+      { size: 'FPS-18', price: 0, image: 'images/falcon_saw_fps_18.jpg' },
+      { size: 'FPS-21', price: 0, image: 'images/falcon_saw_fps_21.jpg' },
+      { size: 'FPS-100', price: 0, image: 'images/falcon_saw_fps_100.jpg' },
+      { size: 'FS-555', price: 0, image: 'images/falcon_saw_fs_555.jpg' },
+      { size: 'FS-333', price: 0, image: 'images/falcon_saw_fs_333.jpg' },
+      { size: 'FPSN-303', price: 0, image: 'images/falcon_saw_fpsn_303.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Ideal for general purpose cutting and pruning branches. Features premium-grade blades with ergonomic handles.",
+    image: "images/falcon_saw_fps_30.jpg"
+  },
+  {
+    id: 301,
+    name: "Falcon Pruning Knives",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Pruning Knives",
+    price: 0,
+    variants: [
+      { size: 'FBGK-60', price: 0, image: 'images/falcon_knife_fbgk_60.jpg' },
+      { size: 'FGK-50', price: 0, image: 'images/falcon_knife_fgk_50.jpg' },
+      { size: 'FMK-904', price: 0, image: 'images/falcon_knife_fmk_904.jpg' },
+      { size: 'FPK-70', price: 0, image: 'images/falcon_knife_fpk_70.jpg' },
+      { size: 'FPK-80', price: 0, image: 'images/falcon_knife_fpk_80.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Pruning, budding, grafting, and mushroom cutting knives. High-grade stainless steel blades for absolute precision.",
+    image: "images/falcon_knife_fbgk_60.jpg"
+  },
+  {
+    id: 302,
+    name: "Falcon Grafting Machines",
+    brand: "FALCON",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Grafting Machines",
+    price: 0,
+    variants: [
+      { size: 'FPGT-2002', price: 0, image: 'images/falcon_grafting_fpgt_2002.jpg' },
+      { size: 'FPGT-2003', price: 0, image: 'images/falcon_grafting_fpgt_2003.jpg' },
+      { size: 'FPGT-2004', price: 0, image: 'images/falcon_grafting_fpgt_2004.jpg' }
+    ],
+    featured: false,
+    newArrival: false,
+    offer: false,
+    description: "Useful for easy grafting when slot or omega cuts are required. Robust and reliable design.",
+    image: "images/falcon_grafting_fpgt_2002.jpg"
   }
 ];;;;;;;;
 
@@ -3794,11 +4021,25 @@ function populateFilterOptions() {
 
   if (brandContainer) {
     let uniqueBrands = [...new Set(PRODUCTS.map(p => p.brand))].sort((a, b) => a.localeCompare(b));
-    const envuIndex = uniqueBrands.findIndex(b => b.toLowerCase().includes("envu"));
-    if (envuIndex > -1) {
-      const envuBrand = uniqueBrands.splice(envuIndex, 1)[0];
-      uniqueBrands.unshift(envuBrand);
-    }
+    const envuBrand = uniqueBrands.find(b => b.toLowerCase().includes("envu"));
+    const fmcBrand = uniqueBrands.find(b => b.toLowerCase().includes("fmc"));
+    const syngentaBrand = uniqueBrands.find(b => b.toLowerCase().includes("syngenta"));
+    const heranbaBrand = uniqueBrands.find(b => b.toLowerCase().includes("heranba"));
+    const chemsterBrand = uniqueBrands.find(b => b.toLowerCase().includes("chemster"));
+    const hilBrand = uniqueBrands.find(b => b.toLowerCase() === "hil");
+    const rodexitBrand = uniqueBrands.find(b => b.toLowerCase() === "rodexit");
+
+    uniqueBrands = uniqueBrands.filter(b => b !== envuBrand && b !== fmcBrand && b !== syngentaBrand && b !== heranbaBrand && b !== chemsterBrand && b !== hilBrand && b !== rodexitBrand);
+    
+    const topBrands = [];
+    if (envuBrand) topBrands.push(envuBrand);
+    if (fmcBrand) topBrands.push(fmcBrand);
+    if (syngentaBrand) topBrands.push(syngentaBrand);
+    if (heranbaBrand) topBrands.push(heranbaBrand);
+    if (chemsterBrand) topBrands.push(chemsterBrand);
+    if (hilBrand) topBrands.push(hilBrand);
+    
+    uniqueBrands = [...topBrands, ...uniqueBrands];
     brandContainer.innerHTML = uniqueBrands.map(brand => `
       <label class="filter-label">
         <input type="checkbox" value="${brand}" class="filter-checkbox brand-cb">
@@ -3828,11 +4069,29 @@ function setupEventListeners() {
   // Mobile Filter Sidebar Toggle
   const filterToggle = document.getElementById("mobile-filter-toggle");
   const sidebar = document.querySelector(".catalog-sidebar");
+
+  // Create a tap-outside backdrop for the mobile sidebar drawer
+  let sidebarBackdrop = document.getElementById("sidebar-backdrop");
+  if (!sidebarBackdrop) {
+    sidebarBackdrop = document.createElement("div");
+    sidebarBackdrop.id = "sidebar-backdrop";
+    document.body.appendChild(sidebarBackdrop);
+  }
+
+  function closeMobileSidebar() {
+    if (sidebar) sidebar.classList.remove("active");
+    if (filterToggle) filterToggle.classList.remove("active");
+    sidebarBackdrop.classList.remove("active");
+  }
+
   if (filterToggle && sidebar) {
     filterToggle.addEventListener("click", () => {
+      const isOpening = !sidebar.classList.contains("active");
       sidebar.classList.toggle("active");
       filterToggle.classList.toggle("active");
+      sidebarBackdrop.classList.toggle("active", isOpening);
     });
+    sidebarBackdrop.addEventListener("click", closeMobileSidebar);
   }
 
   // 1. Theme Switcher
@@ -3993,6 +4252,24 @@ function setupEventListeners() {
       tab.classList.add("active");
 
       activeTab = tab.getAttribute("data-tab");
+
+      // Reset sidebar filters and search on tab switch to prevent conflicting/empty states
+      const brandCbs = document.querySelectorAll(".brand-cb");
+      const categoryCbs = document.querySelectorAll(".category-cb");
+      const toxicityCbs = document.querySelectorAll("input[name='toxicity']");
+      brandCbs.forEach(cb => cb.checked = false);
+      categoryCbs.forEach(cb => cb.checked = false);
+      toxicityCbs.forEach(cb => cb.checked = false);
+      
+      const searchInput = document.getElementById("product-search");
+      const clearSearchBtn = document.getElementById("search-clear-btn");
+      if (searchInput) searchInput.value = "";
+      if (clearSearchBtn) clearSearchBtn.style.display = "none";
+
+      searchQuery = "";
+      selectedBrands = [];
+      selectedToxicity = [];
+
       renderCatalog();
     });
   });
@@ -4014,6 +4291,20 @@ function setupEventListeners() {
         brandFiltersWrap.querySelectorAll(".brand-cb").forEach(cb => {
           if (cb !== e.target) cb.checked = false;
         });
+        
+        // Mutually exclusive: uncheck Category and Toxicity when checking Brand
+        const categoryCbs = document.querySelectorAll(".category-cb");
+        const toxicityCbs = document.querySelectorAll("input[name='toxicity']");
+        categoryCbs.forEach(cb => cb.checked = false);
+        toxicityCbs.forEach(cb => cb.checked = false);
+        selectedToxicity = [];
+
+        // Reset horizontal tabs to ALL PRODUCTS
+        const tabs = document.querySelectorAll(".tab-header");
+        tabs.forEach(t => t.classList.remove("active"));
+        const allTab = Array.from(tabs).find(t => t.getAttribute("data-tab") === "all");
+        if (allTab) allTab.classList.add("active");
+        activeTab = "all";
       }
       const checkedCbs = brandFiltersWrap.querySelectorAll(".brand-cb:checked");
       selectedBrands = Array.from(checkedCbs).map(cb => cb.value);
@@ -4029,6 +4320,21 @@ function setupEventListeners() {
         typeFiltersWrap.querySelectorAll(".category-cb").forEach(cb => {
           if (cb !== e.target) cb.checked = false;
         });
+
+        // Mutually exclusive: uncheck Brand and Toxicity when checking Category
+        const brandCbs = document.querySelectorAll(".brand-cb");
+        const toxicityCbs = document.querySelectorAll("input[name='toxicity']");
+        brandCbs.forEach(cb => cb.checked = false);
+        toxicityCbs.forEach(cb => cb.checked = false);
+        selectedBrands = [];
+        selectedToxicity = [];
+
+        // Reset horizontal tabs to ALL PRODUCTS
+        const tabs = document.querySelectorAll(".tab-header");
+        tabs.forEach(t => t.classList.remove("active"));
+        const allTab = Array.from(tabs).find(t => t.getAttribute("data-tab") === "all");
+        if (allTab) allTab.classList.add("active");
+        activeTab = "all";
       }
       renderCatalog();
     });
@@ -4042,6 +4348,20 @@ function setupEventListeners() {
         toxicityCheckboxes.forEach(other => {
           if (other !== e.target) other.checked = false;
         });
+
+        // Mutually exclusive: uncheck Brand and Category when checking Toxicity
+        const brandCbs = document.querySelectorAll(".brand-cb");
+        const categoryCbs = document.querySelectorAll(".category-cb");
+        brandCbs.forEach(cb => cb.checked = false);
+        categoryCbs.forEach(cb => cb.checked = false);
+        selectedBrands = [];
+
+        // Reset horizontal tabs to ALL PRODUCTS
+        const tabs = document.querySelectorAll(".tab-header");
+        tabs.forEach(t => t.classList.remove("active"));
+        const allTab = Array.from(tabs).find(t => t.getAttribute("data-tab") === "all");
+        if (allTab) allTab.classList.add("active");
+        activeTab = "all";
       }
       const checkedCbs = document.querySelectorAll("input[name='toxicity']:checked");
       selectedToxicity = Array.from(checkedCbs).map(c => c.value);
@@ -4428,11 +4748,11 @@ function renderCatalog() {
       } else if (activeTab === 'ant') {
         allowedIds = [69, 70, 73, 74, 75, 76, 67, 44, 46, 47, 48, 51, 82, 83];
       } else if (activeTab === 'mosquito') {
-        allowedIds = [69, 70, 73, 74, 75, 76, 68, 44, 46, 63, 65, 66, 62, 82, 83, 85, 84, 86, 128, 205, 121];
+        allowedIds = [69, 70, 73, 74, 75, 76, 68, 44, 46, 63, 65, 66, 62, 82, 83, 85, 84, 86, 128, 205, 121, 265, 278, 279];
       } else if (activeTab === 'rodent') {
-        allowedIds = [77, 78, 60, 153, 159, 160, 161, 152, 162, 163, 164];
+        allowedIds = [77, 60, 152, 153, 154, 155, 156, 157, 158, 159, 162, 165, 266, 267, 268, 270, 276, 280, 281, 282, 283, 284, 285, 286, 287];
       } else if (activeTab === 'termite') {
-        allowedIds = [71, 72, 79, 80, 81, 53, 54, 55, 56, 57, 58, 90, 93, 94, 95, 131, 129, 130, 198, 199, 200];
+        allowedIds = [53, 71, 79, 89, 91, 93, 102, 104, 109, 111, 124, 129, 131, 132, 134, 196, 198, 206, 272, 274];
       }
       if (!allowedIds.includes(prod.id)) return false;
     }
@@ -4464,40 +4784,49 @@ function renderCatalog() {
     return true;
   });
 
-  // Sort products: Envu products first, then respect secondary sort option
+  // Sort products: Envu products first (with Premise first among Envu), then respect secondary sort option
   const isEnvu = prod => prod.brand && prod.brand.toLowerCase().includes('envu');
+  const isPremise = prod => prod.name && prod.name.toLowerCase().includes('premise');
   
+  const compareEnvuPremise = (a, b) => {
+    const aEnvu = isEnvu(a);
+    const bEnvu = isEnvu(b);
+    
+    if (aEnvu && !bEnvu) return -1;
+    if (!aEnvu && bEnvu) return 1;
+    
+    if (aEnvu && bEnvu) {
+      const aPremise = isPremise(a);
+      const bPremise = isPremise(b);
+      if (aPremise && !bPremise) return -1;
+      if (!aPremise && bPremise) return 1;
+    }
+    return null; // fall through to secondary sort options
+  };
+
   if (sortOption === 'price-asc') {
     filtered.sort((a, b) => {
-      const aEnvu = isEnvu(a);
-      const bEnvu = isEnvu(b);
-      if (aEnvu && !bEnvu) return -1;
-      if (!aEnvu && bEnvu) return 1;
+      const precedence = compareEnvuPremise(a, b);
+      if (precedence !== null) return precedence;
       return a.price - b.price;
     });
   } else if (sortOption === 'price-desc') {
     filtered.sort((a, b) => {
-      const aEnvu = isEnvu(a);
-      const bEnvu = isEnvu(b);
-      if (aEnvu && !bEnvu) return -1;
-      if (!aEnvu && bEnvu) return 1;
+      const precedence = compareEnvuPremise(a, b);
+      if (precedence !== null) return precedence;
       return b.price - a.price;
     });
   } else if (sortOption === 'name-asc') {
     filtered.sort((a, b) => {
-      const aEnvu = isEnvu(a);
-      const bEnvu = isEnvu(b);
-      if (aEnvu && !bEnvu) return -1;
-      if (!aEnvu && bEnvu) return 1;
+      const precedence = compareEnvuPremise(a, b);
+      if (precedence !== null) return precedence;
       return a.name.localeCompare(b.name);
     });
   } else {
-    // Default sort: Envu products first
+    // Default sort: Envu products first (with Premise first)
     filtered.sort((a, b) => {
-      const aEnvu = isEnvu(a);
-      const bEnvu = isEnvu(b);
-      if (aEnvu && !bEnvu) return -1;
-      if (!aEnvu && bEnvu) return 1;
+      const precedence = compareEnvuPremise(a, b);
+      if (precedence !== null) return precedence;
       return 0; // maintain original database order
     });
   }
@@ -4519,6 +4848,11 @@ function renderCatalog() {
 
   grid.style.display = "grid";
   if (emptyBox) emptyBox.style.display = "none";
+
+  // Pin current grid height so the page never shrinks during innerHTML swap.
+  // Without this the page height collapses momentarily, the browser clamps
+  // scrollY down to the new bottom (footer), and we get a visible jump.
+  grid.style.minHeight = grid.offsetHeight + "px";
 
   grid.innerHTML = filtered.map(prod => {
     let toxicClass = "";
@@ -4581,6 +4915,9 @@ function renderCatalog() {
       </article>
     `;
   }).join('');
+
+  // Release the height pin — new cards are now rendered and hold the height naturally.
+  grid.style.minHeight = "";
 
   lucide.createIcons();
 }
@@ -4708,6 +5045,7 @@ function resetAllFilters() {
   const searchInput = document.getElementById("product-search");
   const clearSearchBtn = document.getElementById("search-clear-btn");
   const navLinks = document.querySelectorAll(".nav-link");
+  const tabs = document.querySelectorAll(".tab-header");
 
   brandCbs.forEach(cb => cb.checked = false);
   categoryCbs.forEach(cb => cb.checked = false);
@@ -4720,11 +5058,21 @@ function resetAllFilters() {
   const allLink = Array.from(navLinks).find(l => l.getAttribute("data-category") === "all");
   if (allLink) allLink.classList.add("active");
 
+  // Reset top tab headers to ALL PRODUCTS
+  tabs.forEach(t => t.classList.remove("active"));
+  const allTab = Array.from(tabs).find(t => t.getAttribute("data-tab") === "all");
+  if (allTab) allTab.classList.add("active");
+
+  activeTab = "all";
   activeCategory = "all";
   searchQuery = "";
   selectedBrands = [];
   selectedToxicity = [];
   renderCatalog();
+  const catalogEl = document.getElementById("catalog");
+  if (catalogEl) {
+    catalogEl.scrollIntoView({ behavior: 'auto' });
+  }
   showToast("All filters successfully reset", "info");
 }
 
@@ -5413,7 +5761,7 @@ function generateBotResponse(userMsg) {
     {
       name: "Mice Control",
       keywords: ["mouse", "mice"],
-      products: ["racumin sure", "klerat waxblocks", "ratol cake", "ratol glue"]
+      products: ["racumin sure", "klerat waxblocks", "ratol cake", "ratol glue", "rodexit", "trap", "bait station"]
     },
     {
       name: "Moth Control",
@@ -5448,12 +5796,12 @@ function generateBotResponse(userMsg) {
     {
       name: "Rat Control",
       keywords: ["rat", "rats"],
-      products: ["racumin sure", "klerat waxblocks", "ratol cake", "ratol glue"]
+      products: ["racumin sure", "klerat waxblocks", "ratol cake", "ratol glue", "rodexit", "trap", "bait station"]
     },
     {
       name: "Rodent Control",
       keywords: ["rodent", "rodents"],
-      products: ["racumin sure", "klerat waxblocks", "ratol cake", "ratol glue"]
+      products: ["racumin sure", "klerat waxblocks", "ratol cake", "ratol glue", "rodexit", "trap", "bait station"]
     }
   ];
 
@@ -5615,4 +5963,3 @@ function initChatbot() {
     }, 400);
   });
 }
-

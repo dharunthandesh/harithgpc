@@ -302,7 +302,7 @@ const PEST_DATABASE = [
     risk: "Transport pathogens from waste onto food and prep surfaces, spreading Cholera, Dysentery, and food poisoning.",
     behaviour: "Attracted to food odors, light, and decay. They feed by regurgitating digestive fluids onto solids and sponging it up.",
     whereToFind: "Kitchens, garbage cans, manure heaps, dining areas, windows, and light fixtures.",
-    recommendedProducts: [52, 116, 117, 118, 46, 63, 69, 70, 73, 74, 75, 76, 146],
+    recommendedProducts: [52, 116, 118, 46, 63, 69, 70, 73, 74, 75, 76, 146],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 44 46 Q 30 40 22 45" fill="none" stroke="#001a1a" stroke-width="1.8" stroke-linecap="round" />
@@ -343,7 +343,7 @@ const PEST_DATABASE = [
     risk: "Gnaw wires (fire hazard), contaminate food with urine/feces, and transmit Salmonella and Hantavirus.",
     behaviour: "Curious and excellent climbers that explore small spaces, nesting with shredded paper and cloth near food sources.",
     whereToFind: "Pantries, kitchen drawers, wall cavities, attics, drop ceilings, and crawlspaces.",
-    recommendedProducts: [77, 78, 60, 153, 159, 160, 161],
+    recommendedProducts: [77, 60, 153, 154, 155, 156, 157, 158, 159, 165, 266, 267, 268, 270, 276, 280, 281, 283, 285, 286, 287],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="tail" d="M 50 72 C 50 72 62 82 52 90 C 46 95 38 90 32 90" fill="none" stroke="#cd5c5c" stroke-width="2" stroke-linecap="round" />
@@ -424,7 +424,7 @@ const PEST_DATABASE = [
     risk: "Major vectors of lethal diseases including Dengue, Malaria, Chikungunya, Zika, and West Nile Virus.",
     behaviour: "Attracted to carbon dioxide, sweat, and body heat. They breed in standing water and are active at dusk and dawn.",
     whereToFind: "Stagnant water puddles, flower pot trays, blocked gutters, dark corners of rooms, and gardens.",
-    recommendedProducts: [69, 70, 73, 74, 75, 76, 68, 44, 46, 63, 65, 66, 62, 82, 83, 85, 84, 86, 128, 205, 121],
+    recommendedProducts: [69, 70, 73, 74, 75, 76, 68, 44, 46, 63, 65, 66, 62, 82, 83, 85, 84, 86, 128, 205, 121, 265, 278, 279],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 44 44 Q 28 58 14 72" fill="none" stroke="#303030" stroke-width="1.2" stroke-linecap="round" />
@@ -491,7 +491,7 @@ const PEST_DATABASE = [
     risk: "Cause structural damage by chewing wood and cables, and transmit Leptospirosis, plague, and food poisoning.",
     behaviour: "Cautious of new objects (neophobic), nocturnal, and live in nests close to consistent water and food supplies.",
     whereToFind: "Sewers, basements, wall voids, roof cavities, crawlspaces, and garbage disposal areas.",
-    recommendedProducts: [77, 78, 60, 153, 159, 160, 161, 152, 162, 163, 164],
+    recommendedProducts: [77, 60, 152, 153, 154, 155, 156, 157, 158, 159, 162, 165, 266, 267, 268, 270, 276, 280, 282, 283, 284, 285, 286, 287],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="tail" d="M 50 78 C 50 78 60 90 52 96 C 44 100 36 90 28 90" fill="none" stroke="#db7093" stroke-width="2.5" stroke-linecap="round" />
@@ -519,7 +519,7 @@ const PEST_DATABASE = [
     risk: "Severe structural chewing damage, structural fires, crop damage, and food safety violations in commercial spaces.",
     behaviour: "Active at night, foraging along walls using whiskers to navigate safely.",
     whereToFind: "Warehouses, kitchens, crawl spaces, agricultural fields, ceiling panels, and trash zones.",
-    recommendedProducts: [77, 78, 60, 153, 159, 160, 161, 152, 162, 163, 164],
+    recommendedProducts: [77, 60, 152, 153, 154, 155, 156, 157, 158, 159, 162, 165, 266, 267, 268, 270, 276, 280, 281, 282, 283, 284, 285, 286, 287],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="tail" d="M 50 74 C 54 82 50 90 42 90" fill="none" stroke="#3c3c3c" stroke-width="2.5" stroke-linecap="round" />
@@ -657,7 +657,7 @@ const PEST_DATABASE = [
     risk: "The most destructive structural pest, causing severe damage to wood structures, furniture, and foundations.",
     behaviour: "Silently chew through wood from the inside out, remaining hidden from sight until damage is done.",
     whereToFind: "Foundations, wooden wall framing, floorboards, wooden doors, mulch, and tree roots.",
-    recommendedProducts: [71, 72, 79, 80, 81, 53, 54, 55, 56, 57, 58, 90, 93, 94, 95, 131, 129, 130, 198, 199, 200],
+    recommendedProducts: [53, 71, 72, 79, 80, 81, 89, 90, 91, 93, 94, 95, 102, 104, 109, 111, 124, 129, 131, 132, 134, 196, 198, 199, 200, 206, 272, 274],
     svg: `<svg viewBox="0 0 100 100" class="pest-svg" xmlns="http://www.w3.org/2000/svg">
       <g>
         <path class="leg-l1" d="M 44 42 Q 30 42 22 48" fill="none" stroke="#8b4513" stroke-width="1.8" stroke-linecap="round" />

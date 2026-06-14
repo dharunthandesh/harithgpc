@@ -25,3 +25,18 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Backups
+app.js.backup_*
+
+# VS Code config
+.vscode/
+
+# Scratch folder
+scratch/
+
+# Catalog and source working directories
+FALCON CATALOGUE/
+NEW EQUIPMENTS/
+A SAJ/media__*
+
