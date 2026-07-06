@@ -1902,11 +1902,22 @@ img.logo-badge {
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 .copyright-text {
-  text-align: center;
+  text-align: left;
+}
+.developed-by-text {
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+.developed-by-text span {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -4805,6 +4816,15 @@ body.loading-active {
   }
   .footer-bottom-inner {
     padding: 0 16px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  .copyright-text {
+    text-align: center;
+  }
+  .developed-by-text {
+    text-align: center;
   }
   
   /* ── Modals ── */
