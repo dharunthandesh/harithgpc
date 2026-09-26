@@ -1,6 +1,6 @@
 # Harith Garden & Pest Clinic — Product Catalog
 
-Total Products: 259
+Total Products: 263
 
 | # | ID | Product Name | Brand | Category | Active Ingredient | Toxicity |
 |---|-----|-------------|-------|----------|-------------------|----------|
@@ -263,3 +263,7 @@ Total Products: 259
 | 257 | 300 | Falcon Pruning Saws | FALCON | equipment | Pruning Saws | Equipment |
 | 258 | 301 | Falcon Pruning Knives | FALCON | equipment | Pruning Knives | Equipment |
 | 259 | 302 | Falcon Grafting Machines | FALCON | equipment | Grafting Machines | Equipment |
+| 260 | 303 | BASF Storm® 0.005% BB Rodenticide | BASF | rodent | Flocoumafen 0.005% BB | Blue (Moderately toxic) |
+| 261 | 304 | BASF Seclira® Cockroach Gel Bait | BASF | cockroach | Dinotefuran 0.5% RB | Green (Slightly toxic) |
+| 262 | 305 | Green Drain™ Waterless Floor Drain Trap Seal | GREEN DRAIN | fly | Silicone Non-Return Valve | Non-Toxic Equipment |
+| 263 | 306 | TermiCoil® Anti-Termite Reticulation Piping System | TERMI-COIL | termite | Perforated Reticulation Piping | Non-Toxic Equipment |

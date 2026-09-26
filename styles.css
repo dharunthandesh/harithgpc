@@ -6260,3 +6260,889 @@ body.loading-active {
   border-color: var(--primary);
   box-shadow: var(--shadow-md);
 }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   TRAINING & DEMONSTRATION HALL STYLES (ABOUT & HOME PAGES)
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* ─── ABOUT PAGE: TRAINING HALL SECTION ─── */
+.training-hall-section {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  scroll-margin-top: 100px;
+}
+
+.training-hero-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.training-hero-card::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.training-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: var(--bg-surface-alt);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-round);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.training-hero-badge i, .training-hero-badge svg {
+  width: 15px;
+  height: 15px;
+}
+
+.training-hero-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.training-hero-content p {
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.training-hero-content strong {
+  color: var(--text-primary);
+}
+
+.training-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.t-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.t-stat-number {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.t-stat-label {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+/* Featured Hero Preview Box */
+.training-hero-preview {
+  position: relative;
+  height: 100%;
+  min-height: 380px;
+  display: flex;
+}
+
+.hero-preview-img-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.hero-preview-img-box:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-preview-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.hero-preview-img-box:hover img {
+  transform: scale(1.04);
+}
+
+
+/* ─── 4 TRAINING PILLARS ─── */
+.training-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.t-pillar-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 30px 24px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.t-pillar-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-light);
+}
+
+.t-pillar-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: var(--bg-surface-alt);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.t-pillar-icon i, .t-pillar-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.t-pillar-card h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.t-pillar-card p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─── PHOTO TOUR GALLERY ─── */
+.training-gallery-wrap {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 40px;
+}
+
+.gallery-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-kicker {
+  display: block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.gallery-header-row h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.training-gallery-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.t-filter-btn {
+  padding: 8px 18px;
+  border-radius: var(--radius-round);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface-alt);
+  color: var(--text-secondary);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.t-filter-btn:hover {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
+
+.t-filter-btn.active {
+  background: var(--primary);
+  color: var(--text-white);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Gallery Grid */
+.training-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.t-gallery-item {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--bg-surface-alt);
+  border: 1px solid rgba(16, 55, 19, 0.12);
+  aspect-ratio: 16 / 11;
+  height: auto;
+  min-height: 200px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.3s ease;
+}
+
+.t-gallery-item.hidden {
+  display: none;
+}
+
+.t-gallery-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(16, 55, 19, 0.16);
+  border-color: var(--primary);
+}
+
+.t-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.t-gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+/* Clean Image Hover Overlay (Subtle magnifying icon on hover, NO text) */
+.t-zoom-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 55, 19, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.t-gallery-item:hover .t-zoom-overlay,
+.hero-preview-img-box:hover .t-zoom-overlay {
+  opacity: 1;
+}
+
+.t-zoom-overlay .t-zoom-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--primary);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transform: scale(0.8);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease;
+}
+
+.t-gallery-item:hover .t-zoom-overlay .t-zoom-btn,
+.hero-preview-img-box:hover .t-zoom-overlay .t-zoom-btn {
+  transform: scale(1);
+}
+
+.t-zoom-btn i, .t-zoom-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* ─── TRAINING CTA BANNER ─── */
+.training-cta-banner {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-radius: var(--radius-lg);
+  padding: 40px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  color: var(--text-white);
+  box-shadow: var(--shadow-md);
+  flex-wrap: wrap;
+}
+
+.training-cta-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 780px;
+}
+
+.training-cta-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: rgba(98, 139, 53, 0.25);
+  border: 1px solid rgba(132, 172, 84, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-light);
+  flex-shrink: 0;
+}
+
+.training-cta-icon i, .training-cta-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.training-cta-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.training-cta-content p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.training-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.training-cta-actions .cta-secondary-btn {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.training-cta-actions .cta-secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   HOME PAGE: TRAINING FACILITY HIGHLIGHT SECTION
+   ───────────────────────────────────────────────────────────────────────── */
+.home-training-section {
+  padding: 100px 0;
+  background: var(--bg-surface-alt);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-training-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.home-training-text .section-kicker-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-round);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.home-training-text .section-kicker-pill i, .home-training-text .section-kicker-pill svg {
+  width: 15px;
+  height: 15px;
+}
+
+.home-training-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.home-training-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.home-training-desc strong {
+  color: var(--text-primary);
+}
+
+.home-training-features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.ht-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.ht-feature-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ht-feature-icon i, .ht-feature-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ht-feature-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ht-feature-item strong {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.ht-feature-item span {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.45;
+}
+
+.home-training-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Visual Collage on Home */
+.home-training-visual {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 240px 180px;
+  gap: 18px;
+}
+
+.ht-visual-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+}
+
+.ht-visual-card.main-card {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.ht-visual-card.sub-card-1 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.ht-visual-card.sub-card-2 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.ht-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.ht-visual-card:hover .ht-visual-img {
+  transform: scale(1.05);
+}
+
+.ht-visual-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(16, 55, 19, 0.85);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 14px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ht-visual-tag i, .ht-visual-tag svg {
+  width: 14px;
+  height: 14px;
+}
+
+.ht-floating-badge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--accent);
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 3;
+}
+
+.ht-floating-badge i, .ht-floating-badge svg {
+  width: 26px;
+  height: 26px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.ht-floating-badge strong {
+  display: block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.ht-floating-badge span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  line-height: 1.1;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   TRAINING HALL FULLSCREEN LIGHTBOX MODAL
+   ───────────────────────────────────────────────────────────────────────── */
+.training-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 25, 9, 0.92);
+  backdrop-filter: blur(12px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.training-lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.t-lightbox-container {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t-lightbox-img-wrap {
+  position: relative;
+  width: 100%;
+  max-height: 75vh;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t-lightbox-img-wrap img {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  display: block;
+}
+
+.t-lightbox-caption {
+  margin-top: 16px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 700px;
+}
+
+.t-lightbox-caption h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.t-lightbox-caption p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.t-lightbox-counter {
+  display: inline-block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  margin-top: 6px;
+  letter-spacing: 0.08em;
+}
+
+.t-lightbox-close {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.t-lightbox-close:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+.t-lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(16, 55, 19, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.t-lightbox-nav:hover {
+  background: var(--accent);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.t-lightbox-prev {
+  left: -60px;
+}
+
+.t-lightbox-next {
+  right: -60px;
+}
+
+/* ─── RESPONSIVE BREAKPOINTS ─── */
+@media (max-width: 1200px) {
+  .training-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .training-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .training-hero-card {
+    grid-template-columns: 1fr;
+    padding: 36px 28px;
+    gap: 36px;
+  }
+  .home-training-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .home-training-visual {
+    grid-template-rows: 280px 200px;
+  }
+  .t-lightbox-prev {
+    left: 10px;
+  }
+  .t-lightbox-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .training-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .training-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .training-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .training-cta-banner {
+    flex-direction: column;
+    padding: 30px 24px;
+    text-align: center;
+  }
+  .training-cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .training-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .training-cta-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+  .home-training-visual {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .ht-visual-card.main-card {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 240px;
+  }
+  .ht-visual-card.sub-card-1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 180px;
+  }
+  .ht-visual-card.sub-card-2 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    height: 180px;
+  }
+  .ht-floating-badge {
+    position: static;
+    margin-top: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+

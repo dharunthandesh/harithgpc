@@ -3890,8 +3890,74 @@ const PRODUCTS = [
     offer: false,
     description: "Useful for easy grafting when slot or omega cuts are required. Robust and reliable design.",
     image: "images/falcon_grafting_fpgt_2002.jpg"
+  },
+  {
+    id: 303,
+    name: "BASF Storm® 0.005% BB Rodenticide (100g)",
+    brand: "BASF",
+    category: "chemicals",
+    toxicity: "Blue Label",
+    activeIngredient: "Flocoumafen 0.005% BB",
+    price: 0,
+    featured: true,
+    newArrival: true,
+    offer: false,
+    description: "BASF Storm 0.005% BB is a premier single-feed anticoagulant rodenticide block bait containing Flocoumafen. Exceptionally palatable and highly lethal to resistant rats and mice across industrial, urban, and agricultural setups.",
+    image: "BASF/STORM.jpg"
+  },
+  {
+    id: 304,
+    name: "BASF Seclira® Gel Cockroach Bait",
+    brand: "BASF",
+    category: "chemicals",
+    toxicity: "Green Label",
+    activeIngredient: "Dinotefuran 0.5% RB",
+    price: 0,
+    featured: true,
+    newArrival: true,
+    offer: false,
+    description: "BASF Seclira Gel is an advanced non-repellent Dinotefuran-based cockroach gel bait (Group 4A Insecticide). Fast-acting formulation designed for targeted crevice, crack, and commercial spot treatments with rapid transfer effect.",
+    image: "BASF/Seclira.jpg"
+  },
+  {
+    id: 305,
+    name: "Green Drain™ Waterless Trap Seal",
+    brand: "GREEN DRAIN",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Silicone One-Way Membrane Drain Trap",
+    price: 0,
+    variants: [
+      { size: 'GD2 (2" / 50mm)', price: 0, image: 'GREENDRAIN/greendrain1.jpg' },
+      { size: 'GD3 (3" / 75mm)', price: 0, image: 'GREENDRAIN/greendrain1.jpg' },
+      { size: 'GD35 (3.5" / 90mm)', price: 0, image: 'GREENDRAIN/greendrain1.jpg' },
+      { size: 'GD4 (4" / 100mm)', price: 0, image: 'GREENDRAIN/greendrain1.jpg' }
+    ],
+    featured: true,
+    newArrival: true,
+    offer: false,
+    description: "Green Drain is an innovative eco-friendly one-way waterless trap seal valve for floor drains. Prevents drain flies, cockroach ingress, hazardous sewer gas, odors, and backflow without chemical usage. Fits standard commercial and domestic floor drains.",
+    image: "GREENDRAIN/greendrain1.jpg"
+  },
+  {
+    id: 306,
+    name: "TermiCoil® Anti-Termite Reticulation Piping System",
+    brand: "TERMI-COIL",
+    category: "equipment",
+    toxicity: "Equipment",
+    activeIngredient: "Porous Elastomeric Drip Reticulation Tubing",
+    price: 0,
+    variants: [
+      { size: 'TCS 100m Reticulation Pipe', price: 0, image: 'NEW PRODUCTS/TermiCoil Anti-Termite Pipes.jpg' },
+      { size: 'TCS Complete Network with Junction Box', price: 0, image: 'NEW PRODUCTS/TermiCoil Anti-Termite Pipes-2.jpg' }
+    ],
+    featured: true,
+    newArrival: true,
+    offer: false,
+    description: "TermiCoil Anti-Termite Reticulation System is a pre-construction and post-construction subterranean termite barrier network. Installed under flooring and building perimeter with external junction injection boxes, allowing periodic chemical replenishment without drilling or structural damage.",
+    image: "NEW PRODUCTS/TermiCoil Anti-Termite Pipes.jpg"
   }
-];;;;;;;;
+];
 
 // Immediate Theme Setup to prevent layout flashes
 (function() {
@@ -3967,7 +4033,10 @@ function initializeApp() {
       const cbLower = cb.value.toLowerCase();
       if (cbLower === brandVal || cbLower.includes(brandVal) || brandVal.includes(cbLower) || 
           (brandVal.includes("envu") && cbLower.includes("envu")) ||
-          (brandVal.includes("heranba") && cbLower.includes("heranba"))) {
+          (brandVal.includes("heranba") && cbLower.includes("heranba")) ||
+          (brandVal.includes("basf") && cbLower.includes("basf")) ||
+          (brandVal.includes("green") && cbLower.includes("green drain")) ||
+          (brandVal.includes("termi") && cbLower.includes("termi-coil"))) {
         cb.checked = true;
         selectedBrands = [cb.value];
       }
@@ -4013,6 +4082,9 @@ function initializeApp() {
 
   // Initialize the global chatbot widget
   initChatbot();
+
+  // Initialize Training Hall Gallery & Lightbox
+  initTrainingHall();
 }
 
 if (document.readyState === "loading") {
@@ -4043,8 +4115,8 @@ function populateFilterOptions() {
     
     const topBrands = [];
     if (envuBrand) topBrands.push(envuBrand);
-    if (fmcBrand) topBrands.push(fmcBrand);
     if (syngentaBrand) topBrands.push(syngentaBrand);
+    if (fmcBrand) topBrands.push(fmcBrand);
     if (heranbaBrand) topBrands.push(heranbaBrand);
     if (chemsterBrand) topBrands.push(chemsterBrand);
     if (hilBrand) topBrands.push(hilBrand);
@@ -4757,15 +4829,15 @@ function renderCatalog() {
     if (activeTab !== 'all') {
       let allowedIds = [];
       if (activeTab === 'cockroach') {
-        allowedIds = [44, 45, 46, 47, 48, 49, 50, 69, 70, 73, 74, 75, 76, 67, 82, 83, 87, 88, 149, 127, 108, 119, 209];
+        allowedIds = [44, 45, 46, 47, 48, 49, 50, 69, 70, 73, 74, 75, 76, 67, 82, 83, 87, 88, 149, 127, 108, 119, 209, 304, 305];
       } else if (activeTab === 'ant') {
         allowedIds = [69, 70, 73, 74, 75, 76, 67, 44, 46, 47, 48, 51, 82, 83];
       } else if (activeTab === 'mosquito') {
         allowedIds = [69, 70, 73, 74, 75, 76, 68, 44, 46, 63, 65, 66, 62, 82, 83, 85, 84, 86, 128, 205, 121, 265, 278, 279];
       } else if (activeTab === 'rodent') {
-        allowedIds = [77, 60, 152, 153, 154, 155, 156, 157, 158, 159, 162, 165, 266, 267, 268, 270, 276, 280, 281, 282, 283, 284, 285, 286, 287];
+        allowedIds = [77, 60, 152, 153, 154, 155, 156, 157, 158, 159, 162, 165, 266, 267, 268, 270, 276, 280, 281, 282, 283, 284, 285, 286, 287, 303];
       } else if (activeTab === 'termite') {
-        allowedIds = [53, 71, 79, 89, 91, 93, 102, 104, 109, 111, 124, 129, 131, 132, 134, 196, 198, 206, 272, 274];
+        allowedIds = [53, 71, 79, 89, 91, 93, 102, 104, 109, 111, 124, 129, 131, 132, 134, 196, 198, 206, 272, 274, 306];
       }
       if (!allowedIds.includes(prod.id)) return false;
     }
@@ -5753,7 +5825,7 @@ function generateBotResponse(userMsg) {
     {
       name: "Cockroach Control",
       keywords: ["cockroach", "cockroaches", "roach", "roaches", "kokron"],
-      products: ["maxforce forte", "maxforce fusion", "roachone gel", "kokron super gel"]
+      products: ["maxforce forte", "maxforce fusion", "seclira", "green drain", "roachone gel", "kokron super gel"]
     },
     {
       name: "Mosquito Defense",
@@ -5778,7 +5850,7 @@ function generateBotResponse(userMsg) {
     {
       name: "Termite Protection",
       keywords: ["termite", "termites"],
-      products: ["premise sc", "agenda 25ec", "termifinn tc", "biflex tc"]
+      products: ["premise sc", "agenda 25ec", "termicoil", "termifinn tc", "biflex tc"]
     },
     {
       name: "Beetle Control",
@@ -5803,7 +5875,7 @@ function generateBotResponse(userMsg) {
     {
       name: "Mice Control",
       keywords: ["mouse", "mice"],
-      products: ["racumin sure", "klerat waxblocks", "ratol cake", "ratol glue", "rodexit", "trap", "bait station"]
+      products: ["storm", "racumin sure", "klerat waxblocks", "ratol cake", "ratol glue", "rodexit", "trap", "bait station"]
     },
     {
       name: "Moth Control",
@@ -5828,7 +5900,7 @@ function generateBotResponse(userMsg) {
     {
       name: "Fly & Insect Control",
       keywords: ["fly", "flies", "insect", "insects"],
-      products: ["quick bayt", "fg flycobait", "flycutor", "fly trap", "fly zapper", "fly catcher", "flycatcher"]
+      products: ["green drain", "quick bayt", "fg flycobait", "flycutor", "fly trap", "fly zapper", "fly catcher", "flycatcher"]
     },
     {
       name: "Ant Solutions",
@@ -5838,12 +5910,12 @@ function generateBotResponse(userMsg) {
     {
       name: "Rat Control",
       keywords: ["rat", "rats"],
-      products: ["racumin sure", "klerat waxblocks", "ratol cake", "ratol glue", "rodexit", "trap", "bait station"]
+      products: ["storm", "racumin sure", "klerat waxblocks", "ratol cake", "ratol glue", "rodexit", "trap", "bait station"]
     },
     {
       name: "Rodent Control",
       keywords: ["rodent", "rodents"],
-      products: ["racumin sure", "klerat waxblocks", "ratol cake", "ratol glue", "rodexit", "trap", "bait station"]
+      products: ["storm", "racumin sure", "klerat waxblocks", "ratol cake", "ratol glue", "rodexit", "trap", "bait station"]
     }
   ];
 
@@ -6005,3 +6077,172 @@ function initChatbot() {
     }, 400);
   });
 }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   TRAINING HALL GALLERY & LIGHTBOX CONTROLLER
+   ───────────────────────────────────────────────────────────────────────── */
+const trainingHallImages = [
+  {
+    src: "TRAINING HALL/4.jpg",
+    title: "AV Lecture Auditorium",
+    desc: "Equipped with ceiling projector, audio system and 35+ writing pad chairs for theoretical training",
+    tag: "Auditorium"
+  },
+  {
+    src: "TRAINING HALL/1.jpg",
+    title: "Component Demo & Display Lab",
+    desc: "Display shelving with certified rodent bait stations, chemicals & demonstration tables",
+    tag: "Demo Lab"
+  },
+  {
+    src: "TRAINING HALL/5.jpg",
+    title: "35+ Seating Capacity Hall",
+    desc: "Comfortable air-conditioned training environment for corporate teams and PCO batches",
+    tag: "Classroom"
+  },
+  {
+    src: "TRAINING HALL/2.jpg",
+    title: "Component Assembly & Dilution Lab",
+    desc: "Interactive workstations where technicians learn component handling and dosage ratios",
+    tag: "Workshop"
+  },
+  {
+    src: "TRAINING HALL/6.jpg",
+    title: "Interactive Pest Seminars",
+    desc: "Classroom featuring Integrated Pest Management (IPM) aids and projection teaching",
+    tag: "Auditorium"
+  },
+  {
+    src: "TRAINING HALL/3.jpg",
+    title: "Equipment Testing Corridor",
+    desc: "Specialized testing zone for flycatchers, thermal foggers and electrical control equipment",
+    tag: "Equipment Station"
+  },
+  {
+    src: "TRAINING HALL/7.jpg",
+    title: "Acoustic Lecture Environment",
+    desc: "Acoustic wall paneling and focused atmosphere for safe pesticide handling lectures",
+    tag: "Auditorium"
+  },
+  {
+    src: "TRAINING HALL/8.jpg",
+    title: "Worker Upskilling & Certification Center",
+    desc: "Dedicated practical center bridging the skill gap for field workers new to modern tools",
+    tag: "Upskilling Center"
+  }
+];
+
+let activeLightboxIdx = 0;
+
+function updateLightboxView() {
+  const modal = document.getElementById("training-lightbox");
+  if (!modal) return;
+  const item = trainingHallImages[activeLightboxIdx];
+  if (!item) return;
+
+  const imgEl = document.getElementById("t-lightbox-img");
+  const titleEl = document.getElementById("t-lightbox-title");
+  const descEl = document.getElementById("t-lightbox-desc");
+  const counterEl = document.getElementById("t-lightbox-counter");
+
+  if (imgEl) {
+    imgEl.src = item.src;
+    imgEl.alt = item.title;
+  }
+  if (titleEl) titleEl.textContent = item.title;
+  if (descEl) descEl.textContent = item.desc;
+  if (counterEl) counterEl.textContent = `Photo ${activeLightboxIdx + 1} of ${trainingHallImages.length}`;
+}
+
+window.openTrainingLightbox = function(index) {
+  const modal = document.getElementById("training-lightbox");
+  if (!modal) return;
+  activeLightboxIdx = Math.max(0, Math.min(index, trainingHallImages.length - 1));
+  updateLightboxView();
+  modal.classList.add("active");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  if (typeof lucide !== "undefined") {
+    lucide.createIcons();
+  }
+};
+
+window.closeTrainingLightbox = function() {
+  const modal = document.getElementById("training-lightbox");
+  if (!modal) return;
+  modal.classList.remove("active");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+};
+
+function initTrainingHall() {
+  // Gallery filter tabs
+  const filterBtns = document.querySelectorAll(".training-gallery-filters .t-filter-btn");
+  const galleryItems = document.querySelectorAll(".training-gallery-grid .t-gallery-item");
+
+  if (filterBtns.length > 0 && galleryItems.length > 0) {
+    filterBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        filterBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-filter");
+        galleryItems.forEach((item) => {
+          const category = item.getAttribute("data-category");
+          if (filter === "all" || category === filter) {
+            item.classList.remove("hidden");
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+      });
+    });
+  }
+
+  // Lightbox navigation and events
+  const modal = document.getElementById("training-lightbox");
+  if (modal) {
+    const closeBtn = document.getElementById("t-lightbox-close-btn");
+    const prevBtn = document.getElementById("t-lightbox-prev-btn");
+    const nextBtn = document.getElementById("t-lightbox-next-btn");
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", window.closeTrainingLightbox);
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        activeLightboxIdx = (activeLightboxIdx - 1 + trainingHallImages.length) % trainingHallImages.length;
+        updateLightboxView();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        activeLightboxIdx = (activeLightboxIdx + 1) % trainingHallImages.length;
+        updateLightboxView();
+      });
+    }
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        window.closeTrainingLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (!modal.classList.contains("active")) return;
+      if (e.key === "Escape") {
+        window.closeTrainingLightbox();
+      } else if (e.key === "ArrowLeft") {
+        activeLightboxIdx = (activeLightboxIdx - 1 + trainingHallImages.length) % trainingHallImages.length;
+        updateLightboxView();
+      } else if (e.key === "ArrowRight") {
+        activeLightboxIdx = (activeLightboxIdx + 1) % trainingHallImages.length;
+        updateLightboxView();
+      }
+    });
+  }
+}
