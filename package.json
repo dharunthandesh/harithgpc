@@ -1,0 +1,10 @@
+{
+  "name": "harithgpc",
+  "version": "1.0.0",
+  "description": "Harith Garden & Pest Clinic",
+  "scripts": {
+    "dev": "node dev-server.js",
+    "start": "node dev-server.js",
+    "build": "echo Static site ready"
+  }
+}
