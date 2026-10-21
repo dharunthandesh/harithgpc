@@ -10,8 +10,9 @@
   <meta name="description" content="Explore our catalog of professional grade pest management formulations, chemicals, and industrial machinery. Authorized distributors of ENVU (Bayer), Syngenta, Foggers India, and FUJIAKA in Chennai." />
 
   <!-- OpenGraph Tags -->
+  <link rel="canonical" href="https://www.harithgpc.com/products" />
   <meta property="og:title" content="Products – Harith Garden and Pest Clinic" />
-  <meta property="og:url" content="https://www.harithgpc.com/products.html" />
+  <meta property="og:url" content="https://www.harithgpc.com/products" />
   <meta property="og:site_name" content="Harith Garden And Pest Clinic" />
   <meta property="og:description" content="Explore our catalog of professional grade pest management formulations, chemicals, and industrial machinery." />
   <meta property="og:type" content="website" />       
@@ -34,6 +35,7 @@
       const isHomepage = window.location.pathname === "/" || 
                          window.location.pathname.endsWith("/index.html") || 
                          window.location.pathname.endsWith("/index.php") ||
+                         window.location.pathname.endsWith("/index") ||
                          window.location.pathname.split("/").pop() === "";
       let loaderPlayed = null;
       try {
@@ -81,7 +83,7 @@
   <header class="main-header">
     <div class="header-inner">
       <!-- Logo -->
-      <a href="index.html" class="logo-container">
+      <a href="/" class="logo-container">
         <img src="images/harith-logo.png" alt="Harith Garden Logo" class="logo-badge">
         <div class="logo-text">
           <span class="logo-main">Harith Garden</span>
@@ -116,7 +118,7 @@
 
       <!-- Shop Now Button -->
       <div class="header-shop-action">
-        <a href="products.html" class="shop-now-btn">
+        <a href="/products" class="shop-now-btn">
           SHOP NOW <i data-lucide="arrow-right"></i>
         </a>
       </div>
@@ -127,12 +129,12 @@
   <nav class="navigation-bar">
     <div class="nav-inner">
       <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="products.html" class="nav-link active">Products</a></li>
-        <li><a href="pest-library.html" class="nav-link">Pest Library</a></li>
-        <li><a href="about.html" class="nav-link">About Company</a></li>
-        <li><a href="about.html#training-hall" class="nav-link">Training Hall</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/products" class="nav-link active">Products</a></li>
+        <li><a href="/pest-library" class="nav-link">Pest Library</a></li>
+        <li><a href="/about" class="nav-link">About Company</a></li>
+        <li><a href="/about#training-hall" class="nav-link">Training Hall</a></li>
+        <li><a href="/contact" class="nav-link">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
@@ -185,12 +187,12 @@
       </div>
     </div>
     <ul class="mobile-nav-links">
-      <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
-      <li><a href="products.html" class="active"><i data-lucide="package"></i> Products</a></li>
-      <li><a href="pest-library.html"><i data-lucide="bug"></i> Pest Library</a></li>
-      <li><a href="about.html"><i data-lucide="building-2"></i> About Company</a></li>
-      <li><a href="about.html#training-hall"><i data-lucide="graduation-cap"></i> Training Hall</a></li>
-      <li><a href="contact.html"><i data-lucide="mail"></i> Contact</a></li>
+      <li><a href="/"><i data-lucide="home"></i> Home</a></li>
+      <li><a href="/products" class="active"><i data-lucide="package"></i> Products</a></li>
+      <li><a href="/pest-library"><i data-lucide="bug"></i> Pest Library</a></li>
+      <li><a href="/about"><i data-lucide="building-2"></i> About Company</a></li>
+      <li><a href="/about#training-hall"><i data-lucide="graduation-cap"></i> Training Hall</a></li>
+      <li><a href="/contact"><i data-lucide="mail"></i> Contact</a></li>
     </ul>
     <div class="mobile-nav-contact">
       <a href="tel:+919444904349"><i data-lucide="phone"></i> +91 9444904349</a>
@@ -305,7 +307,7 @@
         <p class="enquiry-desc">We offer special distributor pricing packages and GST invoicing for registered pest control companies and corporate partners.</p>
       </div>
       <div class="enquiry-action-box">
-        <a href="contact.html" class="enquiry-btn">Send Enquiry Form <i data-lucide="mail"></i></a>
+        <a href="/contact" class="enquiry-btn">Send Enquiry Form <i data-lucide="mail"></i></a>
       </div>
     </div>
   </section>
@@ -341,16 +343,16 @@
         <div class="footer-links-col">
           <h3 class="footer-title">Shop Brands</h3>
           <ul class="footer-list">
-            <li><a href="products.html?brand=ENVU+BAYER" class="footer-link-item brand-shortcut" data-brand="ENVU (BAYER)"><i data-lucide="flask-conical"></i>ENVU (Bayer) Solutions</a></li>
-            <li><a href="products.html?brand=SYNGENTA" class="footer-link-item brand-shortcut" data-brand="SYNGENTA"><i data-lucide="leaf"></i>Syngenta Public Health</a></li>
-            <li><a href="products.html?brand=ULTIMA+SEARCH" class="footer-link-item brand-shortcut" data-brand="ULTIMA SEARCH"><i data-lucide="shield"></i>Ultima Search Rodenticides</a></li>
-            <li><a href="products.html?brand=FOGGERS+INDIA" class="footer-link-item brand-shortcut" data-brand="FOGGERS INDIA"><i data-lucide="wind"></i>Foggers India Machinery</a></li>
-            <li><a href="products.html?brand=ASPEE" class="footer-link-item brand-shortcut" data-brand="ASPEE"><i data-lucide="spray-can"></i>Aspee Sprayers</a></li>
-            <li><a href="products.html?brand=HERANBA" class="footer-link-item brand-shortcut" data-brand="HERANBA"><i data-lucide="test-tube"></i>Heranba Formulations</a></li>
-            <li><a href="products.html?brand=FALCON" class="footer-link-item brand-shortcut" data-brand="FALCON"><i data-lucide="sprout"></i>Falcon Garden Tools</a></li>
-            <li><a href="products.html?brand=BASF" class="footer-link-item brand-shortcut" data-brand="BASF"><i data-lucide="shield-check"></i>BASF Pest Solutions</a></li>
-            <li><a href="products.html?brand=GREEN+DRAIN" class="footer-link-item brand-shortcut" data-brand="GREEN DRAIN"><i data-lucide="droplets"></i>Green Drain™ Trap Seals</a></li>
-            <li><a href="products.html?brand=TERMI-COIL" class="footer-link-item brand-shortcut" data-brand="TERMI-COIL"><i data-lucide="git-commit"></i>TermiCoil® Reticulation</a></li>
+            <li><a href="/products?brand=ENVU+BAYER" class="footer-link-item brand-shortcut" data-brand="ENVU (BAYER)"><i data-lucide="flask-conical"></i>ENVU (Bayer) Solutions</a></li>
+            <li><a href="/products?brand=SYNGENTA" class="footer-link-item brand-shortcut" data-brand="SYNGENTA"><i data-lucide="leaf"></i>Syngenta Public Health</a></li>
+            <li><a href="/products?brand=ULTIMA+SEARCH" class="footer-link-item brand-shortcut" data-brand="ULTIMA SEARCH"><i data-lucide="shield"></i>Ultima Search Rodenticides</a></li>
+            <li><a href="/products?brand=FOGGERS+INDIA" class="footer-link-item brand-shortcut" data-brand="FOGGERS INDIA"><i data-lucide="wind"></i>Foggers India Machinery</a></li>
+            <li><a href="/products?brand=ASPEE" class="footer-link-item brand-shortcut" data-brand="ASPEE"><i data-lucide="spray-can"></i>Aspee Sprayers</a></li>
+            <li><a href="/products?brand=HERANBA" class="footer-link-item brand-shortcut" data-brand="HERANBA"><i data-lucide="test-tube"></i>Heranba Formulations</a></li>
+            <li><a href="/products?brand=FALCON" class="footer-link-item brand-shortcut" data-brand="FALCON"><i data-lucide="sprout"></i>Falcon Garden Tools</a></li>
+            <li><a href="/products?brand=BASF" class="footer-link-item brand-shortcut" data-brand="BASF"><i data-lucide="shield-check"></i>BASF Pest Solutions</a></li>
+            <li><a href="/products?brand=GREEN+DRAIN" class="footer-link-item brand-shortcut" data-brand="GREEN DRAIN"><i data-lucide="droplets"></i>Green Drain™ Trap Seals</a></li>
+            <li><a href="/products?brand=TERMI-COIL" class="footer-link-item brand-shortcut" data-brand="TERMI-COIL"><i data-lucide="git-commit"></i>TermiCoil® Reticulation</a></li>
           </ul>
         </div>
 
@@ -358,12 +360,12 @@
         <div class="footer-links-col">
           <h3 class="footer-title">Quick Links</h3>
           <ul class="footer-list">
-            <li><a href="contact.html#consultation-form" class="footer-link-item"><i data-lucide="send"></i>Submit B2B Enquiry</a></li>
-            <li><a href="pest-library.html" class="footer-link-item"><i data-lucide="bug"></i>Pest Library</a></li>
-            <li><a href="about.html" class="footer-link-item"><i data-lucide="info"></i>About Company</a></li>
-            <li><a href="about.html#training-hall" class="footer-link-item"><i data-lucide="graduation-cap"></i>Training Facility</a></li>
-            <li><a href="contact.html" class="footer-link-item"><i data-lucide="phone"></i>Contact Clinical Team</a></li>
-            <li><a href="products.html" class="footer-link-item"><i data-lucide="package"></i>Browse All Products</a></li>
+            <li><a href="/contact#consultation-form" class="footer-link-item"><i data-lucide="send"></i>Submit B2B Enquiry</a></li>
+            <li><a href="/pest-library" class="footer-link-item"><i data-lucide="bug"></i>Pest Library</a></li>
+            <li><a href="/about" class="footer-link-item"><i data-lucide="info"></i>About Company</a></li>
+            <li><a href="/about#training-hall" class="footer-link-item"><i data-lucide="graduation-cap"></i>Training Facility</a></li>
+            <li><a href="/contact" class="footer-link-item"><i data-lucide="phone"></i>Contact Clinical Team</a></li>
+            <li><a href="/products" class="footer-link-item"><i data-lucide="package"></i>Browse All Products</a></li>
           </ul>
         </div>
 

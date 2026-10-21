@@ -4259,9 +4259,9 @@ function setupEventListeners() {
           }
         }
 
-        if (matchedPest && !window.location.pathname.includes("products.html")) {
-          if (!window.location.pathname.includes("pest-library.html")) {
-            window.location.href = `pest-library.html?pest=${matchedPest.id}`;
+        if (matchedPest && !window.location.pathname.includes("products")) {
+          if (!window.location.pathname.includes("pest-library")) {
+            window.location.href = `/pest-library?pest=${matchedPest.id}`;
           } else {
             if (typeof viewPestDetail === 'function') {
               viewPestDetail(matchedPest.id);
@@ -4270,8 +4270,8 @@ function setupEventListeners() {
             }
           }
         } else {
-          if (!window.location.pathname.includes("products.html")) {
-            window.location.href = `products.html?search=${encodeURIComponent(query)}`;
+          if (!window.location.pathname.includes("products")) {
+            window.location.href = `/products?search=${encodeURIComponent(query)}`;
           } else {
             searchQuery = query;
             renderCatalog();
@@ -4609,8 +4609,8 @@ function setupEventListeners() {
     sc.addEventListener("click", (e) => {
       e.preventDefault();
       const brandVal = sc.getAttribute("data-brand");
-      if (!window.location.pathname.includes("products.html")) {
-        window.location.href = `products.html?brand=${encodeURIComponent(brandVal)}`;
+      if (!window.location.pathname.includes("products")) {
+        window.location.href = `/products?brand=${encodeURIComponent(brandVal)}`;
         return;
       }
       resetAllFilters();
@@ -4697,8 +4697,8 @@ function setupEventListeners() {
   const shopNowBtns = document.querySelectorAll(".shop-now-btn");
   shopNowBtns.forEach(btn => {
     btn.addEventListener("click", (e) => {
-      if (!window.location.pathname.includes("products.html")) {
-        window.location.href = "products.html";
+      if (!window.location.pathname.includes("products")) {
+        window.location.href = "/products";
         e.preventDefault();
         return;
       }
@@ -5086,8 +5086,8 @@ function renderSearchSuggestions(query) {
 
 function selectSearchSuggestion(value, type) {
   if (type === 'pest') {
-    if (!window.location.pathname.includes("pest-library.html")) {
-      window.location.href = `pest-library.html?pest=${encodeURIComponent(value)}`;
+    if (!window.location.pathname.includes("pest-library")) {
+      window.location.href = `/pest-library?pest=${encodeURIComponent(value)}`;
       return;
     }
     if (typeof viewPestDetail === 'function') {
@@ -5103,8 +5103,8 @@ function selectSearchSuggestion(value, type) {
     return;
   }
 
-  if (!window.location.pathname.includes("products.html")) {
-    window.location.href = `products.html?search=${encodeURIComponent(value)}`;
+  if (!window.location.pathname.includes("products")) {
+    window.location.href = `/products?search=${encodeURIComponent(value)}`;
     return;
   }
   const searchInput = document.getElementById("product-search");
@@ -5423,7 +5423,7 @@ function openProductQuickView(productId) {
 
   if (!modal || !modalBody) {
     // If the modal is not present (e.g. on the pest library page), redirect to products page
-    window.location.href = `products.html?search=${encodeURIComponent(prod.name)}`;
+    window.location.href = `/products?search=${encodeURIComponent(prod.name)}`;
     return;
   }
 
@@ -5623,6 +5623,7 @@ function initLoader() {
   const isHomepage = window.location.pathname === "/" || 
                      window.location.pathname.endsWith("/index.html") || 
                      window.location.pathname.endsWith("/index.php") ||
+                     window.location.pathname.endsWith("/index") ||
                      window.location.pathname.split("/").pop() === "";
 
   let loaderPlayed = null;
@@ -5780,7 +5781,7 @@ function handleProductClick(prodName) {
     }
     catalog.scrollIntoView({ behavior: "smooth" });
   } else {
-    window.location.href = `products.html?search=${encodeURIComponent(prodName)}`;
+    window.location.href = `/products?search=${encodeURIComponent(prodName)}`;
   }
 }
 window.handleProductClick = handleProductClick;
@@ -5795,7 +5796,7 @@ function generateBotResponse(userMsg) {
 
   if (msg.includes("contact") || msg.includes("phone") || msg.includes("number") || msg.includes("call") || msg.includes("whatsapp") || msg.includes("doubt") || msg.includes("help") || msg.includes("address") || msg.includes("email") || msg.includes("support")) {
     return {
-      text: "If you have any doubts, custom requirements, or bulk enquiry requests, please call or WhatsApp our clinic directly at <strong>+91 9444904349</strong> (Mon-Sat 10 AM - 7 PM), or email us at <strong>info@harithgpc.com</strong>. You can also visit our <a href='contact.html' style='color: var(--primary-light); text-decoration: underline; font-weight: 700;'>Contact Page</a> to submit an online form.",
+      text: "If you have any doubts, custom requirements, or bulk enquiry requests, please call or WhatsApp our clinic directly at <strong>+91 9444904349</strong> (Mon-Sat 10 AM - 7 PM), or email us at <strong>info@harithgpc.com</strong>. You can also visit our <a href='/contact' style='color: var(--primary-light); text-decoration: underline; font-weight: 700;'>Contact Page</a> to submit an online form.",
       products: []
     };
   }
@@ -5952,7 +5953,7 @@ function generateBotResponse(userMsg) {
   }
 
   return {
-    text: "I couldn't find a specific pest or product matching your query. We offer specialized solutions for Cockroaches, Ants, Termites, Rodents, Mosquitoes, Bed Bugs, Spiders, Fleas, and more.<br><br>You can also check our <a href='pest-library.html' style='color: var(--primary-light); text-decoration: underline; font-weight: 700;'>Pest Library</a> to browse all 23 pests, or contact our experts directly at <strong>+91 9444904349</strong>.",
+    text: "I couldn't find a specific pest or product matching your query. We offer specialized solutions for Cockroaches, Ants, Termites, Rodents, Mosquitoes, Bed Bugs, Spiders, Fleas, and more.<br><br>You can also check our <a href='/pest-library' style='color: var(--primary-light); text-decoration: underline; font-weight: 700;'>Pest Library</a> to browse all 23 pests, or contact our experts directly at <strong>+91 9444904349</strong>.",
     products: []
   };
 }

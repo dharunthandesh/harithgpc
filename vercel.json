@@ -1,0 +1,86 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/products.html",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/pest-library.html",
+      "destination": "/pest-library",
+      "permanent": true
+    },
+    {
+      "source": "/Product_Catalog.html",
+      "destination": "/Product_Catalog",
+      "permanent": true
+    },
+    {
+      "source": "/Product_Catalog_print.html",
+      "destination": "/Product_Catalog_print",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/products",
+      "destination": "/products.html"
+    },
+    {
+      "source": "/pest-library",
+      "destination": "/pest-library.html"
+    },
+    {
+      "source": "/Product_Catalog",
+      "destination": "/Product_Catalog.html"
+    },
+    {
+      "source": "/product-catalog",
+      "destination": "/Product_Catalog.html"
+    },
+    {
+      "source": "/Product_Catalog_print",
+      "destination": "/Product_Catalog_print.html"
+    },
+    {
+      "source": "/product-catalog-print",
+      "destination": "/Product_Catalog_print.html"
+    }
+  ]
+}
