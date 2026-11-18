@@ -5,6 +5,39 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "harithgpc.in"
+        }
+      ],
+      "destination": "https://www.harithgpc.in/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "harithgpc.com"
+        }
+      ],
+      "destination": "https://www.harithgpc.in/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.harithgpc.com"
+        }
+      ],
+      "destination": "https://www.harithgpc.in/:path*",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true

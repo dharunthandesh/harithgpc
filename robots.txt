@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /tools/
 
-Sitemap: https://www.harithgpc.com/sitemap.xml
+Sitemap: https://www.harithgpc.in/sitemap.xml
