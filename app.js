@@ -5641,23 +5641,11 @@ function renderCatalog() {
   grid.style.minHeight = grid.offsetHeight + "px";
 
   grid.innerHTML = filtered.map(prod => {
-    let toxicClass = "";
-    let toxicLabel = "";
+    let toxicBandHtml = "";
     if (prod.category === "gardening") {
-      toxicClass = "gardening";
-      toxicLabel = "Gardening";
-    } else if (prod.toxicity === "Yellow Label") {
-      toxicClass = "yellow-label";
-      toxicLabel = "Highly Active";
-    } else if (prod.toxicity === "Blue Label") {
-      toxicClass = "blue-label";
-      toxicLabel = "Moderately Active";
-    } else if (prod.toxicity === "Green Label") {
-      toxicClass = "green-label";
-      toxicLabel = "Slightly Active / Mild";
-    } else {
-      toxicClass = "equipment";
-      toxicLabel = "Pest Equipment";
+      toxicBandHtml = '<span class="toxic-band-tag gardening">Gardening</span>';
+    } else if (prod.category === "equipment" || prod.category === "traps & equipment") {
+      toxicBandHtml = '<span class="toxic-band-tag equipment">Pest Equipment</span>';
     }
 
     const hasVariants = prod.variants && prod.variants.length > 0;
@@ -5675,7 +5663,7 @@ function renderCatalog() {
     return `
       <article class="product-card" data-product-id="${prod.id}" ${hasVariants ? 'data-selected-variant="0"' : ''}>
         <div class="product-img-wrap">
-          <span class="toxic-band-tag ${toxicClass}">${toxicLabel}</span>
+          ${toxicBandHtml}
           ${prod.image ? `<img src="${prod.image}" alt="${prod.name}">` : ""}
           <div class="card-overlay">
             <button class="overlay-action-btn" onclick="openProductQuickView(${prod.id})" title="Quick View">
@@ -6118,23 +6106,11 @@ function openProductQuickView(productId) {
     return;
   }
 
-  let toxicClass = "";
-  let toxicLabel = "";
+  let toxicChipHtml = "";
   if (prod.category === "gardening") {
-    toxicClass = "gardening";
-    toxicLabel = "Gardening";
-  } else if (prod.toxicity === "Yellow Label") {
-    toxicClass = "yellow-label";
-    toxicLabel = "Yellow Label (Highly Active)";
-  } else if (prod.toxicity === "Blue Label") {
-    toxicClass = "blue-label";
-    toxicLabel = "Blue Label (Moderately Active)";
-  } else if (prod.toxicity === "Green Label") {
-    toxicClass = "green-label";
-    toxicLabel = "Green Label (Slightly Active / Mild)";
-  } else {
-    toxicClass = "equipment";
-    toxicLabel = "Pest Control Equipment";
+    toxicChipHtml = '<span class="meta-chip toxicity-chip gardening">Gardening</span>';
+  } else if (prod.category === "equipment" || prod.category === "traps & equipment") {
+    toxicChipHtml = '<span class="meta-chip toxicity-chip equipment">Pest Control Equipment</span>';
   }
 
   const hasVariants = prod.variants && prod.variants.length > 0;
@@ -6160,7 +6136,7 @@ function openProductQuickView(productId) {
       <span class="modal-brand">${prod.brand}</span>
       <h2 class="modal-title">${prod.name}</h2>
       <div class="modal-metadata">
-        <span class="meta-chip toxicity-chip ${toxicClass}">${toxicLabel}</span>
+        ${toxicChipHtml}
         <span class="meta-chip active-ingredient-chip">Active Ingredient: ${prod.activeIngredient}</span>
       </div>
       ${variantsHtml}
