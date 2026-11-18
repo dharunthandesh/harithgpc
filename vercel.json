@@ -1,8 +1,33 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "outputDirectory": ".",
-  "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/products",
+      "destination": "/products.html"
+    },
+    {
+      "source": "/pest-library",
+      "destination": "/pest-library.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/Product_Catalog",
+      "destination": "/Product_Catalog.html"
+    },
+    {
+      "source": "/Product_Catalog_print",
+      "destination": "/Product_Catalog_print.html"
+    }
+  ],
   "redirects": [
     {
       "source": "/:path*",
@@ -35,6 +60,36 @@
         }
       ],
       "destination": "https://www.harithgpc.in/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/products.html",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/pest-library.html",
+      "destination": "/pest-library",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/Product_Catalog.html",
+      "destination": "/Product_Catalog",
+      "permanent": true
+    },
+    {
+      "source": "/Product_Catalog_print.html",
+      "destination": "/Product_Catalog_print",
       "permanent": true
     },
     {

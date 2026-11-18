@@ -34,7 +34,9 @@ const server = http.createServer((req, res) => {
     return res.end();
   }
 
-  if (pathname.endsWith('.html')) {
+  if (pathname.startsWith('/google') && pathname.endsWith('.html')) {
+    // Serve Google verification file directly without clean URL redirection
+  } else if (pathname.endsWith('.html')) {
     const clean = pathname.slice(0, -5);
     res.writeHead(308, { Location: clean + (urlObj.search || '') });
     return res.end();
